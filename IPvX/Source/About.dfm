@@ -33,7 +33,7 @@ object AboutForm: TAboutForm
     AutoSize = False
     Caption = 
       'Warning: This computer program is protected by copyright law and' +
-      ' international treaties. Unauthoprized reproduction or distribut' +
+      ' international treaties. Unauthorized reproduction or distribut' +
       'ion of this program, or any portion of it, may result in severe ' +
       'civil and criminal penalties, and will be prosecuted to the maxi' +
       'mum extent possible under the law.'
