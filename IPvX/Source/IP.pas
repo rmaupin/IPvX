@@ -84,31 +84,31 @@ type
 
   TIPv4 = class(TObject)  // The IPv4 object; only stores the address and mask, all other properties and values are calculated when referenced
     private
-      type TAddr = UInt32;  // IPv4 addresses are 32-bit, unsigned integers
-      var FAddr: TAddr;     // The IPv4 Address
-      var FMask: TAddr;     // The IPv4 Mask
-      function GetPrefix(): string;                       // Calulates the Prefix and returns it as a string
+      type TAddr = UInt32;                                // IPv4 addresses are 32-bit, unsigned integers
+      var FAddr: TAddr;                                   // The IPv4 Address
+      var FMask: TAddr;                                   // The IPv4 Mask
+      function GetPrefix(): string;                       // Calculates the Prefix and returns it as a string
       procedure SetPrefix(const APrefix: string);         // Sets the Address and Mask from a Prefix string
-      function GetNetwork(): string;                      // Calulates the Network and returns it as a string
+      function GetNetwork(): string;                      // Calculates the Network and returns it as a string
       procedure SetNetwork(const ANetwork: string);       // Sets the Address from a Network string
-      function GetNetLength(): string;                    // Calulates the Prefix Length and returns it as a string
+      function GetNetLength(): string;                    // Calculates the Prefix Length and returns it as a string
       procedure SetNetLength(const ANetLength: string);   // Sets the Mask from a Prefix Length string
       function GetAddress(): string;                      // Returns the Address as a string
       procedure SetAddress(const AAddress: string);       // Sets the Address from a string
       function GetNetMask(): string;                      // Returns the Mask as a string
       procedure SetNetMask(const ANetMask: string);       // Sets the Mask from a string
-      function GetHostMask(): string;                     // Calulates the Host Mask and returns it as a string
+      function GetHostMask(): string;                     // Calculates the Host Mask and returns it as a string
       procedure SetHostMask(const AHostMask: string);     // Sets the Mask from a Host Mask string
-      function GetOffset(): string;                       // Calulates the Address Offest within the network and returns it as a string
+      function GetOffset(): string;                       // Calculates the Address Offset within the network and returns it as a string
       procedure SetOffset(const AOffset: string);         // Sets the Address from an Address Offset string
       function GetFirst(): string;                        // Calculates the First Usable Address and returns it as a string
       function GetLast(): string;                         // Calculates the Last Usable Address and returns it as a string
       function GetBroadcast(): string;                    // Calculates the Broadcast Address and returns it as a string
     public
       constructor Create();
-      procedure Clear();                                // Clears the Address and Mask by setting the Address to all zeroes and the Mask to all ones
-      procedure Assign(const Source: TIPv4);            // Assigns the Address and Mask from another IPv4 object
-      function InRange(const APrefix: string): Boolean; // Test if the Address in in the range of a given Prefix
+      procedure Clear();                                                // Clears the Address and Mask by setting the Address to all zeroes and the Mask to all ones
+      procedure Assign(const Source: TIPv4);                            // Assigns the Address and Mask from another IPv4 object
+      function InRange(const APrefix: string): Boolean;                 // Test if the Address in in the range of a given Prefix
       destructor Destroy(); override;
       property Prefix:    string  read GetPrefix    write SetPrefix;    // The R/W Prefix property
       property Network:   string  read GetNetwork   write SetNetwork;   // The R/W Network property
@@ -124,39 +124,33 @@ type
 
   TIPv6 = class(TObject)  // The IPv6 object; only stores the address and mask, all other properties and values are calculated when referenced
     private
-      type TAddr = BigInteger;  // IPv6 addresses are 128-bit, unsigned integers; requires the use of integer array or BigInteger
-      var FAddr: TAddr;         // The IPv6 Address
-      var FMask: TAddr;         // The IPv6 Mask
-      function Expand(const AAddress: string): string;    // Fully expands an IPv6 Address or Prefix string, including leading zeroes in each of the 16-bit address fields
-      function Compress(const AAddress: string): string;  // Compresses and IPv6 Address string to the RFC 5952 address format
-      function GetPrefix(): string;                       // Calulates the Prefix and returns it as a string
-      function GetPrefixEx(): string;                     // Calulates the Prefix and returns it as a fully expanded Prefix string
+      type TAddr = BigInteger;                            // IPv6 addresses are 128-bit, unsigned integers; requires the use of integer array or BigInteger
+      var FAddr: TAddr;                                   // The IPv6 Address
+      var FMask: TAddr;                                   // The IPv6 Mask
+      function GetPrefix(): string;                       // Calculates the Prefix and returns it as a string
       procedure SetPrefix(const APrefix: string);         // Sets the Address and Mask from a Prefix string
-      function GetNetwork(): string;                      // Calulates the Network and returns it as a string
-      function GetNetworkEx(): string;                    // Calulates the Network and returns it as a fully expanded Prefix string
+      function GetNetwork(): string;                      // Calculates the Network and returns it as a string
       procedure SetNetwork(const ANetwork: string);       // Sets the Address from a Network string
-      function GetNetLength(): string;                    // Calulates the Prefix Length and returns it as a string
+      function GetNetLength(): string;                    // Calculates the Prefix Length and returns it as a string
       procedure SetNetLength(const ANetLength: string);   // Sets the Mask from a Prefix Length string
       function GetAddress(): string;                      // Returns the Address as a string
-      function GetAddressEx(): string;                    // Returns a fully expanded Address as a string
       procedure SetAddress(const AAddress: string);       // Sets the Address from a string
-      function GetOffset(): string;                       // Calulates the Address Offest within the network and returns it as a string
+      function GetOffset(): string;                       // Calculates the Address Offset within the network and returns it as a string
       procedure SetOffset(const AOffset: string);         // Sets the Address from an Address Offset string
       function GetFirst(): string;                        // Calculates the First Network Address and returns it as a string
       function GetLast(): string;                         // Calculates the Last Network Address and returns it as a string
     public
       constructor Create();
-      procedure Clear();                                // Clears the Address and Mask by setting the Address to all zeroes and the Mask to all ones
-      procedure Assign(const Source: TIPv6);            // Assigns the Address and Mask from another IPv4 object
-      function InRange(const APrefix: string): Boolean; // Test if the Address in in the range of a given Prefix
+      procedure Clear();                                                // Clears the Address and Mask by setting the Address to all zeroes and the Mask to all ones
+      procedure Assign(const Source: TIPv6);                            // Assigns the Address and Mask from another IPv4 object
+      function InRange(const APrefix: string): Boolean;                 // Test if the Address in in the range of a given Prefix
+      function Expand(const AAddress: string): string;                  // Fully expands an IPv6 Address or Prefix string, including leading zeroes in each of the 16-bit address fields
+      function Compress(const AAddress: string): string;                // Compresses an IPv6 Address string to the RFC 5952 address format
       destructor Destroy(); override;
       property Prefix:    string  read GetPrefix    write SetPrefix;    // The R/W Prefix property
-      property PrefixEx:  string  read GetPrefixEx;                     // The RO Expanded Prefix property
       property Network:   string  read GetNetwork   write SetNetwork;   // The R/W Network property
-      property NetworkEx: string  read GetNetworkEx;                    // The RO Expanded Network property
       property NetLength: string  read GetNetLength write SetNetLength; // The R/W Prefix Length property
       property Address:   string  read GetAddress   write SetAddress;   // The R/W Address property
-      property AddressEx: string  read GetAddressEx;                    // The RO Expanded Address property
       property Offset:    string  read GetOffset    write SetOffset;    // The R/W Address Offset property
       property First:     string  read GetFirst;                        // The RO First Network Address property
       property Last:      string  read GetLast;                         // The RO Last Network Address property
@@ -821,30 +815,6 @@ begin
                      '/' + i.ToString);                                                     // Convert the prefix length to a string adding to the previous string
 end;
 
-function TIPv6.GetPrefixEx(): string;
-var
-  i: Integer;   // The number of one bits in the Mask
-  m, n: TAddr;  // The Mask and Network
-begin
-  i := 0;
-  m := FMask;             
-  while (m > 0) do begin  // Count the number of one bits in the Mask
-    i := (i + 1);
-    m := (m mod '$80000000000000000000000000000000');
-    m := (m shl 1);
-  end;
-  n := (FAddr and FMask);                           // Calculate the Network
-  Result := Expand(((n shr 112).ToHexString                                      + ':' +  // Calculate the 1st word and convert to a string
-                   ((n mod '$10000000000000000000000000000') shr 96).ToHexString + ':' +  // Calculate the 2nd word and convert to a string adding to the previous string
-                   ((n mod '$1000000000000000000000000') shr 80).ToHexString     + ':' +  // Calculate the 3rd word and convert to a string adding to the previous string
-                   ((n mod '$100000000000000000000') shr 64).ToHexString         + ':' +  // Calculate the 4th word and convert to a string adding to the previous string
-                   ((n mod '$10000000000000000') shr 48).ToHexString             + ':' +  // Calculate the 5th word and convert to a string adding to the previous string
-                   ((n mod '$1000000000000') shr 32).ToHexString                 + ':' +  // Calculate the 6th word and convert to a string adding to the previous string
-                   ((n mod '$100000000') shr 16).ToHexString                     + ':' +  // Calculate the 7th word and convert to a string adding to the previous string
-                    (n mod '$10000').ToHexString).ToLower                        +        // Calculate the 8th word and convert to a string adding to the previous string
-                   '/' + i.ToString);                                                     // Convert the prefix length to a string adding to the previous string
-end;
-
 procedure TIPv6.SetPrefix(const APrefix: string);
 begin
   try
@@ -895,21 +865,6 @@ begin
                      ((n mod '$1000000000000') shr 32).ToHexString                 + ':' +  // Calculate the 6th word and convert to a string adding to the previous string
                      ((n mod '$100000000') shr 16).ToHexString                     + ':' +  // Calculate the 7th word and convert to a string adding to the previous string
                       (n mod '$10000').ToHexString).ToLower);                               // Calculate the 8th word and convert to a string adding to the previous string
-end;
-
-function TIPv6.GetNetworkEx(): string;
-var
-  n: TAddr; // The Network
-begin
-  n := (FAddr and FMask);                                                                 // Calculate the Network
-  Result := Expand(((n shr 112).ToHexString                                      + ':' +  // Calculate the 1st word and convert to a string
-                   ((n mod '$10000000000000000000000000000') shr 96).ToHexString + ':' +  // Calculate the 2nd word and convert to a string adding to the previous string
-                   ((n mod '$1000000000000000000000000') shr 80).ToHexString     + ':' +  // Calculate the 3rd word and convert to a string adding to the previous string
-                   ((n mod '$100000000000000000000') shr 64).ToHexString         + ':' +  // Calculate the 4th word and convert to a string adding to the previous string
-                   ((n mod '$10000000000000000') shr 48).ToHexString             + ':' +  // Calculate the 5th word and convert to a string adding to the previous string
-                   ((n mod '$1000000000000') shr 32).ToHexString                 + ':' +  // Calculate the 6th word and convert to a string adding to the previous string
-                   ((n mod '$100000000') shr 16).ToHexString                     + ':' +  // Calculate the 7th word and convert to a string adding to the previous string
-                    (n mod '$10000').ToHexString).ToLower);                               // Calculate the 8th word and convert to a string adding to the previous string
 end;
 
 procedure TIPv6.SetNetwork(const ANetwork: string);
@@ -995,18 +950,6 @@ begin
                      ((FAddr mod '$1000000000000') shr 32).ToHexString                 + ':' +  // Calculate the 6th word and convert to a string adding to the previous string
                      ((FAddr mod '$100000000') shr 16).ToHexString                     + ':' +  // Calculate the 7th word and convert to a string adding to the previous string
                       (FAddr mod '$10000').ToHexString).ToLower);                               // Calculate the 8th word and convert to a string adding to the previous string
-end;
-
-function TIPv6.GetAddressEx(): string;
-begin
-  Result := Expand(((FAddr shr 112).ToHexString                                      + ':' +  // Calculate the 1st word and convert to a string
-                   ((FAddr mod '$10000000000000000000000000000') shr 96).ToHexString + ':' +  // Calculate the 2nd word and convert to a string adding to the previous string
-                   ((FAddr mod '$1000000000000000000000000') shr 80).ToHexString     + ':' +  // Calculate the 3rd word and convert to a string adding to the previous string
-                   ((FAddr mod '$100000000000000000000') shr 64).ToHexString         + ':' +  // Calculate the 4th word and convert to a string adding to the previous string
-                   ((FAddr mod '$10000000000000000') shr 48).ToHexString             + ':' +  // Calculate the 5th word and convert to a string adding to the previous string
-                   ((FAddr mod '$1000000000000') shr 32).ToHexString                 + ':' +  // Calculate the 6th word and convert to a string adding to the previous string
-                   ((FAddr mod '$100000000') shr 16).ToHexString                     + ':' +  // Calculate the 7th word and convert to a string adding to the previous string
-                    (FAddr mod '$10000').ToHexString).ToLower);                               // Calculate the 8th word and convert to a string adding to the previous string
 end;
 
 procedure TIPv6.SetAddress(const AAddress: string);

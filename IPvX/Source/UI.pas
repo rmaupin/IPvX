@@ -67,7 +67,7 @@ interface
 
 uses
   About, IP,
-  System.Classes, System.ImageList, System.SysUtils, System.UITypes,
+  System.Classes, System.ImageList, System.IOUtils, System.SysUtils, System.UITypes,
   Vcl.BaseImageCollection, Vcl.Controls, Vcl.Dialogs, Vcl.ExtCtrls, Vcl.Forms, Vcl.HtmlHelpViewer, Vcl.ImageCollection, Vcl.ImgList, Vcl.Menus, Vcl.StdCtrls, Vcl.VirtualImage, Vcl.VirtualImageList,
   Winapi.Messages, Winapi.Windows;
 
@@ -243,6 +243,7 @@ procedure TUIForm.FormCreate(Sender: TObject);
 begin
   AboutForm.AboutImage.ImageCollection := ApplicationImageCollection;
   AboutForm.AboutImage.ImageName := 'IPvX';
+  HelpFile := TPath.ChangeExtension(ParamStr(0), 'chm');
   FIPVersion := 4;
   FIPv4ActiveEdit := IPv4PrefixEdit;
   FIPv6ActiveEdit := IPv6PrefixEdit;

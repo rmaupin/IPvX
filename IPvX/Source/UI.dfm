@@ -1,6 +1,7 @@
 object UIForm: TUIForm
   Left = 0
   Top = 0
+  HelpKeyword = 'WelcometoIPvX'
   Margins.Left = 0
   Margins.Top = 0
   Margins.Right = 0
@@ -4107,7 +4108,8 @@ object UIForm: TUIForm
     Top = 8
     Width = 200
     Height = 344
-    HelpContext = 2
+    HelpKeyword = 'Keypad'
+    HelpContext = 12
     BevelOuter = bvNone
     ParentColor = True
     TabOrder = 2
@@ -4116,7 +4118,8 @@ object UIForm: TUIForm
       Top = 0
       Width = 200
       Height = 344
-      HelpContext = 20
+      HelpKeyword = 'Keypad'
+      HelpContext = 12
       ImageCollection = KeypadImageCollection
       ImageWidth = 0
       ImageHeight = 0
@@ -4128,7 +4131,8 @@ object UIForm: TUIForm
       Top = 292
       Width = 48
       Height = 48
-      HelpContext = 200
+      HelpKeyword = 'Keypad'
+      HelpContext = 12
       ImageCollection = KeypadImageCollection
       ImageWidth = 0
       ImageHeight = 0
@@ -4142,7 +4146,8 @@ object UIForm: TUIForm
       Top = 292
       Width = 48
       Height = 48
-      HelpContext = 216
+      HelpKeyword = 'Keypad'
+      HelpContext = 12
       ImageCollection = KeypadImageCollection
       ImageWidth = 0
       ImageHeight = 0
@@ -4156,7 +4161,8 @@ object UIForm: TUIForm
       Top = 244
       Width = 48
       Height = 96
-      HelpContext = 218
+      HelpKeyword = 'Keypad'
+      HelpContext = 12
       ImageCollection = KeypadImageCollection
       ImageWidth = 0
       ImageHeight = 0
@@ -4170,7 +4176,8 @@ object UIForm: TUIForm
       Top = 148
       Width = 48
       Height = 48
-      HelpContext = 207
+      HelpKeyword = 'Keypad'
+      HelpContext = 12
       ImageCollection = KeypadImageCollection
       ImageWidth = 0
       ImageHeight = 0
@@ -4184,7 +4191,8 @@ object UIForm: TUIForm
       Top = 148
       Width = 48
       Height = 48
-      HelpContext = 208
+      HelpKeyword = 'Keypad'
+      HelpContext = 12
       ImageCollection = KeypadImageCollection
       ImageWidth = 0
       ImageHeight = 0
@@ -4198,7 +4206,8 @@ object UIForm: TUIForm
       Top = 148
       Width = 48
       Height = 48
-      HelpContext = 209
+      HelpKeyword = 'Keypad'
+      HelpContext = 12
       ImageCollection = KeypadImageCollection
       ImageWidth = 0
       ImageHeight = 0
@@ -4212,7 +4221,8 @@ object UIForm: TUIForm
       Top = 196
       Width = 48
       Height = 48
-      HelpContext = 204
+      HelpKeyword = 'Keypad'
+      HelpContext = 12
       ImageCollection = KeypadImageCollection
       ImageWidth = 0
       ImageHeight = 0
@@ -4226,7 +4236,8 @@ object UIForm: TUIForm
       Top = 196
       Width = 48
       Height = 48
-      HelpContext = 205
+      HelpKeyword = 'Keypad'
+      HelpContext = 12
       ImageCollection = KeypadImageCollection
       ImageWidth = 0
       ImageHeight = 0
@@ -4240,7 +4251,8 @@ object UIForm: TUIForm
       Top = 196
       Width = 48
       Height = 48
-      HelpContext = 206
+      HelpKeyword = 'Keypad'
+      HelpContext = 12
       ImageCollection = KeypadImageCollection
       ImageWidth = 0
       ImageHeight = 0
@@ -4254,7 +4266,8 @@ object UIForm: TUIForm
       Top = 244
       Width = 48
       Height = 48
-      HelpContext = 201
+      HelpKeyword = 'Keypad'
+      HelpContext = 12
       ImageCollection = KeypadImageCollection
       ImageWidth = 0
       ImageHeight = 0
@@ -4268,7 +4281,8 @@ object UIForm: TUIForm
       Top = 244
       Width = 48
       Height = 48
-      HelpContext = 202
+      HelpKeyword = 'Keypad'
+      HelpContext = 12
       ImageCollection = KeypadImageCollection
       ImageWidth = 0
       ImageHeight = 0
@@ -4282,7 +4296,8 @@ object UIForm: TUIForm
       Top = 244
       Width = 48
       Height = 48
-      HelpContext = 203
+      HelpKeyword = 'Keypad'
+      HelpContext = 12
       ImageCollection = KeypadImageCollection
       ImageWidth = 0
       ImageHeight = 0
@@ -4296,7 +4311,8 @@ object UIForm: TUIForm
       Top = 196
       Width = 48
       Height = 48
-      HelpContext = 219
+      HelpKeyword = 'Keypad'
+      HelpContext = 12
       ImageCollection = KeypadImageCollection
       ImageWidth = 0
       ImageHeight = 0
@@ -4310,7 +4326,8 @@ object UIForm: TUIForm
       Top = 292
       Width = 48
       Height = 48
-      HelpContext = 217
+      HelpKeyword = 'Keypad'
+      HelpContext = 12
       ImageCollection = KeypadImageCollection
       ImageWidth = 0
       ImageHeight = 0
@@ -4324,7 +4341,8 @@ object UIForm: TUIForm
       Top = 100
       Width = 48
       Height = 48
-      HelpContext = 210
+      HelpKeyword = 'Keypad'
+      HelpContext = 12
       ImageCollection = KeypadImageCollection
       ImageWidth = 0
       ImageHeight = 0
@@ -4338,7 +4356,8 @@ object UIForm: TUIForm
       Top = 100
       Width = 48
       Height = 48
-      HelpContext = 211
+      HelpKeyword = 'Keypad'
+      HelpContext = 12
       ImageCollection = KeypadImageCollection
       ImageWidth = 0
       ImageHeight = 0
@@ -4352,7 +4371,8 @@ object UIForm: TUIForm
       Top = 100
       Width = 48
       Height = 48
-      HelpContext = 212
+      HelpKeyword = 'Keypad'
+      HelpContext = 12
       ImageCollection = KeypadImageCollection
       ImageWidth = 0
       ImageHeight = 0
@@ -4366,7 +4386,8 @@ object UIForm: TUIForm
       Top = 148
       Width = 48
       Height = 48
-      HelpContext = 220
+      HelpKeyword = 'Keypad'
+      HelpContext = 12
       ImageCollection = KeypadImageCollection
       ImageWidth = 0
       ImageHeight = 0
@@ -4380,7 +4401,8 @@ object UIForm: TUIForm
       Top = 52
       Width = 48
       Height = 48
-      HelpContext = 213
+      HelpKeyword = 'Keypad'
+      HelpContext = 12
       ImageCollection = KeypadImageCollection
       ImageWidth = 0
       ImageHeight = 0
@@ -4394,7 +4416,8 @@ object UIForm: TUIForm
       Top = 52
       Width = 48
       Height = 48
-      HelpContext = 214
+      HelpKeyword = 'Keypad'
+      HelpContext = 12
       ImageCollection = KeypadImageCollection
       ImageWidth = 0
       ImageHeight = 0
@@ -4408,7 +4431,8 @@ object UIForm: TUIForm
       Top = 52
       Width = 48
       Height = 48
-      HelpContext = 215
+      HelpKeyword = 'Keypad'
+      HelpContext = 12
       ImageCollection = KeypadImageCollection
       ImageWidth = 0
       ImageHeight = 0
@@ -4422,7 +4446,8 @@ object UIForm: TUIForm
       Top = 100
       Width = 48
       Height = 48
-      HelpContext = 221
+      HelpKeyword = 'Keypad'
+      HelpContext = 12
       ImageCollection = KeypadImageCollection
       ImageWidth = 0
       ImageHeight = 0
@@ -4436,7 +4461,8 @@ object UIForm: TUIForm
       Top = 52
       Width = 48
       Height = 48
-      HelpContext = 222
+      HelpKeyword = 'Keypad'
+      HelpContext = 12
       ImageCollection = KeypadImageCollection
       ImageWidth = 0
       ImageHeight = 0
@@ -4450,7 +4476,8 @@ object UIForm: TUIForm
       Top = 4
       Width = 192
       Height = 48
-      HelpContext = 223
+      HelpKeyword = 'Keypad'
+      HelpContext = 12
       BevelOuter = bvNone
       Caption = 'IPv4'
       Font.Charset = DEFAULT_CHARSET
@@ -4467,7 +4494,8 @@ object UIForm: TUIForm
     Top = 360
     Width = 650
     Height = 21
-    HelpContext = 5
+    HelpKeyword = 'StatusBar'
+    HelpContext = 18
     Align = alBottom
     BevelOuter = bvNone
     Font.Charset = DEFAULT_CHARSET
@@ -4482,7 +4510,8 @@ object UIForm: TUIForm
       Top = 0
       Width = 64
       Height = 21
-      HelpContext = 51
+      HelpKeyword = 'StatusBar'
+      HelpContext = 18
       Align = alLeft
       Alignment = taLeftJustify
       TabOrder = 0
@@ -4491,7 +4520,8 @@ object UIForm: TUIForm
         Top = 1
         Width = 62
         Height = 19
-        HelpContext = 511
+        HelpKeyword = 'StatusBar'
+        HelpContext = 18
         Align = alClient
         Caption = 'Broadcast'
         ExplicitWidth = 52
@@ -4503,7 +4533,8 @@ object UIForm: TUIForm
       Top = 0
       Width = 112
       Height = 21
-      HelpContext = 53
+      HelpKeyword = 'StatusBar'
+      HelpContext = 18
       Align = alLeft
       Alignment = taLeftJustify
       TabOrder = 1
@@ -4512,7 +4543,8 @@ object UIForm: TUIForm
         Top = 1
         Width = 110
         Height = 19
-        HelpContext = 531
+        HelpKeyword = 'StatusBar'
+        HelpContext = 18
         Align = alClient
         Caption = 'Organization-Local'
         ExplicitWidth = 101
@@ -4524,7 +4556,8 @@ object UIForm: TUIForm
       Top = 0
       Width = 474
       Height = 21
-      HelpContext = 52
+      HelpKeyword = 'StatusBar'
+      HelpContext = 18
       Align = alClient
       Alignment = taLeftJustify
       TabOrder = 2
@@ -4533,7 +4566,8 @@ object UIForm: TUIForm
         Top = 1
         Width = 472
         Height = 19
-        HelpContext = 521
+        HelpKeyword = 'StatusBar'
+        HelpContext = 18
         Align = alClient
         Caption = 'Description'
         ExplicitWidth = 60
@@ -4546,7 +4580,8 @@ object UIForm: TUIForm
     Top = 12
     Width = 428
     Height = 197
-    HelpContext = 4
+    HelpKeyword = 'IPv6ValuesandLabels'
+    HelpContext = 17
     BevelOuter = bvNone
     Caption = 'IPv6Panel'
     TabOrder = 1
@@ -4556,7 +4591,8 @@ object UIForm: TUIForm
       Top = 3
       Width = 30
       Height = 15
-      HelpContext = 401
+      HelpKeyword = 'IPv6ValuesandLabels'
+      HelpContext = 17
       Caption = 'Prefix'
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWindowText
@@ -4570,7 +4606,8 @@ object UIForm: TUIForm
       Top = 32
       Width = 45
       Height = 15
-      HelpContext = 402
+      HelpKeyword = 'IPv6ValuesandLabels'
+      HelpContext = 17
       Caption = 'Network'
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWindowText
@@ -4584,7 +4621,8 @@ object UIForm: TUIForm
       Top = 61
       Width = 70
       Height = 15
-      HelpContext = 403
+      HelpKeyword = 'IPv6ValuesandLabels'
+      HelpContext = 17
       Caption = 'Prefix Length'
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWindowText
@@ -4598,7 +4636,8 @@ object UIForm: TUIForm
       Top = 90
       Width = 42
       Height = 15
-      HelpContext = 404
+      HelpKeyword = 'IPv6ValuesandLabels'
+      HelpContext = 17
       Caption = 'Address'
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWindowText
@@ -4612,7 +4651,8 @@ object UIForm: TUIForm
       Top = 119
       Width = 77
       Height = 15
-      HelpContext = 405
+      HelpKeyword = 'IPv6ValuesandLabels'
+      HelpContext = 17
       Caption = 'Address Offset'
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWindowText
@@ -4626,7 +4666,8 @@ object UIForm: TUIForm
       Top = 148
       Width = 115
       Height = 15
-      HelpContext = 406
+      HelpKeyword = 'IPv6ValuesandLabels'
+      HelpContext = 17
       Caption = 'First Network Address'
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWindowText
@@ -4640,7 +4681,8 @@ object UIForm: TUIForm
       Top = 177
       Width = 114
       Height = 15
-      HelpContext = 407
+      HelpKeyword = 'IPv6ValuesandLabels'
+      HelpContext = 17
       Caption = 'Last Network Address'
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWindowText
@@ -4654,7 +4696,8 @@ object UIForm: TUIForm
       Top = 0
       Width = 307
       Height = 23
-      HelpContext = 401
+      HelpKeyword = 'IPv6ValuesandLabels'
+      HelpContext = 17
       BevelInner = bvNone
       BevelOuter = bvNone
       Font.Charset = DEFAULT_CHARSET
@@ -4673,7 +4716,8 @@ object UIForm: TUIForm
       Top = 29
       Width = 310
       Height = 23
-      HelpContext = 402
+      HelpKeyword = 'IPv6ValuesandLabels'
+      HelpContext = 17
       BevelInner = bvNone
       BevelOuter = bvNone
       Font.Charset = DEFAULT_CHARSET
@@ -4692,7 +4736,8 @@ object UIForm: TUIForm
       Top = 58
       Width = 310
       Height = 23
-      HelpContext = 403
+      HelpKeyword = 'IPv6ValuesandLabels'
+      HelpContext = 17
       BevelInner = bvNone
       BevelOuter = bvNone
       Font.Charset = DEFAULT_CHARSET
@@ -4711,7 +4756,8 @@ object UIForm: TUIForm
       Top = 87
       Width = 310
       Height = 23
-      HelpContext = 404
+      HelpKeyword = 'IPv6ValuesandLabels'
+      HelpContext = 17
       BevelInner = bvNone
       BevelOuter = bvNone
       Font.Charset = DEFAULT_CHARSET
@@ -4730,7 +4776,8 @@ object UIForm: TUIForm
       Top = 116
       Width = 310
       Height = 23
-      HelpContext = 405
+      HelpKeyword = 'IPv6ValuesandLabels'
+      HelpContext = 17
       BevelInner = bvNone
       BevelOuter = bvNone
       Font.Charset = DEFAULT_CHARSET
@@ -4749,7 +4796,8 @@ object UIForm: TUIForm
       Top = 145
       Width = 310
       Height = 23
-      HelpContext = 406
+      HelpKeyword = 'IPv6ValuesandLabels'
+      HelpContext = 17
       BevelInner = bvNone
       BevelOuter = bvNone
       Color = clInfoBk
@@ -4769,7 +4817,8 @@ object UIForm: TUIForm
       Top = 174
       Width = 310
       Height = 23
-      HelpContext = 407
+      HelpKeyword = 'IPv6ValuesandLabels'
+      HelpContext = 17
       BevelInner = bvNone
       BevelOuter = bvNone
       Color = clInfoBk
@@ -4790,7 +4839,8 @@ object UIForm: TUIForm
     Top = 12
     Width = 243
     Height = 284
-    HelpContext = 3
+    HelpKeyword = 'IPv4ValuesandLabels'
+    HelpContext = 16
     BevelOuter = bvNone
     TabOrder = 0
     object IPv4NetworkMaskLabel: TLabel
@@ -4798,7 +4848,8 @@ object UIForm: TUIForm
       Top = 119
       Width = 76
       Height = 15
-      HelpContext = 305
+      HelpKeyword = 'IPv4ValuesandLabels'
+      HelpContext = 16
       Caption = 'Network Mask'
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWindowText
@@ -4812,7 +4863,8 @@ object UIForm: TUIForm
       Top = 90
       Width = 42
       Height = 15
-      HelpContext = 304
+      HelpKeyword = 'IPv4ValuesandLabels'
+      HelpContext = 16
       Caption = 'Address'
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWindowText
@@ -4826,7 +4878,8 @@ object UIForm: TUIForm
       Top = 61
       Width = 70
       Height = 15
-      HelpContext = 303
+      HelpKeyword = 'IPv4ValuesandLabels'
+      HelpContext = 16
       Caption = 'Prefix Length'
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWindowText
@@ -4840,7 +4893,8 @@ object UIForm: TUIForm
       Top = 32
       Width = 45
       Height = 15
-      HelpContext = 302
+      HelpKeyword = 'IPv4ValuesandLabels'
+      HelpContext = 16
       Caption = 'Network'
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWindowText
@@ -4854,7 +4908,8 @@ object UIForm: TUIForm
       Top = 3
       Width = 30
       Height = 15
-      HelpContext = 301
+      HelpKeyword = 'IPv4ValuesandLabels'
+      HelpContext = 16
       Caption = 'Prefix'
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWindowText
@@ -4868,7 +4923,8 @@ object UIForm: TUIForm
       Top = 264
       Width = 97
       Height = 15
-      HelpContext = 310
+      HelpKeyword = 'IPv4ValuesandLabels'
+      HelpContext = 16
       Caption = 'Broadcast Address'
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWindowText
@@ -4882,7 +4938,8 @@ object UIForm: TUIForm
       Top = 235
       Width = 104
       Height = 15
-      HelpContext = 309
+      HelpKeyword = 'IPv4ValuesandLabels'
+      HelpContext = 16
       Caption = 'Last Usable Address'
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWindowText
@@ -4896,7 +4953,8 @@ object UIForm: TUIForm
       Top = 206
       Width = 105
       Height = 15
-      HelpContext = 308
+      HelpKeyword = 'IPv4ValuesandLabels'
+      HelpContext = 16
       Caption = 'First Usable Address'
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWindowText
@@ -4910,7 +4968,8 @@ object UIForm: TUIForm
       Top = 177
       Width = 77
       Height = 15
-      HelpContext = 307
+      HelpKeyword = 'IPv4ValuesandLabels'
+      HelpContext = 16
       Caption = 'Address Offset'
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWindowText
@@ -4924,7 +4983,8 @@ object UIForm: TUIForm
       Top = 148
       Width = 56
       Height = 15
-      HelpContext = 306
+      HelpKeyword = 'IPv4ValuesandLabels'
+      HelpContext = 16
       Caption = 'Host Mask'
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWindowText
@@ -4938,7 +4998,8 @@ object UIForm: TUIForm
       Top = 116
       Width = 132
       Height = 23
-      HelpContext = 305
+      HelpKeyword = 'IPv4ValuesandLabels'
+      HelpContext = 16
       BevelInner = bvNone
       BevelOuter = bvNone
       Font.Charset = DEFAULT_CHARSET
@@ -4957,7 +5018,8 @@ object UIForm: TUIForm
       Top = 87
       Width = 132
       Height = 23
-      HelpContext = 304
+      HelpKeyword = 'IPv4ValuesandLabels'
+      HelpContext = 16
       BevelInner = bvNone
       BevelOuter = bvNone
       Font.Charset = DEFAULT_CHARSET
@@ -4976,7 +5038,8 @@ object UIForm: TUIForm
       Top = 58
       Width = 132
       Height = 23
-      HelpContext = 303
+      HelpKeyword = 'IPv4ValuesandLabels'
+      HelpContext = 16
       BevelInner = bvNone
       BevelOuter = bvNone
       Font.Charset = DEFAULT_CHARSET
@@ -4995,7 +5058,8 @@ object UIForm: TUIForm
       Top = 29
       Width = 132
       Height = 23
-      HelpContext = 302
+      HelpKeyword = 'IPv4ValuesandLabels'
+      HelpContext = 16
       BevelInner = bvNone
       BevelOuter = bvNone
       Font.Charset = DEFAULT_CHARSET
@@ -5014,7 +5078,8 @@ object UIForm: TUIForm
       Top = 0
       Width = 132
       Height = 23
-      HelpContext = 301
+      HelpKeyword = 'IPv4ValuesandLabels'
+      HelpContext = 16
       BevelInner = bvNone
       BevelOuter = bvNone
       Font.Charset = DEFAULT_CHARSET
@@ -5033,7 +5098,8 @@ object UIForm: TUIForm
       Top = 261
       Width = 132
       Height = 23
-      HelpContext = 310
+      HelpKeyword = 'IPv4ValuesandLabels'
+      HelpContext = 16
       BevelInner = bvNone
       BevelOuter = bvNone
       Color = clInfoBk
@@ -5053,7 +5119,8 @@ object UIForm: TUIForm
       Top = 232
       Width = 132
       Height = 23
-      HelpContext = 309
+      HelpKeyword = 'IPv4ValuesandLabels'
+      HelpContext = 16
       BevelInner = bvNone
       BevelOuter = bvNone
       Color = clInfoBk
@@ -5073,7 +5140,8 @@ object UIForm: TUIForm
       Top = 203
       Width = 132
       Height = 23
-      HelpContext = 308
+      HelpKeyword = 'IPv4ValuesandLabels'
+      HelpContext = 16
       BevelInner = bvNone
       BevelOuter = bvNone
       Color = clInfoBk
@@ -5093,7 +5161,8 @@ object UIForm: TUIForm
       Top = 174
       Width = 132
       Height = 23
-      HelpContext = 307
+      HelpKeyword = 'IPv4ValuesandLabels'
+      HelpContext = 16
       BevelInner = bvNone
       BevelOuter = bvNone
       Font.Charset = DEFAULT_CHARSET
@@ -5112,7 +5181,8 @@ object UIForm: TUIForm
       Top = 145
       Width = 132
       Height = 23
-      HelpContext = 306
+      HelpKeyword = 'IPv4ValuesandLabels'
+      HelpContext = 16
       BevelInner = bvNone
       BevelOuter = bvNone
       Font.Charset = DEFAULT_CHARSET
@@ -9619,10 +9689,10 @@ object UIForm: TUIForm
     Top = 648
     object FileMenu: TMenuItem
       Caption = 'File'
-      HelpContext = 11
+      HelpContext = 8
       object ClearMenuItem: TMenuItem
         Caption = 'Clear'
-        HelpContext = 111
+        HelpContext = 8
         ImageIndex = 0
         ImageName = 'Clear'
         ShortCut = 27
@@ -9633,7 +9703,7 @@ object UIForm: TUIForm
       end
       object ExitMenuItem: TMenuItem
         Caption = 'Exit'
-        HelpContext = 112
+        HelpContext = 8
         ImageIndex = 1
         ImageName = 'Close'
         ShortCut = 32856
@@ -9642,12 +9712,12 @@ object UIForm: TUIForm
     end
     object IPMenu: TMenuItem
       Caption = 'IP'
-      HelpContext = 12
+      HelpContext = 10
       object IPv4MenuItem: TMenuItem
         Caption = 'IPv4'
         Checked = True
         GroupIndex = 1
-        HelpContext = 121
+        HelpContext = 10
         RadioItem = True
         ShortCut = 32820
         OnClick = IPv4MenuItemClick
@@ -9655,7 +9725,7 @@ object UIForm: TUIForm
       object IPv6MenuItem: TMenuItem
         Caption = 'IPv6'
         GroupIndex = 1
-        HelpContext = 122
+        HelpContext = 10
         RadioItem = True
         ShortCut = 32822
         OnClick = IPv6MenuItemClick
@@ -9663,13 +9733,12 @@ object UIForm: TUIForm
     end
     object HelpMenu: TMenuItem
       Caption = 'Help'
-      HelpContext = 13
+      HelpContext = 11
       object HelpManuItem: TMenuItem
         Caption = 'Help'
-        HelpContext = 131
+        HelpContext = 11
         ImageIndex = 2
         ImageName = 'Help'
-        ShortCut = 32840
         OnClick = HelpManuItemClick
       end
       object N2: TMenuItem
@@ -9677,7 +9746,7 @@ object UIForm: TUIForm
       end
       object AboutMenuItem: TMenuItem
         Caption = 'About'
-        HelpContext = 132
+        HelpContext = 11
         ImageIndex = 3
         ImageName = 'Info'
         ShortCut = 32833
