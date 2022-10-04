@@ -2,6 +2,7 @@ object UIForm: TUIForm
   Left = 0
   Top = 0
   HelpKeyword = 'WelcometoIPvX'
+  HelpContext = 1
   Margins.Left = 0
   Margins.Top = 0
   Margins.Right = 0
@@ -4117,7 +4118,7 @@ object UIForm: TUIForm
     Width = 300
     Height = 516
     HelpKeyword = 'Keypad'
-    HelpContext = 12
+    HelpContext = 320
     Margins.Left = 5
     Margins.Top = 5
     Margins.Right = 5
@@ -4131,7 +4132,7 @@ object UIForm: TUIForm
       Width = 300
       Height = 516
       HelpKeyword = 'Keypad'
-      HelpContext = 12
+      HelpContext = 320
       Margins.Left = 5
       Margins.Top = 5
       Margins.Right = 5
@@ -4148,7 +4149,7 @@ object UIForm: TUIForm
       Width = 72
       Height = 72
       HelpKeyword = 'Keypad'
-      HelpContext = 12
+      HelpContext = 320
       Margins.Left = 5
       Margins.Top = 5
       Margins.Right = 5
@@ -4167,7 +4168,7 @@ object UIForm: TUIForm
       Width = 72
       Height = 72
       HelpKeyword = 'Keypad'
-      HelpContext = 12
+      HelpContext = 320
       Margins.Left = 5
       Margins.Top = 5
       Margins.Right = 5
@@ -4186,7 +4187,7 @@ object UIForm: TUIForm
       Width = 72
       Height = 144
       HelpKeyword = 'Keypad'
-      HelpContext = 12
+      HelpContext = 320
       Margins.Left = 5
       Margins.Top = 5
       Margins.Right = 5
@@ -4205,7 +4206,7 @@ object UIForm: TUIForm
       Width = 72
       Height = 72
       HelpKeyword = 'Keypad'
-      HelpContext = 12
+      HelpContext = 320
       Margins.Left = 5
       Margins.Top = 5
       Margins.Right = 5
@@ -4224,7 +4225,7 @@ object UIForm: TUIForm
       Width = 72
       Height = 72
       HelpKeyword = 'Keypad'
-      HelpContext = 12
+      HelpContext = 320
       Margins.Left = 5
       Margins.Top = 5
       Margins.Right = 5
@@ -4243,7 +4244,7 @@ object UIForm: TUIForm
       Width = 72
       Height = 72
       HelpKeyword = 'Keypad'
-      HelpContext = 12
+      HelpContext = 320
       Margins.Left = 5
       Margins.Top = 5
       Margins.Right = 5
@@ -4262,7 +4263,7 @@ object UIForm: TUIForm
       Width = 72
       Height = 72
       HelpKeyword = 'Keypad'
-      HelpContext = 12
+      HelpContext = 320
       Margins.Left = 5
       Margins.Top = 5
       Margins.Right = 5
@@ -4281,7 +4282,7 @@ object UIForm: TUIForm
       Width = 72
       Height = 72
       HelpKeyword = 'Keypad'
-      HelpContext = 12
+      HelpContext = 320
       Margins.Left = 5
       Margins.Top = 5
       Margins.Right = 5
@@ -4300,7 +4301,7 @@ object UIForm: TUIForm
       Width = 72
       Height = 72
       HelpKeyword = 'Keypad'
-      HelpContext = 12
+      HelpContext = 320
       Margins.Left = 5
       Margins.Top = 5
       Margins.Right = 5
@@ -4319,7 +4320,7 @@ object UIForm: TUIForm
       Width = 72
       Height = 72
       HelpKeyword = 'Keypad'
-      HelpContext = 12
+      HelpContext = 320
       Margins.Left = 5
       Margins.Top = 5
       Margins.Right = 5
@@ -4338,7 +4339,7 @@ object UIForm: TUIForm
       Width = 72
       Height = 72
       HelpKeyword = 'Keypad'
-      HelpContext = 12
+      HelpContext = 320
       Margins.Left = 5
       Margins.Top = 5
       Margins.Right = 5
@@ -4357,7 +4358,7 @@ object UIForm: TUIForm
       Width = 72
       Height = 72
       HelpKeyword = 'Keypad'
-      HelpContext = 12
+      HelpContext = 320
       Margins.Left = 5
       Margins.Top = 5
       Margins.Right = 5
@@ -4376,7 +4377,7 @@ object UIForm: TUIForm
       Width = 72
       Height = 72
       HelpKeyword = 'Keypad'
-      HelpContext = 12
+      HelpContext = 320
       Margins.Left = 5
       Margins.Top = 5
       Margins.Right = 5
@@ -4395,7 +4396,7 @@ object UIForm: TUIForm
       Width = 72
       Height = 72
       HelpKeyword = 'Keypad'
-      HelpContext = 12
+      HelpContext = 320
       Margins.Left = 5
       Margins.Top = 5
       Margins.Right = 5
@@ -4414,7 +4415,7 @@ object UIForm: TUIForm
       Width = 72
       Height = 72
       HelpKeyword = 'Keypad'
-      HelpContext = 12
+      HelpContext = 320
       Margins.Left = 5
       Margins.Top = 5
       Margins.Right = 5
@@ -4433,7 +4434,7 @@ object UIForm: TUIForm
       Width = 72
       Height = 72
       HelpKeyword = 'Keypad'
-      HelpContext = 12
+      HelpContext = 320
       Margins.Left = 5
       Margins.Top = 5
       Margins.Right = 5
@@ -4452,7 +4453,7 @@ object UIForm: TUIForm
       Width = 72
       Height = 72
       HelpKeyword = 'Keypad'
-      HelpContext = 12
+      HelpContext = 320
       Margins.Left = 5
       Margins.Top = 5
       Margins.Right = 5
@@ -4471,7 +4472,7 @@ object UIForm: TUIForm
       Width = 72
       Height = 72
       HelpKeyword = 'Keypad'
-      HelpContext = 12
+      HelpContext = 320
       Margins.Left = 5
       Margins.Top = 5
       Margins.Right = 5
@@ -4490,7 +4491,7 @@ object UIForm: TUIForm
       Width = 72
       Height = 72
       HelpKeyword = 'Keypad'
-      HelpContext = 12
+      HelpContext = 320
       Margins.Left = 5
       Margins.Top = 5
       Margins.Right = 5
@@ -4509,7 +4510,7 @@ object UIForm: TUIForm
       Width = 72
       Height = 72
       HelpKeyword = 'Keypad'
-      HelpContext = 12
+      HelpContext = 320
       Margins.Left = 5
       Margins.Top = 5
       Margins.Right = 5
@@ -4528,7 +4529,7 @@ object UIForm: TUIForm
       Width = 72
       Height = 72
       HelpKeyword = 'Keypad'
-      HelpContext = 12
+      HelpContext = 320
       Margins.Left = 5
       Margins.Top = 5
       Margins.Right = 5
@@ -4547,7 +4548,7 @@ object UIForm: TUIForm
       Width = 72
       Height = 72
       HelpKeyword = 'Keypad'
-      HelpContext = 12
+      HelpContext = 320
       Margins.Left = 5
       Margins.Top = 5
       Margins.Right = 5
@@ -4566,7 +4567,7 @@ object UIForm: TUIForm
       Width = 72
       Height = 72
       HelpKeyword = 'Keypad'
-      HelpContext = 12
+      HelpContext = 320
       Margins.Left = 5
       Margins.Top = 5
       Margins.Right = 5
@@ -4585,7 +4586,7 @@ object UIForm: TUIForm
       Width = 288
       Height = 72
       HelpKeyword = 'Keypad'
-      HelpContext = 12
+      HelpContext = 320
       Margins.Left = 5
       Margins.Top = 5
       Margins.Right = 5
@@ -4607,7 +4608,7 @@ object UIForm: TUIForm
     Width = 938
     Height = 32
     HelpKeyword = 'StatusBar'
-    HelpContext = 18
+    HelpContext = 400
     Margins.Left = 5
     Margins.Top = 5
     Margins.Right = 5
@@ -4627,7 +4628,7 @@ object UIForm: TUIForm
       Width = 96
       Height = 32
       HelpKeyword = 'StatusBar'
-      HelpContext = 18
+      HelpContext = 400
       Margins.Left = 5
       Margins.Top = 5
       Margins.Right = 5
@@ -4644,7 +4645,7 @@ object UIForm: TUIForm
         Width = 84
         Height = 30
         HelpKeyword = 'StatusBar'
-        HelpContext = 18
+        HelpContext = 400
         Margins.Left = 5
         Margins.Top = 5
         Margins.Right = 5
@@ -4661,7 +4662,7 @@ object UIForm: TUIForm
       Width = 168
       Height = 32
       HelpKeyword = 'StatusBar'
-      HelpContext = 18
+      HelpContext = 400
       Margins.Left = 5
       Margins.Top = 5
       Margins.Right = 5
@@ -4678,7 +4679,7 @@ object UIForm: TUIForm
         Width = 156
         Height = 30
         HelpKeyword = 'StatusBar'
-        HelpContext = 18
+        HelpContext = 400
         Margins.Left = 5
         Margins.Top = 5
         Margins.Right = 5
@@ -4695,7 +4696,7 @@ object UIForm: TUIForm
       Width = 674
       Height = 32
       HelpKeyword = 'StatusBar'
-      HelpContext = 18
+      HelpContext = 400
       Margins.Left = 5
       Margins.Top = 5
       Margins.Right = 5
@@ -4712,7 +4713,7 @@ object UIForm: TUIForm
         Width = 662
         Height = 30
         HelpKeyword = 'StatusBar'
-        HelpContext = 18
+        HelpContext = 400
         Margins.Left = 5
         Margins.Top = 5
         Margins.Right = 5
@@ -4730,7 +4731,7 @@ object UIForm: TUIForm
     Width = 605
     Height = 273
     HelpKeyword = 'IPv6ValuesandLabels'
-    HelpContext = 17
+    HelpContext = 332
     Margins.Left = 5
     Margins.Top = 5
     Margins.Right = 5
@@ -4745,7 +4746,7 @@ object UIForm: TUIForm
       Width = 43
       Height = 25
       HelpKeyword = 'IPv6ValuesandLabels'
-      HelpContext = 17
+      HelpContext = 332
       Margins.Left = 5
       Margins.Top = 5
       Margins.Right = 5
@@ -4764,7 +4765,7 @@ object UIForm: TUIForm
       Width = 67
       Height = 25
       HelpKeyword = 'IPv6ValuesandLabels'
-      HelpContext = 17
+      HelpContext = 332
       Margins.Left = 5
       Margins.Top = 5
       Margins.Right = 5
@@ -4783,7 +4784,7 @@ object UIForm: TUIForm
       Width = 102
       Height = 25
       HelpKeyword = 'IPv6ValuesandLabels'
-      HelpContext = 17
+      HelpContext = 332
       Margins.Left = 5
       Margins.Top = 5
       Margins.Right = 5
@@ -4802,7 +4803,7 @@ object UIForm: TUIForm
       Width = 65
       Height = 25
       HelpKeyword = 'IPv6ValuesandLabels'
-      HelpContext = 17
+      HelpContext = 332
       Margins.Left = 5
       Margins.Top = 5
       Margins.Right = 5
@@ -4821,7 +4822,7 @@ object UIForm: TUIForm
       Width = 119
       Height = 25
       HelpKeyword = 'IPv6ValuesandLabels'
-      HelpContext = 17
+      HelpContext = 332
       Margins.Left = 5
       Margins.Top = 5
       Margins.Right = 5
@@ -4840,7 +4841,7 @@ object UIForm: TUIForm
       Width = 103
       Height = 25
       HelpKeyword = 'IPv6ValuesandLabels'
-      HelpContext = 17
+      HelpContext = 332
       Margins.Left = 5
       Margins.Top = 5
       Margins.Right = 5
@@ -4859,7 +4860,7 @@ object UIForm: TUIForm
       Width = 101
       Height = 25
       HelpKeyword = 'IPv6ValuesandLabels'
-      HelpContext = 17
+      HelpContext = 332
       Margins.Left = 5
       Margins.Top = 5
       Margins.Right = 5
@@ -4878,7 +4879,7 @@ object UIForm: TUIForm
       Width = 111
       Height = 25
       HelpKeyword = 'IPv6ValuesandLabels'
-      HelpContext = 17
+      HelpContext = 332
       Margins.Left = 5
       Margins.Top = 5
       Margins.Right = 5
@@ -4897,7 +4898,7 @@ object UIForm: TUIForm
       Width = 480
       Height = 28
       HelpKeyword = 'IPv6ValuesandLabels'
-      HelpContext = 17
+      HelpContext = 332
       Margins.Left = 5
       Margins.Top = 5
       Margins.Right = 5
@@ -4920,7 +4921,7 @@ object UIForm: TUIForm
       Width = 480
       Height = 28
       HelpKeyword = 'IPv6ValuesandLabels'
-      HelpContext = 17
+      HelpContext = 332
       Margins.Left = 5
       Margins.Top = 5
       Margins.Right = 5
@@ -4943,7 +4944,7 @@ object UIForm: TUIForm
       Width = 480
       Height = 28
       HelpKeyword = 'IPv6ValuesandLabels'
-      HelpContext = 17
+      HelpContext = 332
       Margins.Left = 5
       Margins.Top = 5
       Margins.Right = 5
@@ -4966,7 +4967,7 @@ object UIForm: TUIForm
       Width = 480
       Height = 28
       HelpKeyword = 'IPv6ValuesandLabels'
-      HelpContext = 17
+      HelpContext = 332
       Margins.Left = 5
       Margins.Top = 5
       Margins.Right = 5
@@ -4989,7 +4990,7 @@ object UIForm: TUIForm
       Width = 480
       Height = 28
       HelpKeyword = 'IPv6ValuesandLabels'
-      HelpContext = 17
+      HelpContext = 332
       Margins.Left = 5
       Margins.Top = 5
       Margins.Right = 5
@@ -5012,7 +5013,7 @@ object UIForm: TUIForm
       Width = 480
       Height = 28
       HelpKeyword = 'IPv6ValuesandLabels'
-      HelpContext = 17
+      HelpContext = 332
       Margins.Left = 5
       Margins.Top = 5
       Margins.Right = 5
@@ -5036,7 +5037,7 @@ object UIForm: TUIForm
       Width = 480
       Height = 28
       HelpKeyword = 'IPv6ValuesandLabels'
-      HelpContext = 17
+      HelpContext = 332
       Margins.Left = 5
       Margins.Top = 5
       Margins.Right = 5
@@ -5060,7 +5061,7 @@ object UIForm: TUIForm
       Width = 480
       Height = 28
       HelpKeyword = 'IPv6ValuesandLabels'
-      HelpContext = 17
+      HelpContext = 332
       Margins.Left = 5
       Margins.Top = 5
       Margins.Right = 5
@@ -5085,7 +5086,7 @@ object UIForm: TUIForm
     Width = 362
     Height = 378
     HelpKeyword = 'IPv4ValuesandLabels'
-    HelpContext = 16
+    HelpContext = 331
     Margins.Left = 5
     Margins.Top = 5
     Margins.Right = 5
@@ -5099,7 +5100,7 @@ object UIForm: TUIForm
       Width = 114
       Height = 25
       HelpKeyword = 'IPv4ValuesandLabels'
-      HelpContext = 16
+      HelpContext = 331
       Margins.Left = 5
       Margins.Top = 5
       Margins.Right = 5
@@ -5118,7 +5119,7 @@ object UIForm: TUIForm
       Width = 65
       Height = 25
       HelpKeyword = 'IPv4ValuesandLabels'
-      HelpContext = 16
+      HelpContext = 331
       Margins.Left = 5
       Margins.Top = 5
       Margins.Right = 5
@@ -5137,7 +5138,7 @@ object UIForm: TUIForm
       Width = 102
       Height = 25
       HelpKeyword = 'IPv4ValuesandLabels'
-      HelpContext = 16
+      HelpContext = 331
       Margins.Left = 5
       Margins.Top = 5
       Margins.Right = 5
@@ -5156,7 +5157,7 @@ object UIForm: TUIForm
       Width = 67
       Height = 25
       HelpKeyword = 'IPv4ValuesandLabels'
-      HelpContext = 16
+      HelpContext = 331
       Margins.Left = 5
       Margins.Top = 5
       Margins.Right = 5
@@ -5175,7 +5176,7 @@ object UIForm: TUIForm
       Width = 43
       Height = 25
       HelpKeyword = 'IPv4ValuesandLabels'
-      HelpContext = 16
+      HelpContext = 331
       Margins.Left = 5
       Margins.Top = 5
       Margins.Right = 5
@@ -5194,7 +5195,7 @@ object UIForm: TUIForm
       Width = 111
       Height = 25
       HelpKeyword = 'IPv4ValuesandLabels'
-      HelpContext = 16
+      HelpContext = 331
       Margins.Left = 5
       Margins.Top = 5
       Margins.Right = 5
@@ -5213,7 +5214,7 @@ object UIForm: TUIForm
       Width = 101
       Height = 25
       HelpKeyword = 'IPv4ValuesandLabels'
-      HelpContext = 16
+      HelpContext = 331
       Margins.Left = 5
       Margins.Top = 5
       Margins.Right = 5
@@ -5232,7 +5233,7 @@ object UIForm: TUIForm
       Width = 103
       Height = 25
       HelpKeyword = 'IPv4ValuesandLabels'
-      HelpContext = 16
+      HelpContext = 331
       Margins.Left = 5
       Margins.Top = 5
       Margins.Right = 5
@@ -5251,7 +5252,7 @@ object UIForm: TUIForm
       Width = 119
       Height = 25
       HelpKeyword = 'IPv4ValuesandLabels'
-      HelpContext = 16
+      HelpContext = 331
       Margins.Left = 5
       Margins.Top = 5
       Margins.Right = 5
@@ -5270,7 +5271,7 @@ object UIForm: TUIForm
       Width = 85
       Height = 25
       HelpKeyword = 'IPv4ValuesandLabels'
-      HelpContext = 16
+      HelpContext = 331
       Margins.Left = 5
       Margins.Top = 5
       Margins.Right = 5
@@ -5289,7 +5290,7 @@ object UIForm: TUIForm
       Width = 148
       Height = 25
       HelpKeyword = 'IPv4ValuesandLabels'
-      HelpContext = 16
+      HelpContext = 331
       Margins.Left = 5
       Margins.Top = 5
       Margins.Right = 5
@@ -5308,7 +5309,7 @@ object UIForm: TUIForm
       Width = 204
       Height = 28
       HelpKeyword = 'IPv4ValuesandLabels'
-      HelpContext = 16
+      HelpContext = 331
       Margins.Left = 5
       Margins.Top = 5
       Margins.Right = 5
@@ -5331,7 +5332,7 @@ object UIForm: TUIForm
       Width = 204
       Height = 28
       HelpKeyword = 'IPv4ValuesandLabels'
-      HelpContext = 16
+      HelpContext = 331
       Margins.Left = 5
       Margins.Top = 5
       Margins.Right = 5
@@ -5354,7 +5355,7 @@ object UIForm: TUIForm
       Width = 204
       Height = 28
       HelpKeyword = 'IPv4ValuesandLabels'
-      HelpContext = 16
+      HelpContext = 331
       Margins.Left = 5
       Margins.Top = 5
       Margins.Right = 5
@@ -5377,7 +5378,7 @@ object UIForm: TUIForm
       Width = 204
       Height = 28
       HelpKeyword = 'IPv4ValuesandLabels'
-      HelpContext = 16
+      HelpContext = 331
       Margins.Left = 5
       Margins.Top = 5
       Margins.Right = 5
@@ -5400,7 +5401,7 @@ object UIForm: TUIForm
       Width = 204
       Height = 28
       HelpKeyword = 'IPv4ValuesandLabels'
-      HelpContext = 16
+      HelpContext = 331
       Margins.Left = 5
       Margins.Top = 5
       Margins.Right = 5
@@ -5423,7 +5424,7 @@ object UIForm: TUIForm
       Width = 204
       Height = 28
       HelpKeyword = 'IPv4ValuesandLabels'
-      HelpContext = 16
+      HelpContext = 331
       Margins.Left = 5
       Margins.Top = 5
       Margins.Right = 5
@@ -5447,7 +5448,7 @@ object UIForm: TUIForm
       Width = 204
       Height = 28
       HelpKeyword = 'IPv4ValuesandLabels'
-      HelpContext = 16
+      HelpContext = 331
       Margins.Left = 5
       Margins.Top = 5
       Margins.Right = 5
@@ -5471,7 +5472,7 @@ object UIForm: TUIForm
       Width = 204
       Height = 28
       HelpKeyword = 'IPv4ValuesandLabels'
-      HelpContext = 16
+      HelpContext = 331
       Margins.Left = 5
       Margins.Top = 5
       Margins.Right = 5
@@ -5495,7 +5496,7 @@ object UIForm: TUIForm
       Width = 204
       Height = 28
       HelpKeyword = 'IPv4ValuesandLabels'
-      HelpContext = 16
+      HelpContext = 331
       Margins.Left = 5
       Margins.Top = 5
       Margins.Right = 5
@@ -5518,7 +5519,7 @@ object UIForm: TUIForm
       Width = 204
       Height = 28
       HelpKeyword = 'IPv4ValuesandLabels'
-      HelpContext = 16
+      HelpContext = 331
       Margins.Left = 5
       Margins.Top = 5
       Margins.Right = 5
@@ -5541,7 +5542,7 @@ object UIForm: TUIForm
       Width = 204
       Height = 28
       HelpKeyword = 'IPv4ValuesandLabels'
-      HelpContext = 16
+      HelpContext = 331
       Margins.Left = 5
       Margins.Top = 5
       Margins.Right = 5
@@ -10052,20 +10053,21 @@ object UIForm: TUIForm
     Top = 648
     object FileMenu: TMenuItem
       Caption = 'File'
-      HelpContext = 8
+      HelpContext = 311
       object ClearMenuItem: TMenuItem
         Caption = 'Clear'
-        HelpContext = 8
+        HelpContext = 311
         ImageIndex = 0
         ImageName = 'Clear'
         OnClick = ClearMenuItemClick
       end
       object N1: TMenuItem
         Caption = '-'
+        HelpContext = 311
       end
       object ExitMenuItem: TMenuItem
         Caption = 'Exit'
-        HelpContext = 8
+        HelpContext = 311
         ImageIndex = 1
         ImageName = 'Close'
         OnClick = ExitMenuItemClick
@@ -10073,39 +10075,40 @@ object UIForm: TUIForm
     end
     object IPMenu: TMenuItem
       Caption = 'IP'
-      HelpContext = 10
+      HelpContext = 312
       object IPv4MenuItem: TMenuItem
         Caption = 'IPv4'
         Checked = True
         GroupIndex = 1
-        HelpContext = 10
+        HelpContext = 312
         RadioItem = True
         OnClick = IPv4MenuItemClick
       end
       object IPv6MenuItem: TMenuItem
         Caption = 'IPv6'
         GroupIndex = 1
-        HelpContext = 10
+        HelpContext = 312
         RadioItem = True
         OnClick = IPv6MenuItemClick
       end
     end
     object HelpMenu: TMenuItem
       Caption = 'Help'
-      HelpContext = 11
+      HelpContext = 313
       object HelpMenuItem: TMenuItem
         Caption = 'Help'
-        HelpContext = 11
+        HelpContext = 313
         ImageIndex = 2
         ImageName = 'Help'
         OnClick = HelpMenuItemClick
       end
       object N2: TMenuItem
         Caption = '-'
+        HelpContext = 313
       end
       object AboutMenuItem: TMenuItem
         Caption = 'About'
-        HelpContext = 11
+        HelpContext = 313
         ImageIndex = 3
         ImageName = 'Info'
         OnClick = AboutMenuItemClick
