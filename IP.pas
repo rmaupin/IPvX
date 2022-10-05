@@ -1435,9 +1435,9 @@ begin
   if IPv6RegEx.Match then begin
     if (IPv6RegEx.Groups[1] > '') then begin
       a := IPv6RegEx.Groups[2] +
-           IntToHex(((IPv6RegEx.Groups[3].ToInteger shl 8) or IPv6RegEx.Groups[4].ToInteger), 1) +
+           IntToHex(((IPv6RegEx.Groups[4].ToInteger shl 8) or IPv6RegEx.Groups[5].ToInteger), 1) +
            ':'                                                                                           +
-           IntToHex(((IPv6RegEx.Groups[5].ToInteger shl 8) or IPv6RegEx.Groups[6].ToInteger), 1);
+           IntToHex(((IPv6RegEx.Groups[6].ToInteger shl 8) or IPv6RegEx.Groups[7].ToInteger), 1);
     end
     else begin
       a := IPv6RegEx.Groups[8];
@@ -1542,86 +1542,82 @@ var
   a: TArray<String>;
   s: TArray<String>;
 begin
-  try
-    s := Expand(AAddress).Split(['/']);
-    a := s[0].Split([':']);
-    for i := 0 to 7 do begin
-      a[i] := IntToHex(('$' + a[i]).ToInteger, 1).ToLower;
-    end;
-    Result := '';
-    for i := 0 to 5 do begin
-      Result := (Result + a[i] + ':');
-    end;
-    if (Result = '0:0:0:0:0:ffff:') then begin
-      u := ((UInt32(a[6].ToInteger) shl 16) or UInt32(a[7].ToInteger));
-      Result := (Result +
-                ((u shr 24).ToString         + '.' +
-                ((u shl 08) shr 24).ToString + '.' +
-                ((u shl 16) shr 24).ToString + '.' +
-                ((u shl 24) shr 24).ToString));
-    end
-    else begin
-      Result := (Result + a[6] + ':' + a[7]);
-    end;
-    if (Result = '0:0:0:0:0:0:0:0') then begin
-      Result := '::';
-    end
-    else if Result.StartsWith('0:0:0:0:0:0:0:') then begin
-      Result := Result.Replace('0:0:0:0:0:0:0:', '::');
-    end
-    else if Result.EndsWith(':0:0:0:0:0:0:0') then begin
-      Result := Result.Replace(':0:0:0:0:0:0:0', '::');
-    end
-    else if Result.StartsWith('0:0:0:0:0:0:') then begin
-      Result := Result.Replace('0:0:0:0:0:0:', '::');
-    end
-    else if Result.Contains(':0:0:0:0:0:0:') then begin
-      Result := Result.Replace(':0:0:0:0:0:0:', '::');
-    end
-    else if Result.EndsWith(':0:0:0:0:0:0') then begin
-      Result := Result.Replace(':0:0:0:0:0:0', '::');
-    end
-    else if Result.StartsWith('0:0:0:0:0:') then begin                  
-      Result := Result.Replace('0:0:0:0:0:', '::');
-    end
-    else if Result.Contains(':0:0:0:0:0:') then begin
-      Result := Result.Replace(':0:0:0:0:0:', '::');
-    end
-    else if Result.EndsWith(':0:0:0:0:0') then begin
-      Result := Result.Replace(':0:0:0:0:0', '::');
-    end
-    else if Result.StartsWith('0:0:0:0:') then begin                    
-      Result := Result.Replace('0:0:0:0:', '::');
-    end
-    else if Result.Contains(':0:0:0:0:') then begin
-      Result := Result.Replace(':0:0:0:0:', '::');
-    end
-    else if Result.EndsWith(':0:0:0:0') then begin
-      Result := Result.Replace(':0:0:0:0', '::');
-    end
-    else if Result.StartsWith('0:0:0:') then begin                      
-      Result := Result.Replace('0:0:0:', '::');
-    end
-    else if Result.Contains(':0:0:0:') then begin
-      Result := Result.Replace(':0:0:0:', '::');
-    end
-    else if Result.EndsWith(':0:0:0') then begin
-      Result := Result.Replace(':0:0:0', '::');
-    end
-    else if Result.StartsWith('0:0:') then begin                        
-      Result := Result.Replace('0:0:', '::');
-    end
-    else if Result.Contains(':0:0:') then begin
-      Result := Result.Replace(':0:0:', '::');
-    end
-    else if Result.EndsWith(':0:0') then begin
-      Result := Result.Replace(':0:0', '::');
-    end;
-    if (Length(s) > 1) then begin
-      Result := (Result + '/' + s[1]);
-    end;
-  except
-    raise EIPError.Create('[%IPV6-ERROR-ADDRESS: bad format]');
+  s := Expand(AAddress).Split(['/']);
+  a := s[0].Split([':']);
+  for i := 0 to 7 do begin
+    a[i] := IntToHex(('$' + a[i]).ToInteger, 1).ToLower;
+  end;
+  Result := '';
+  for i := 0 to 5 do begin
+    Result := (Result + a[i] + ':');
+  end;
+  if (Result = '0:0:0:0:0:ffff:') then begin
+    u := ((UInt32(('$' + a[6]).ToInteger) shl 16) or UInt32(('$' + a[7]).ToInteger));
+    Result := (Result +
+              ((u shr 24).ToString         + '.' +
+              ((u shl 08) shr 24).ToString + '.' +
+              ((u shl 16) shr 24).ToString + '.' +
+              ((u shl 24) shr 24).ToString));
+  end
+  else begin
+    Result := (Result + a[6] + ':' + a[7]);
+  end;
+  if (Result = '0:0:0:0:0:0:0:0') then begin
+    Result := '::';
+  end
+  else if Result.StartsWith('0:0:0:0:0:0:0:') then begin
+    Result := Result.Replace('0:0:0:0:0:0:0:', '::');
+  end
+  else if Result.EndsWith(':0:0:0:0:0:0:0') then begin
+    Result := Result.Replace(':0:0:0:0:0:0:0', '::');
+  end
+  else if Result.StartsWith('0:0:0:0:0:0:') then begin
+    Result := Result.Replace('0:0:0:0:0:0:', '::');
+  end
+  else if Result.Contains(':0:0:0:0:0:0:') then begin
+    Result := Result.Replace(':0:0:0:0:0:0:', '::');
+  end
+  else if Result.EndsWith(':0:0:0:0:0:0') then begin
+    Result := Result.Replace(':0:0:0:0:0:0', '::');
+  end
+  else if Result.StartsWith('0:0:0:0:0:') then begin
+    Result := Result.Replace('0:0:0:0:0:', '::');
+  end
+  else if Result.Contains(':0:0:0:0:0:') then begin
+    Result := Result.Replace(':0:0:0:0:0:', '::');
+  end
+  else if Result.EndsWith(':0:0:0:0:0') then begin
+    Result := Result.Replace(':0:0:0:0:0', '::');
+  end
+  else if Result.StartsWith('0:0:0:0:') then begin
+    Result := Result.Replace('0:0:0:0:', '::');
+  end
+  else if Result.Contains(':0:0:0:0:') then begin
+    Result := Result.Replace(':0:0:0:0:', '::');
+  end
+  else if Result.EndsWith(':0:0:0:0') then begin
+    Result := Result.Replace(':0:0:0:0', '::');
+  end
+  else if Result.StartsWith('0:0:0:') then begin
+    Result := Result.Replace('0:0:0:', '::');
+  end
+  else if Result.Contains(':0:0:0:') then begin
+    Result := Result.Replace(':0:0:0:', '::');
+  end
+  else if Result.EndsWith(':0:0:0') then begin
+    Result := Result.Replace(':0:0:0', '::');
+  end
+  else if Result.StartsWith('0:0:') then begin
+    Result := Result.Replace('0:0:', '::');
+  end
+  else if Result.Contains(':0:0:') then begin
+    Result := Result.Replace(':0:0:', '::');
+  end
+  else if Result.EndsWith(':0:0') then begin
+    Result := Result.Replace(':0:0', '::');
+  end;
+  if (Length(s) > 1) then begin
+    Result := (Result + '/' + s[1]);
   end;
 end;
 
