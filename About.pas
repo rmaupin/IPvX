@@ -171,14 +171,4 @@ begin
   Action := caHide;
 end;
 
-initialization
-begin
-  AboutForm := TAboutForm.Create(nil);
-end;
-
-finalization
-begin
-  AboutForm.Free;
-end;
-
 end.

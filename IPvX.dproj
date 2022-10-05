@@ -5,7 +5,7 @@
         <FrameworkType>VCL</FrameworkType>
         <Base>True</Base>
         <Config Condition="'$(Config)'==''">Release</Config>
-        <Platform Condition="'$(Platform)'==''">Win64</Platform>
+        <Platform Condition="'$(Platform)'==''">Win32</Platform>
         <TargetedPlatforms>3</TargetedPlatforms>
         <AppType>Application</AppType>
         <MainSource>IPvX.dpr</MainSource>
@@ -142,12 +142,6 @@
         </DelphiCompile>
         <DCCReference Include="UI.pas">
             <Form>UIForm</Form>
-            <FormType>dfm</FormType>
-        </DCCReference>
-        <DCCReference Include="IP.pas"/>
-        <DCCReference Include="About.pas">
-            <Form>AboutForm</Form>
-            <FormType>dfm</FormType>
         </DCCReference>
         <BuildConfiguration Include="Base">
             <Key>Base</Key>

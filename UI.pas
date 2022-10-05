@@ -243,6 +243,7 @@ type
     procedure FormKeyUp(Sender: TObject; var Key: Word; Shift: TShiftState);
     procedure FormKeyPress(Sender: TObject; var Key: Char);
   private
+    FAbout: TAboutForm;
     FIPVersion: Integer;
     FIPv4Cast: string;
     FIPv6Cast: string;
@@ -271,8 +272,9 @@ implementation {$R *.dfm}
 
 procedure TUIForm.FormCreate(Sender: TObject);
 begin
-  AboutForm.AboutImage.ImageCollection := ApplicationImageCollection;
-  AboutForm.AboutImage.ImageName := 'IPvX';
+  FAbout := TAboutForm.Create(self);
+  FAbout.AboutImage.ImageCollection := ApplicationImageCollection;
+  FAbout.AboutImage.ImageName := 'IPvX';
   HelpFile := TPath.ChangeExtension(ParamStr(0), 'chm');
   FIPVersion := 4;
   Width := 717;
@@ -658,6 +660,7 @@ end;
 
 procedure TUIForm.FormDestroy(Sender: TObject);
 begin
+  FAbout.Free;
   FIPv4.Free;
   FIPv6.Free;
 end;
@@ -743,7 +746,7 @@ end;
 
 procedure TUIForm.AboutMenuItemClick(Sender: TObject);
 begin
-  AboutForm.ShowModal;
+  FAbout.ShowModal;
 end;
 
 {$ENDREGION}
