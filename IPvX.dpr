@@ -88,7 +88,9 @@ program IPvX;
 
 uses
   Vcl.Forms,
-  UI in 'UI.pas' {UIForm};
+  UI in 'UI.pas' {UIForm},
+  IP in 'IP.pas',
+  About in 'About.pas' {AboutForm};
 
 {$R *.res}
 
@@ -104,5 +106,6 @@ begin
   Application.Title := 'IPvX';
   Application.HelpFile := 'IPvX.chm';
   Application.CreateForm(TUIForm, UIForm);
+  Application.CreateForm(TAboutForm, AboutForm);
   Application.Run;
 end.

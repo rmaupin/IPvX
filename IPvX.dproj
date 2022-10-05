@@ -144,6 +144,11 @@
             <Form>UIForm</Form>
             <FormType>dfm</FormType>
         </DCCReference>
+        <DCCReference Include="IP.pas"/>
+        <DCCReference Include="About.pas">
+            <Form>AboutForm</Form>
+            <FormType>dfm</FormType>
+        </DCCReference>
         <BuildConfiguration Include="Base">
             <Key>Base</Key>
         </BuildConfiguration>
@@ -208,6 +213,12 @@
                     </Platform>
                 </DeployFile>
                 <DeployFile LocalName="Win64\Release\IPvX.exe" Configuration="Release" Class="ProjectOutput"/>
+                <DeployFile LocalName="Win64\Release\IPvX.exe" Configuration="Release" Class="ProjectOutput">
+                    <Platform Name="Win64">
+                        <RemoteName>IPvX.exe</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
                 <DeployClass Name="AdditionalDebugSymbols">
                     <Platform Name="iOSSimulator">
                         <Operation>1</Operation>

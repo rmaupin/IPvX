@@ -5,12 +5,12 @@ object AboutForm: TAboutForm
   AutoSize = True
   BorderStyle = bsDialog
   Caption = 'About {Product Name}'
-  ClientHeight = 321
-  ClientWidth = 460
+  ClientHeight = 478
+  ClientWidth = 688
   Color = clWhite
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clBlack
-  Font.Height = -11
+  Font.Height = -17
   Font.Name = 'Segoe UI'
   Font.Style = []
   Font.Quality = fqClearTypeNatural
@@ -22,14 +22,18 @@ object AboutForm: TAboutForm
   StyleElements = []
   OnClose = FormClose
   OnCreate = FormCreate
-  PixelsPerInch = 96
-  TextHeight = 13
+  PixelsPerInch = 144
+  TextHeight = 23
   object Label4: TLabel
     AlignWithMargins = True
-    Left = 6
-    Top = 93
-    Width = 448
-    Height = 185
+    Left = 8
+    Top = 120
+    Width = 672
+    Height = 295
+    Margins.Left = 5
+    Margins.Top = 5
+    Margins.Right = 5
+    Margins.Bottom = 5
     AutoSize = False
     Caption = 
       'DISCLAIMER:'#13#13'THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS ' +
@@ -46,7 +50,7 @@ object AboutForm: TAboutForm
       ' IF ADVISED OF THE POSSIBILITY  OF SUCH DAMAGE.'
     Font.Charset = DEFAULT_CHARSET
     Font.Color = 6446426
-    Font.Height = -11
+    Font.Height = -17
     Font.Name = 'Segoe UI'
     Font.Style = []
     Font.Quality = fqClearTypeNatural
@@ -57,17 +61,18 @@ object AboutForm: TAboutForm
   end
   object Label1: TLabel
     AlignWithMargins = True
-    Left = 102
+    Left = 152
     Top = 3
-    Width = 143
-    Height = 25
+    Width = 221
+    Height = 40
     Margins.Left = 0
     Margins.Top = 0
-    Margins.Right = 6
+    Margins.Right = 9
+    Margins.Bottom = 5
     Caption = '{Product Name}'
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clBlack
-    Font.Height = -19
+    Font.Height = -29
     Font.Name = 'Segoe UI'
     Font.Style = [fsBold]
     Font.Quality = fqClearTypeNatural
@@ -77,17 +82,18 @@ object AboutForm: TAboutForm
   end
   object Label2: TLabel
     AlignWithMargins = True
-    Left = 102
-    Top = 31
-    Width = 133
-    Height = 15
+    Left = 152
+    Top = 45
+    Width = 198
+    Height = 25
     Margins.Left = 0
     Margins.Top = 0
-    Margins.Right = 6
+    Margins.Right = 9
+    Margins.Bottom = 5
     Caption = 'Release {Product Version}'
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clBlack
-    Font.Height = -12
+    Font.Height = -18
     Font.Name = 'Segoe UI'
     Font.Style = []
     Font.Quality = fqClearTypeNatural
@@ -96,14 +102,18 @@ object AboutForm: TAboutForm
   end
   object Label3: TLabel
     AlignWithMargins = True
-    Left = 102
-    Top = 51
-    Width = 92
-    Height = 15
+    Left = 152
+    Top = 75
+    Width = 135
+    Height = 25
+    Margins.Left = 5
+    Margins.Top = 5
+    Margins.Right = 5
+    Margins.Bottom = 5
     Caption = '{Legal Copyright}'
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clBlack
-    Font.Height = -12
+    Font.Height = -18
     Font.Name = 'Segoe UI'
     Font.Style = []
     Font.Quality = fqClearTypeNatural
@@ -111,35 +121,37 @@ object AboutForm: TAboutForm
     StyleElements = []
   end
   object AboutImage: TVirtualImage
-    Left = 6
+    Left = 8
     Top = 3
-    Width = 64
-    Height = 64
-    Margins.Right = 32
-    Margins.Bottom = 32
+    Width = 96
+    Height = 96
+    Margins.Left = 5
+    Margins.Top = 5
+    Margins.Right = 48
+    Margins.Bottom = 48
     ImageWidth = 0
     ImageHeight = 0
     ImageIndex = 0
   end
   object Button1: TButton
     AlignWithMargins = True
-    Left = 191
-    Top = 287
-    Width = 76
-    Height = 25
-    Margins.Left = 116
-    Margins.Top = 6
-    Margins.Right = 116
-    Margins.Bottom = 6
+    Left = 286
+    Top = 429
+    Width = 114
+    Height = 37
+    Margins.Left = 174
+    Margins.Top = 9
+    Margins.Right = 174
+    Margins.Bottom = 9
     Caption = 'OK'
-    Constraints.MaxHeight = 25
-    Constraints.MaxWidth = 82
-    Constraints.MinHeight = 25
-    Constraints.MinWidth = 76
+    Constraints.MaxHeight = 38
+    Constraints.MaxWidth = 123
+    Constraints.MinHeight = 37
+    Constraints.MinWidth = 114
     Default = True
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clBlack
-    Font.Height = -11
+    Font.Height = -17
     Font.Name = 'Tahoma'
     Font.Style = []
     Font.Quality = fqClearTypeNatural
