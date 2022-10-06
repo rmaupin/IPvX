@@ -111,7 +111,7 @@ type
 
 //******************************************************************************
 //*                                                                            *
-//* IPv4: An IPv4 object only stores a 32-bit unisigned integer for the IPv4   *
+//* IPv4: An IPv4 object only stores a 32-bit unsigned integer for the IPv4    *
 //*       address and a 32-bit unsigned integer for the IPv4 mask.             *
 //*                                                                            *
 //*       IPv4 address and mask strings are read and written in the IPv4       *
@@ -272,7 +272,7 @@ type
 
 //******************************************************************************
 //*                                                                            *
-//* IPv6: An IPv6 object only stores a 128-bit unisigned integer for the IPv6  *
+//* IPv6: An IPv6 object only stores a 128-bit unsigned integer for the IPv6   *
 //*       address and a 128-bit unsigned integer for the IPv6 mask.            *
 //*                                                                            *
 //*       IPv6 address strings may be written in any RFC 4291 IP Version 6     *
@@ -1681,7 +1681,7 @@ initialization
   IPv4RegEx         := TPerlRegEx.Create();
   IPv4RegEx.Options := [preExtended];
   IPv4RegEx.RegEx   := '^# Anchor'#10                                                                        +
-  		                 '(?:# BEGIN Dotted-decimal Notation'#10                                               +
+                       '(?:# BEGIN Dotted-decimal Notation'#10                                               +
                     	 '  (25[0-5]|2[0-4][0-9]|1[0-9][0-9]|[1-9]?[0-9])\.   # 0 to 255.  *** Group 1 ***'#10 +
                     	 '  (25[0-5]|2[0-4][0-9]|1[0-9][0-9]|[1-9]?[0-9])\.   # 0 to 255.  *** Group 2 ***'#10 +
                     	 '  (25[0-5]|2[0-4][0-9]|1[0-9][0-9]|[1-9]?[0-9])\.   # 0 to 255.  *** Group 3 ***'#10 +
@@ -1689,7 +1689,7 @@ initialization
                     	 ')  # END Dotted-decimal Notation'#10                                                 +
                     	 '(?:# BEGIN Optional Length'#10                                                       +
                     	 '     /(3[0-2]|[1-2]?[0-9])                          # /0 to /32  *** Group 5 ***'#10 +
-	                     ')?  # END Optional Length'#10                                                        +
+                       ')?  # END Optional Length'#10                                                        +
                     	 '$# Anchor'#10;
   IPv4RegEx.Study;
 
