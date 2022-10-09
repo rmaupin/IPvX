@@ -277,7 +277,7 @@ type
 //*                                                                            *
 //*       IPv6 address strings may be written in any RFC 4291 IP Version 6     *
 //*       Addressing Architecture, Section 2.2. Text Representation of         *
-//*       Addresses conventional format (1), but are only read in the RFC 5259 *
+//*       Addresses conventional format (1), but are only read in the RFC 5952 *
 //*       A Recommendation for IPv6 Address Text Representation canonical      *
 //*       format (2).                                                          *
 //*                                                                            *
