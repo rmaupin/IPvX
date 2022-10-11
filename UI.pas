@@ -89,8 +89,9 @@ interface
 
 uses
   About, IP,
-  System.Classes, System.ImageList, System.IOUtils, System.SysUtils, System.UITypes,
-  Vcl.BaseImageCollection, Vcl.Controls, Vcl.Dialogs, Vcl.ExtCtrls, Vcl.Forms, Vcl.HtmlHelpViewer, Vcl.ImageCollection, Vcl.ImgList, Vcl.Menus, Vcl.StdCtrls, Vcl.VirtualImage, Vcl.VirtualImageList,
+  System.Classes, System.ImageList, System.SysUtils, System.UITypes,
+  Vcl.BaseImageCollection, Vcl.Controls, Vcl.Dialogs, Vcl.ExtCtrls, Vcl.Forms, Vcl.HtmlHelpViewer,
+  Vcl.ImageCollection, Vcl.ImgList, Vcl.Menus, Vcl.StdCtrls, Vcl.VirtualImage, Vcl.VirtualImageList,
   Winapi.Messages, Winapi.Windows;
 
 type
@@ -107,11 +108,11 @@ type
         IPv4MenuItem: TMenuItem;
         IPv6MenuItem: TMenuItem;
       HelpMenu: TMenuItem;
-    HelpMenuItem: TMenuItem;
+        HelpMenuItem: TMenuItem;
         N2: TMenuItem;
         AboutMenuItem: TMenuItem;
     KeyPanel: TPanel;
-      IPPanel: TPanel;
+      IPLabel: TLabel;
       KeyBaseImage: TVirtualImage;
       KeyImage0: TVirtualImage;
       KeyImage1: TVirtualImage;
@@ -184,64 +185,19 @@ type
         StatusDescriptionLabel: TLabel;
     procedure FormCreate(Sender: TObject);
     procedure FormShortCut(var Msg: TWMKey; var Handled: Boolean);
+    procedure FormKeyDown(Sender: TObject; var Key: Word; Shift: TShiftState);
+    procedure FormKeyPress(Sender: TObject; var Key: Char);
+    procedure FormKeyUp(Sender: TObject; var Key: Word; Shift: TShiftState);
     procedure FormDestroy(Sender: TObject);
     procedure ClearMenuItemClick(Sender: TObject);
     procedure ExitMenuItemClick(Sender: TObject);
-    procedure IPv4MenuItemClick(Sender: TObject);
-    procedure IPv6MenuItemClick(Sender: TObject);
+    procedure IPMenuItemClick(Sender: TObject);
     procedure AboutMenuItemClick(Sender: TObject);
     procedure HelpMenuItemClick(Sender: TObject);
-    procedure KeyImage0MouseDown(Sender: TObject; Button: TMouseButton; Shift: TShiftState; X, Y: Integer);
-    procedure KeyImage0MouseUp(Sender: TObject; Button: TMouseButton; Shift: TShiftState; X, Y: Integer);
-    procedure KeyImage1MouseDown(Sender: TObject; Button: TMouseButton; Shift: TShiftState; X, Y: Integer);
-    procedure KeyImage1MouseUp(Sender: TObject; Button: TMouseButton; Shift: TShiftState; X, Y: Integer);
-    procedure KeyImage2MouseDown(Sender: TObject; Button: TMouseButton; Shift: TShiftState; X, Y: Integer);
-    procedure KeyImage2MouseUp(Sender: TObject; Button: TMouseButton; Shift: TShiftState; X, Y: Integer);
-    procedure KeyImage3MouseDown(Sender: TObject; Button: TMouseButton; Shift: TShiftState; X, Y: Integer);
-    procedure KeyImage3MouseUp(Sender: TObject; Button: TMouseButton; Shift: TShiftState; X, Y: Integer);
-    procedure KeyImage4MouseDown(Sender: TObject; Button: TMouseButton; Shift: TShiftState; X, Y: Integer);
-    procedure KeyImage4MouseUp(Sender: TObject; Button: TMouseButton; Shift: TShiftState; X, Y: Integer);
-    procedure KeyImage5MouseDown(Sender: TObject; Button: TMouseButton; Shift: TShiftState; X, Y: Integer);
-    procedure KeyImage5MouseUp(Sender: TObject; Button: TMouseButton; Shift: TShiftState; X, Y: Integer);
-    procedure KeyImage6MouseDown(Sender: TObject; Button: TMouseButton; Shift: TShiftState; X, Y: Integer);
-    procedure KeyImage6MouseUp(Sender: TObject; Button: TMouseButton; Shift: TShiftState; X, Y: Integer);
-    procedure KeyImage7MouseDown(Sender: TObject; Button: TMouseButton; Shift: TShiftState; X, Y: Integer);
-    procedure KeyImage7MouseUp(Sender: TObject; Button: TMouseButton; Shift: TShiftState; X, Y: Integer);
-    procedure KeyImage8MouseDown(Sender: TObject; Button: TMouseButton; Shift: TShiftState; X, Y: Integer);
-    procedure KeyImage8MouseUp(Sender: TObject; Button: TMouseButton; Shift: TShiftState; X, Y: Integer);
-    procedure KeyImage9MouseDown(Sender: TObject; Button: TMouseButton; Shift: TShiftState; X, Y: Integer);
-    procedure KeyImage9MouseUp(Sender: TObject; Button: TMouseButton; Shift: TShiftState; X, Y: Integer);
-    procedure KeyImageAMouseDown(Sender: TObject; Button: TMouseButton; Shift: TShiftState; X, Y: Integer);
-    procedure KeyImageAMouseUp(Sender: TObject; Button: TMouseButton; Shift: TShiftState; X, Y: Integer);
-    procedure KeyImageBMouseDown(Sender: TObject; Button: TMouseButton; Shift: TShiftState; X, Y: Integer);
-    procedure KeyImageBMouseUp(Sender: TObject; Button: TMouseButton; Shift: TShiftState; X, Y: Integer);
-    procedure KeyImageCMouseDown(Sender: TObject; Button: TMouseButton; Shift: TShiftState; X, Y: Integer);
-    procedure KeyImageCMouseUp(Sender: TObject; Button: TMouseButton; Shift: TShiftState; X, Y: Integer);
-    procedure KeyImageDMouseDown(Sender: TObject; Button: TMouseButton; Shift: TShiftState; X, Y: Integer);
-    procedure KeyImageDMouseUp(Sender: TObject; Button: TMouseButton; Shift: TShiftState; X, Y: Integer);
-    procedure KeyImageEMouseDown(Sender: TObject; Button: TMouseButton; Shift: TShiftState; X, Y: Integer);
-    procedure KeyImageEMouseUp(Sender: TObject; Button: TMouseButton; Shift: TShiftState; X, Y: Integer);
-    procedure KeyImageFMouseDown(Sender: TObject; Button: TMouseButton; Shift: TShiftState; X, Y: Integer);
-    procedure KeyImageFMouseUp(Sender: TObject; Button: TMouseButton; Shift: TShiftState; X, Y: Integer);
-    procedure KeyImageDotMouseDown(Sender: TObject; Button: TMouseButton; Shift: TShiftState; X, Y: Integer);
-    procedure KeyImageDotMouseUp(Sender: TObject; Button: TMouseButton; Shift: TShiftState; X, Y: Integer);
-    procedure KeyImageColonMouseDown(Sender: TObject; Button: TMouseButton; Shift: TShiftState; X, Y: Integer);
-    procedure KeyImageColonMouseUp(Sender: TObject; Button: TMouseButton; Shift: TShiftState; X, Y: Integer);
-    procedure KeyImageEnterMouseDown(Sender: TObject; Button: TMouseButton; Shift: TShiftState; X, Y: Integer);
-    procedure KeyImageEnterMouseUp(Sender: TObject; Button: TMouseButton; Shift: TShiftState; X, Y: Integer);
-    procedure KeyImageColonX2MouseDown(Sender: TObject; Button: TMouseButton; Shift: TShiftState; X, Y: Integer);
-    procedure KeyImageColonX2MouseUp(Sender: TObject; Button: TMouseButton; Shift: TShiftState; X, Y: Integer);
-    procedure KeyImageSlashMouseDown(Sender: TObject; Button: TMouseButton; Shift: TShiftState; X, Y: Integer);
-    procedure KeyImageSlashMouseUp(Sender: TObject; Button: TMouseButton; Shift: TShiftState; X, Y: Integer);
-    procedure KeyImageBackMouseDown(Sender: TObject; Button: TMouseButton; Shift: TShiftState; X, Y: Integer);
-    procedure KeyImageBackMouseUp(Sender: TObject; Button: TMouseButton; Shift: TShiftState; X, Y: Integer);
-    procedure KeyImageClearMouseDown(Sender: TObject; Button: TMouseButton; Shift: TShiftState; X, Y: Integer);
-    procedure KeyImageClearMouseUp(Sender: TObject; Button: TMouseButton; Shift: TShiftState; X, Y: Integer);
+    procedure KeyImageMouseDown(Sender: TObject; Button: TMouseButton; Shift: TShiftState; X, Y: Integer);
+    procedure KeyImageMouseUp(Sender: TObject; Button: TMouseButton; Shift: TShiftState; X, Y: Integer);
     procedure IPv4EditExit(Sender: TObject);
     procedure IPv6EditExit(Sender: TObject);
-    procedure FormKeyDown(Sender: TObject; var Key: Word; Shift: TShiftState);
-    procedure FormKeyUp(Sender: TObject; var Key: Word; Shift: TShiftState);
-    procedure FormKeyPress(Sender: TObject; var Key: Char);
   private
     FAbout: TAboutForm;
     FIPVersion: Integer;
@@ -275,7 +231,6 @@ begin
   FAbout := TAboutForm.Create(self);
   FAbout.AboutImage.ImageCollection := ApplicationImageCollection;
   FAbout.AboutImage.ImageName := 'IPvX';
-  HelpFile := TPath.ChangeExtension(ParamStr(0), 'chm');
   FIPVersion := 4;
   Width := 717;
   FIPv4ActiveEdit := IPv4AddressEdit;
@@ -322,7 +277,7 @@ begin
                           else begin
                             Key := 0;
                             if ((ssAlt in Shift) and (not ((ssShift in Shift) or (ssCtrl in Shift)))) then begin
-                              IPv4MenuItemClick(IPv4MenuItem);
+                              IPMenuItemClick(IPv4MenuItem);
                             end;
                           end;
     vk5, vkNumpad5:       if (not ((ssShift in Shift) or (ssAlt in Shift) or (ssCtrl in Shift))) then begin
@@ -337,7 +292,7 @@ begin
                           else begin
                             Key := 0;
                             if ((ssAlt in Shift) and (not ((ssShift in Shift) or (ssCtrl in Shift)))) then begin
-                              IPv6MenuItemClick(IPv6MenuItem);
+                              IPMenuItemClick(IPv6MenuItem);
                             end;
                           end;
     vk7, vkNumpad7:       if (not ((ssShift in Shift) or (ssAlt in Shift) or (ssCtrl in Shift))) then begin
@@ -564,45 +519,6 @@ begin
   end;
 end;
 
-procedure TUIForm.FormKeyUp(Sender: TObject; var Key: Word; Shift: TShiftState);
-begin
-  KeyImage0.ImageName         := 'Up0';
-  KeyImage1.ImageName         := 'Up1'; 
-  KeyImage2.ImageName         := 'Up2'; 
-  KeyImage3.ImageName         := 'Up3'; 
-  KeyImage4.ImageName         := 'Up4'; 
-  KeyImage5.ImageName         := 'Up5'; 
-  KeyImage6.ImageName         := 'Up6'; 
-  KeyImage7.ImageName         := 'Up7'; 
-  KeyImage8.ImageName         := 'Up8'; 
-  KeyImage9.ImageName         := 'Up9'; 
-  KeyImageDot.ImageName       := 'UpDot';
-  KeyImageSlash.ImageName     := 'UpSlash';
-  KeyImageClear.ImageName     := 'UpClr';
-  KeyImageBack.ImageName      := 'UpBack';
-  KeyImageEnter.ImageName     := 'UpEnter';
-  if FIPVersion = 4 then begin
-    KeyImageA.ImageName       := 'BaseA';
-    KeyImageB.ImageName       := 'BaseB';
-    KeyImageC.ImageName       := 'BaseC';
-    KeyImageD.ImageName       := 'BaseD';
-    KeyImageE.ImageName       := 'BaseE';
-    KeyImageF.ImageName       := 'BaseF';
-    KeyImageColon.ImageName   := 'BaseColon';
-    KeyImageColonX2.ImageName := 'BaseColonX2';
-  end
-  else begin
-    KeyImageA.ImageName       := 'UpA';
-    KeyImageB.ImageName       := 'UpB';
-    KeyImageC.ImageName       := 'UpC';
-    KeyImageD.ImageName       := 'UpD';
-    KeyImageE.ImageName       := 'UpE';
-    KeyImageF.ImageName       := 'UpF';
-    KeyImageColon.ImageName   := 'UpColon';
-    KeyImageColonX2.ImageName := 'UpColonX2';
-  end;
-end;
-
 procedure TUIForm.FormShortCut(var Msg: TWMKey; var Handled: Boolean);
 begin
   Handled := True;
@@ -658,6 +574,47 @@ begin
   end;
 end;
 
+procedure TUIForm.FormKeyUp(Sender: TObject; var Key: Word; Shift: TShiftState);
+begin
+  KeyImage0.ImageName         := 'Up0';
+  KeyImage1.ImageName         := 'Up1'; 
+  KeyImage2.ImageName         := 'Up2'; 
+  KeyImage3.ImageName         := 'Up3'; 
+  KeyImage4.ImageName         := 'Up4'; 
+  KeyImage5.ImageName         := 'Up5'; 
+  KeyImage6.ImageName         := 'Up6'; 
+  KeyImage7.ImageName         := 'Up7'; 
+  KeyImage8.ImageName         := 'Up8'; 
+  KeyImage9.ImageName         := 'Up9'; 
+  KeyImageDot.ImageName       := 'UpDot';
+  KeyImageSlash.ImageName     := 'UpSlash';
+  KeyImageClear.ImageName     := 'UpClr';
+  KeyImageBack.ImageName      := 'UpBack';
+  KeyImageEnter.ImageName     := 'UpEnter';
+  if FIPVersion = 4 then begin
+    IPLabel.Caption           := 'IPv4';
+    KeyImageA.ImageName       := 'BaseA';
+    KeyImageB.ImageName       := 'BaseB';
+    KeyImageC.ImageName       := 'BaseC';
+    KeyImageD.ImageName       := 'BaseD';
+    KeyImageE.ImageName       := 'BaseE';
+    KeyImageF.ImageName       := 'BaseF';
+    KeyImageColon.ImageName   := 'BaseColon';
+    KeyImageColonX2.ImageName := 'BaseColonX2';
+  end
+  else begin
+    IPLabel.Caption           := 'IPv6';
+    KeyImageA.ImageName       := 'UpA';
+    KeyImageB.ImageName       := 'UpB';
+    KeyImageC.ImageName       := 'UpC';
+    KeyImageD.ImageName       := 'UpD';
+    KeyImageE.ImageName       := 'UpE';
+    KeyImageF.ImageName       := 'UpF';
+    KeyImageColon.ImageName   := 'UpColon';
+    KeyImageColonX2.ImageName := 'UpColonX2';
+  end;
+end;
+
 procedure TUIForm.FormDestroy(Sender: TObject);
 begin
   FAbout.Free;
@@ -691,52 +648,36 @@ begin
   Close;
 end;
 
-procedure TUIForm.IPv4MenuItemClick(Sender: TObject);
+procedure TUIForm.IPMenuItemClick(Sender: TObject);
+var
+  w: Word;
 begin
-  if (FIPVersion = 6) then begin
-    IPv4MenuItem.Checked      := True;
-    FIPv6ActiveEdit           := (ActiveControl as TEdit);
-    FIPVersion                := 4;
-    IPPanel.Caption           := 'IPv4';
-    KeyImageA.ImageName       := 'BaseA';
-    KeyImageB.ImageName       := 'BaseB';
-    KeyImageC.ImageName       := 'BaseC';
-    KeyImageD.ImageName       := 'BaseD';
-    KeyImageE.ImageName       := 'BaseE';
-    KeyImageF.ImageName       := 'BaseF';
-    KeyImageColon.ImageName   := 'BaseColon';
-    KeyImageColonX2.ImageName := 'BaseColonX2';
-    IPv6Panel.Visible         := False;
-    IPv4Panel.Visible         := True;
-    Width                     := 717;
-    ActiveControl             := FIPv4ActiveEdit;
-    IPv4Update;
-    (ActiveControl as TEdit).SelectAll;
+  if (Sender = IPv4MenuItem) then begin
+    if (FIPVersion = 6) then begin
+      IPv4MenuItem.Checked      := True;
+      FIPv6ActiveEdit           := (ActiveControl as TEdit);
+      FIPVersion                := 4;
+      IPv6Panel.Visible         := False;
+      IPv4Panel.Visible         := True;
+      Width                     := 717;
+      ActiveControl             := FIPv4ActiveEdit;
+      IPv4Update;
+    end;
+  end
+  else if (Sender = IPv6MenuItem) then begin
+    if (FIPVersion = 4) then begin
+      IPv6MenuItem.Checked      := True;
+      FIPv4ActiveEdit           := (ActiveControl as TEdit);
+      FIPVersion                := 6;
+      IPv4Panel.Visible         := False;
+      IPv6Panel.Visible         := True;
+      Width                     := 960;
+      ActiveControl             := FIPv6ActiveEdit;
+      IPv6Update;
+    end;
   end;
-end;
-
-procedure TUIForm.IPv6MenuItemClick(Sender: TObject);
-begin
-  if (FIPVersion = 4) then begin
-    IPv6MenuItem.Checked      := True;
-    FIPv4ActiveEdit           := (ActiveControl as TEdit);
-    FIPVersion                := 6;
-    IPPanel.Caption           := 'IPv6';
-    KeyImageA.ImageName       := 'UpA';
-    KeyImageB.ImageName       := 'UpB';
-    KeyImageC.ImageName       := 'UpC';
-    KeyImageD.ImageName       := 'UpD';
-    KeyImageE.ImageName       := 'UpE';
-    KeyImageF.ImageName       := 'UpF';
-    KeyImageColon.ImageName   := 'UpColon';
-    KeyImageColonX2.ImageName := 'UpColonX2';
-    IPv4Panel.Visible         := False;
-    IPv6Panel.Visible         := True;
-    Width                     := 960;
-    ActiveControl             := FIPv6ActiveEdit;
-    IPv6Update;
-    (ActiveControl as TEdit).SelectAll;
-  end;
+  FormKeyUp(Sender, w, []);
+  (ActiveControl as TEdit).SelectAll;
 end;
 
 procedure TUIForm.HelpMenuItemClick(Sender: TObject);
@@ -751,298 +692,166 @@ end;
 
 {$ENDREGION}
 
-{$REGION 'Mouse'}
+{$REGION 'Keypad'}
 
-{$REGION 'Mouse Down'}
-
-procedure TUIForm.KeyImage0MouseDown(Sender: TObject; Button: TMouseButton; Shift: TShiftState; X, Y: Integer);
+procedure TUIForm.KeyImageMouseDown(Sender: TObject; Button: TMouseButton; Shift: TShiftState; X, Y: Integer);
 begin
   if ((Button = mbLeft) and (not ((ssShift in Shift) or (ssAlt in Shift) or (ssCtrl in Shift)))) then begin
-    keybd_event(VK_NUMPAD0, MapVirtualKey(VK_NUMPAD0, 0), 0, 0);
+    if (Sender = KeyImage0) then begin
+      keybd_event(VK_NUMPAD0, MapVirtualKey(VK_NUMPAD0, 0), 0, 0);
+    end
+    else if (Sender = KeyImage1) then begin
+      keybd_event(VK_NUMPAD1, MapVirtualKey(VK_NUMPAD1, 0), 0, 0);
+    end
+    else if (Sender = KeyImage2) then begin
+      keybd_event(VK_NUMPAD2, MapVirtualKey(VK_NUMPAD2, 0), 0, 0);
+    end
+    else if (Sender = KeyImage3) then begin
+      keybd_event(VK_NUMPAD3, MapVirtualKey(VK_NUMPAD3, 0), 0, 0);
+    end
+    else if (Sender = KeyImage4) then begin
+      keybd_event(VK_NUMPAD4, MapVirtualKey(VK_NUMPAD4, 0), 0, 0);
+    end
+    else if (Sender = KeyImage5) then begin
+      keybd_event(VK_NUMPAD5, MapVirtualKey(VK_NUMPAD5, 0), 0, 0);
+    end
+    else if (Sender = KeyImage6) then begin
+      keybd_event(VK_NUMPAD6, MapVirtualKey(VK_NUMPAD6, 0), 0, 0);
+    end
+    else if (Sender = KeyImage7) then begin
+      keybd_event(VK_NUMPAD7, MapVirtualKey(VK_NUMPAD7, 0), 0, 0);
+    end
+    else if (Sender = KeyImage8) then begin
+      keybd_event(VK_NUMPAD8, MapVirtualKey(VK_NUMPAD8, 0), 0, 0);
+    end
+    else if (Sender = KeyImage9) then begin
+      keybd_event(VK_NUMPAD9, MapVirtualKey(VK_NUMPAD9, 0), 0, 0);
+    end
+    else if (Sender = KeyImageDot) then begin
+      keybd_event(VK_DECIMAL, MapVirtualKey(VK_DECIMAL, 0), 0, 0);
+    end
+    else if (Sender = KeyImageSlash) then begin
+      keybd_event(VK_DIVIDE, MapVirtualKey(VK_DIVIDE, 0), 0, 0);
+    end
+    else if (Sender = KeyImageEnter) then begin
+      keybd_event(VK_TAB, MapVirtualKey(VK_TAB, 0), 0, 0);
+    end
+    else if (Sender = KeyImageClear) then begin
+      keybd_event(VK_ESCAPE, MapVirtualKey(VK_ESCAPE, 0), 0, 0);
+    end
+    else if (Sender = KeyImageBack) then begin
+      keybd_event(VK_BACK, MapVirtualKey(VK_BACK, 0), 0, 0);
+    end
+    else if (FIPVersion = 6) then begin
+      if (Sender = KeyImageA) then begin
+        keybd_event(Ord('A'), MapVirtualKey(Ord('A'), 0), 0, 0);
+      end
+      else if (Sender = KeyImageB) then begin
+        keybd_event(Ord('B'), MapVirtualKey(Ord('B'), 0), 0, 0);
+      end
+      else if (Sender = KeyImageC) then begin
+        keybd_event(Ord('C'), MapVirtualKey(Ord('C'), 0), 0, 0);
+      end
+      else if (Sender = KeyImageD) then begin
+        keybd_event(Ord('D'), MapVirtualKey(Ord('D'), 0), 0, 0);
+      end
+      else if (Sender = KeyImageE) then begin
+        keybd_event(Ord('E'), MapVirtualKey(Ord('E'), 0), 0, 0);
+      end
+      else if (Sender = KeyImageF) then begin
+        keybd_event(Ord('F'), MapVirtualKey(Ord('F'), 0), 0, 0);
+      end
+      else if (Sender = KeyImageColon) then begin
+        keybd_event(VK_SHIFT, MapVirtualKey(VK_SHIFT, 0), 0, 0);
+        keybd_event(vkSemicolon, MapVirtualKey(vkSemicolon, 0), 0, 0);
+      end
+      else if (Sender = KeyImageColonX2) then begin
+        keybd_event(VK_SHIFT, MapVirtualKey(VK_SHIFT, 0), 0, 0);
+        FColonX2 := True;
+        keybd_event(vkSemicolon, MapVirtualKey(vkSemicolon, 0), 0, 0);
+        FColonX2 := True;
+        keybd_event(vkSemicolon, MapVirtualKey(vkSemicolon, 0), 0, 0);
+      end;
+    end;
   end;
 end;
 
-procedure TUIForm.KeyImage1MouseDown(Sender: TObject; Button: TMouseButton; Shift: TShiftState; X, Y: Integer);
+procedure TUIForm.KeyImageMouseUp(Sender: TObject; Button: TMouseButton; Shift: TShiftState; X, Y: Integer);
 begin
-  if ((Button = mbLeft) and (not ((ssShift in Shift) or (ssAlt in Shift) or (ssCtrl in Shift)))) then begin
-    keybd_event(VK_NUMPAD1, MapVirtualKey(VK_NUMPAD1, 0), 0, 0);
+  if (Sender = KeyImage0) then begin
+    keybd_event(VK_NUMPAD0, MapVirtualKey(VK_NUMPAD0, 0), KEYEVENTF_KEYUP, 0);
+  end
+  else if (Sender = KeyImage1) then begin
+    keybd_event(VK_NUMPAD1, MapVirtualKey(VK_NUMPAD1, 0), KEYEVENTF_KEYUP, 0);
+  end
+  else if (Sender = KeyImage2) then begin
+    keybd_event(VK_NUMPAD2, MapVirtualKey(VK_NUMPAD2, 0), KEYEVENTF_KEYUP, 0);
+  end
+  else if (Sender = KeyImage3) then begin
+    keybd_event(VK_NUMPAD3, MapVirtualKey(VK_NUMPAD3, 0), KEYEVENTF_KEYUP, 0);
+  end
+  else if (Sender = KeyImage4) then begin
+    keybd_event(VK_NUMPAD4, MapVirtualKey(VK_NUMPAD4, 0), KEYEVENTF_KEYUP, 0);
+  end
+  else if (Sender = KeyImage5) then begin
+    keybd_event(VK_NUMPAD5, MapVirtualKey(VK_NUMPAD5, 0), KEYEVENTF_KEYUP, 0);
+  end
+  else if (Sender = KeyImage6) then begin
+    keybd_event(VK_NUMPAD6, MapVirtualKey(VK_NUMPAD6, 0), KEYEVENTF_KEYUP, 0);
+  end
+  else if (Sender = KeyImage7) then begin
+    keybd_event(VK_NUMPAD7, MapVirtualKey(VK_NUMPAD7, 0), KEYEVENTF_KEYUP, 0);
+  end
+  else if (Sender = KeyImage8) then begin
+    keybd_event(VK_NUMPAD8, MapVirtualKey(VK_NUMPAD8, 0), KEYEVENTF_KEYUP, 0);
+  end
+  else if (Sender = KeyImage9) then begin
+    keybd_event(VK_NUMPAD9, MapVirtualKey(VK_NUMPAD9, 0), KEYEVENTF_KEYUP, 0);
+  end
+  else if (Sender = KeyImageDot) then begin
+    keybd_event(VK_DECIMAL, MapVirtualKey(VK_DECIMAL, 0), KEYEVENTF_KEYUP, 0);
+  end
+  else if (Sender = KeyImageSlash) then begin
+    keybd_event(VK_DIVIDE, MapVirtualKey(VK_DIVIDE, 0), KEYEVENTF_KEYUP, 0);
+  end
+  else if (Sender = KeyImageEnter) then begin
+    keybd_event(VK_TAB, MapVirtualKey(VK_TAB, 0), KEYEVENTF_KEYUP, 0);
+  end
+  else if (Sender = KeyImageClear) then begin
+    keybd_event(VK_ESCAPE, MapVirtualKey(VK_ESCAPE, 0), KEYEVENTF_KEYUP, 0);
+  end
+  else if (Sender = KeyImageBack) then begin
+    keybd_event(VK_BACK, MapVirtualKey(VK_BACK, 0), KEYEVENTF_KEYUP, 0);
+  end
+  else if (FIPVersion = 6) then begin
+    if (Sender = KeyImageA) then begin
+      keybd_event(Ord('A'), MapVirtualKey(Ord('A'), 0), KEYEVENTF_KEYUP, 0);
+    end
+    else if (Sender = KeyImageB) then begin
+      keybd_event(Ord('B'), MapVirtualKey(Ord('B'), 0), KEYEVENTF_KEYUP, 0);
+    end
+    else if (Sender = KeyImageC) then begin
+      keybd_event(Ord('C'), MapVirtualKey(Ord('C'), 0), KEYEVENTF_KEYUP, 0);
+    end
+    else if (Sender = KeyImageD) then begin
+      keybd_event(Ord('D'), MapVirtualKey(Ord('D'), 0), KEYEVENTF_KEYUP, 0);
+    end
+    else if (Sender = KeyImageE) then begin
+      keybd_event(Ord('E'), MapVirtualKey(Ord('E'), 0), KEYEVENTF_KEYUP, 0);
+    end
+    else if (Sender = KeyImageF) then begin
+      keybd_event(Ord('F'), MapVirtualKey(Ord('F'), 0), KEYEVENTF_KEYUP, 0);
+    end
+    else if (Sender = KeyImageColon) then begin
+      keybd_event(vkSemicolon, MapVirtualKey(vkSemicolon, 0), KEYEVENTF_KEYUP, 0);
+      keybd_event(VK_SHIFT, MapVirtualKey(VK_SHIFT, 0), KEYEVENTF_KEYUP, 0);
+    end
+    else if (Sender = KeyImageColonX2) then begin
+      keybd_event(vkSemicolon, MapVirtualKey(vkSemicolon, 0), KEYEVENTF_KEYUP, 0);
+      keybd_event(VK_SHIFT, MapVirtualKey(VK_SHIFT, 0), KEYEVENTF_KEYUP, 0);
+    end;
   end;
 end;
-
-procedure TUIForm.KeyImage2MouseDown(Sender: TObject; Button: TMouseButton; Shift: TShiftState; X, Y: Integer);
-begin
-  if ((Button = mbLeft) and (not ((ssShift in Shift) or (ssAlt in Shift) or (ssCtrl in Shift)))) then begin
-    keybd_event(VK_NUMPAD2, MapVirtualKey(VK_NUMPAD2, 0), 0, 0);
-  end;
-end;
-
-procedure TUIForm.KeyImage3MouseDown(Sender: TObject; Button: TMouseButton; Shift: TShiftState; X, Y: Integer);
-begin
-  if ((Button = mbLeft) and (not ((ssShift in Shift) or (ssAlt in Shift) or (ssCtrl in Shift)))) then begin
-    keybd_event(VK_NUMPAD3, MapVirtualKey(VK_NUMPAD3, 0), 0, 0);
-  end;
-end;
-
-procedure TUIForm.KeyImage4MouseDown(Sender: TObject; Button: TMouseButton; Shift: TShiftState; X, Y: Integer);
-begin
-  if ((Button = mbLeft) and (not ((ssShift in Shift) or (ssAlt in Shift) or (ssCtrl in Shift)))) then begin
-    keybd_event(VK_NUMPAD4, MapVirtualKey(VK_NUMPAD4, 0), 0, 0);
-  end;
-end;
-
-procedure TUIForm.KeyImage5MouseDown(Sender: TObject; Button: TMouseButton; Shift: TShiftState; X, Y: Integer);
-begin
-  if ((Button = mbLeft) and (not ((ssShift in Shift) or (ssAlt in Shift) or (ssCtrl in Shift)))) then begin
-    keybd_event(VK_NUMPAD5, MapVirtualKey(VK_NUMPAD5, 0), 0, 0);
-  end;
-end;
-
-procedure TUIForm.KeyImage6MouseDown(Sender: TObject; Button: TMouseButton; Shift: TShiftState; X, Y: Integer);
-begin
-  if ((Button = mbLeft) and (not ((ssShift in Shift) or (ssAlt in Shift) or (ssCtrl in Shift)))) then begin
-    keybd_event(VK_NUMPAD6, MapVirtualKey(VK_NUMPAD6, 0), 0, 0);
-  end;
-end;
-
-procedure TUIForm.KeyImage7MouseDown(Sender: TObject; Button: TMouseButton; Shift: TShiftState; X, Y: Integer);
-begin
-  if ((Button = mbLeft) and (not ((ssShift in Shift) or (ssAlt in Shift) or (ssCtrl in Shift)))) then begin
-    keybd_event(vkNumpad7, MapVirtualKey(vkNumpad7, 0), 0, 0);
-  end;
-end;
-
-procedure TUIForm.KeyImage8MouseDown(Sender: TObject; Button: TMouseButton; Shift: TShiftState; X, Y: Integer);
-begin
-  if ((Button = mbLeft) and (not ((ssShift in Shift) or (ssAlt in Shift) or (ssCtrl in Shift)))) then begin
-    keybd_event(vkNumpad8, MapVirtualKey(vkNumpad8, 0), 0, 0);
-  end;
-end;
-
-procedure TUIForm.KeyImage9MouseDown(Sender: TObject; Button: TMouseButton; Shift: TShiftState; X, Y: Integer);
-begin
-  if ((Button = mbLeft) and (not ((ssShift in Shift) or (ssAlt in Shift) or (ssCtrl in Shift)))) then begin
-    keybd_event(vkNumpad9, MapVirtualKey(vkNumpad9, 0), 0, 0);
-  end;
-end;
-
-procedure TUIForm.KeyImageAMouseDown(Sender: TObject; Button: TMouseButton; Shift: TShiftState; X, Y: Integer);
-begin
-  if ((FIPVersion = 6) and (Button = mbLeft) and (not ((ssShift in Shift) or (ssAlt in Shift) or (ssCtrl in Shift)))) then begin
-    keybd_event(Ord('A'), MapVirtualKey(Ord('A'), 0), 0, 0);
-  end;
-end;
-
-procedure TUIForm.KeyImageBMouseDown(Sender: TObject; Button: TMouseButton; Shift: TShiftState; X, Y: Integer);
-begin
-  if ((FIPVersion = 6) and (Button = mbLeft) and (not ((ssShift in Shift) or (ssAlt in Shift) or (ssCtrl in Shift)))) then begin
-    keybd_event(Ord('B'), MapVirtualKey(Ord('B'), 0), 0, 0);
-  end;
-end;
-
-procedure TUIForm.KeyImageCMouseDown(Sender: TObject; Button: TMouseButton; Shift: TShiftState; X, Y: Integer);
-begin
-  if ((FIPVersion = 6) and (Button = mbLeft) and (not ((ssShift in Shift) or (ssAlt in Shift) or (ssCtrl in Shift)))) then begin
-    keybd_event(Ord('C'), MapVirtualKey(Ord('C'), 0), 0, 0);
-  end;
-end;
-
-procedure TUIForm.KeyImageDMouseDown(Sender: TObject; Button: TMouseButton; Shift: TShiftState; X, Y: Integer);
-begin
-  if ((FIPVersion = 6) and (Button = mbLeft) and (not ((ssShift in Shift) or (ssAlt in Shift) or (ssCtrl in Shift)))) then begin
-    keybd_event(Ord('D'), MapVirtualKey(Ord('D'), 0), 0, 0);
-  end;
-end;
-
-procedure TUIForm.KeyImageEMouseDown(Sender: TObject; Button: TMouseButton; Shift: TShiftState; X, Y: Integer);
-begin
-  if ((FIPVersion = 6) and (Button = mbLeft) and (not ((ssShift in Shift) or (ssAlt in Shift) or (ssCtrl in Shift)))) then begin
-    keybd_event(Ord('E'), MapVirtualKey(Ord('E'), 0), 0, 0);
-  end;
-end;
-
-procedure TUIForm.KeyImageFMouseDown(Sender: TObject; Button: TMouseButton; Shift: TShiftState; X, Y: Integer);
-begin
-  if ((FIPVersion = 6) and (Button = mbLeft) and (not ((ssShift in Shift) or (ssAlt in Shift) or (ssCtrl in Shift)))) then begin
-    keybd_event(Ord('F'), MapVirtualKey(Ord('F'), 0), 0, 0);
-  end;
-end;
-
-procedure TUIForm.KeyImageSlashMouseDown(Sender: TObject; Button: TMouseButton; Shift: TShiftState; X, Y: Integer);
-begin
-  if ((Button = mbLeft) and (not ((ssShift in Shift) or (ssAlt in Shift) or (ssCtrl in Shift)))) then begin
-    keybd_event(vkDivide, MapVirtualKey(vkDivide, 0), 0, 0);
-  end;
-end;
-
-procedure TUIForm.KeyImageDotMouseDown(Sender: TObject; Button: TMouseButton; Shift: TShiftState; X, Y: Integer);
-begin
-  if ((Button = mbLeft) and (not ((ssShift in Shift) or (ssAlt in Shift) or (ssCtrl in Shift)))) then begin
-    keybd_event(VK_DECIMAL, MapVirtualKey(VK_DECIMAL, 0), 0, 0);
-  end;
-end;
-
-procedure TUIForm.KeyImageColonMouseDown(Sender: TObject; Button: TMouseButton; Shift: TShiftState; X, Y: Integer);
-begin
-  if ((FIPVersion = 6) and (Button = mbLeft)and (not ((ssShift in Shift) or (ssAlt in Shift) or (ssCtrl in Shift)))) then begin
-    keybd_event(VK_SHIFT, MapVirtualKey(VK_SHIFT, 0), 0, 0);
-    keybd_event(vkSemicolon, MapVirtualKey(vkSemicolon, 0), 0, 0);
-  end;
-end;
-
-procedure TUIForm.KeyImageColonX2MouseDown(Sender: TObject; Button: TMouseButton; Shift: TShiftState; X, Y: Integer);
-begin
-  if ((FIPVersion = 6) and (Button = mbLeft)and (not ((ssShift in Shift) or (ssAlt in Shift) or (ssCtrl in Shift)))) then begin
-    keybd_event(VK_SHIFT, MapVirtualKey(VK_SHIFT, 0), 0, 0);
-    FColonX2 := True;
-    keybd_event(vkSemicolon, MapVirtualKey(vkSemicolon, 0), 0, 0);
-    FColonX2 := True;
-    keybd_event(vkSemicolon, MapVirtualKey(vkSemicolon, 0), 0, 0);
-  end;
-end;
-
-procedure TUIForm.KeyImageEnterMouseDown(Sender: TObject; Button: TMouseButton; Shift: TShiftState; X, Y: Integer);
-begin
-  if ((Button = mbLeft) and (not ((ssShift in Shift) or (ssAlt in Shift) or (ssCtrl in Shift)))) then begin
-    keybd_event(vkReturn, MapVirtualKey(vkReturn, 0), 0, 0);
-  end;
-end;
-
-procedure TUIForm.KeyImageClearMouseDown(Sender: TObject; Button: TMouseButton; Shift: TShiftState; X, Y: Integer);
-begin
-  if ((Button = mbLeft) and (not ((ssShift in Shift) or (ssAlt in Shift) or (ssCtrl in Shift)))) then begin
-    keybd_event(VK_ESCAPE, MapVirtualKey(VK_ESCAPE, 0), 0, 0);
-  end;
-end;
-
-procedure TUIForm.KeyImageBackMouseDown(Sender: TObject; Button: TMouseButton; Shift: TShiftState; X, Y: Integer);
-begin
-  if ((Button = mbLeft) and (not ((ssShift in Shift) or (ssAlt in Shift) or (ssCtrl in Shift)))) then begin
-    keybd_event(VK_BACK, MapVirtualKey(VK_BACK, 0), 0, 0);
-  end;
-end;
-
-{$ENDREGION}
-
-{$REGION 'Mouse Up'}
-
-procedure TUIForm.KeyImage0MouseUp(Sender: TObject; Button: TMouseButton; Shift: TShiftState; X, Y: Integer);
-begin
-  keybd_event(VK_NUMPAD0, MapVirtualKey(VK_NUMPAD0, 0), KEYEVENTF_KEYUP, 0);
-end;
-
-procedure TUIForm.KeyImage1MouseUp(Sender: TObject; Button: TMouseButton; Shift: TShiftState; X, Y: Integer);
-begin
-  keybd_event(VK_NUMPAD1, MapVirtualKey(VK_NUMPAD1, 0), KEYEVENTF_KEYUP, 0);
-end;
-
-procedure TUIForm.KeyImage2MouseUp(Sender: TObject; Button: TMouseButton; Shift: TShiftState; X, Y: Integer);
-begin
-  keybd_event(VK_NUMPAD2, MapVirtualKey(VK_NUMPAD2, 0), KEYEVENTF_KEYUP, 0);
-end;
-
-procedure TUIForm.KeyImage3MouseUp(Sender: TObject; Button: TMouseButton; Shift: TShiftState; X, Y: Integer);
-begin
-  keybd_event(VK_NUMPAD3, MapVirtualKey(VK_NUMPAD3, 0), KEYEVENTF_KEYUP, 0);
-end;
-
-procedure TUIForm.KeyImage4MouseUp(Sender: TObject; Button: TMouseButton; Shift: TShiftState; X, Y: Integer);
-begin
-  keybd_event(VK_NUMPAD4, MapVirtualKey(VK_NUMPAD4, 0), KEYEVENTF_KEYUP, 0);
-end;
-
-procedure TUIForm.KeyImage5MouseUp(Sender: TObject; Button: TMouseButton; Shift: TShiftState; X, Y: Integer);
-begin
-  keybd_event(VK_NUMPAD5, MapVirtualKey(VK_NUMPAD5, 0), KEYEVENTF_KEYUP, 0);
-end;
-
-procedure TUIForm.KeyImage6MouseUp(Sender: TObject; Button: TMouseButton; Shift: TShiftState; X, Y: Integer);
-begin
-  keybd_event(VK_NUMPAD6, MapVirtualKey(VK_NUMPAD6, 0), KEYEVENTF_KEYUP, 0);
-end;
-
-procedure TUIForm.KeyImage7MouseUp(Sender: TObject; Button: TMouseButton; Shift: TShiftState; X, Y: Integer);
-begin
-  keybd_event(vkNumpad7, MapVirtualKey(vkNumpad7, 0), KEYEVENTF_KEYUP, 0);
-end;
-
-procedure TUIForm.KeyImage8MouseUp(Sender: TObject; Button: TMouseButton; Shift: TShiftState; X, Y: Integer);
-begin
-  keybd_event(vkNumpad8, MapVirtualKey(vkNumpad8, 0), KEYEVENTF_KEYUP, 0);
-end;
-
-procedure TUIForm.KeyImage9MouseUp(Sender: TObject; Button: TMouseButton; Shift: TShiftState; X, Y: Integer);
-begin
-  keybd_event(vkNumpad9, MapVirtualKey(vkNumpad9, 0), KEYEVENTF_KEYUP, 0);
-end;
-
-procedure TUIForm.KeyImageAMouseUp(Sender: TObject; Button: TMouseButton; Shift: TShiftState; X, Y: Integer);
-begin
-  keybd_event(Ord('A'), MapVirtualKey(Ord('A'), 0), KEYEVENTF_KEYUP, 0);
-end;
-
-procedure TUIForm.KeyImageBMouseUp(Sender: TObject; Button: TMouseButton; Shift: TShiftState; X, Y: Integer);
-begin
-  keybd_event(Ord('B'), MapVirtualKey(Ord('B'), 0), KEYEVENTF_KEYUP, 0);
-end;
-
-procedure TUIForm.KeyImageCMouseUp(Sender: TObject; Button: TMouseButton; Shift: TShiftState; X, Y: Integer);
-begin
-  keybd_event(Ord('C'), MapVirtualKey(Ord('C'), 0), KEYEVENTF_KEYUP, 0);
-end;
-
-procedure TUIForm.KeyImageDMouseUp(Sender: TObject; Button: TMouseButton; Shift: TShiftState; X, Y: Integer);
-begin
-  keybd_event(Ord('D'), MapVirtualKey(Ord('D'), 0), KEYEVENTF_KEYUP, 0);
-end;
-
-procedure TUIForm.KeyImageEMouseUp(Sender: TObject; Button: TMouseButton; Shift: TShiftState; X, Y: Integer);
-begin
-  keybd_event(Ord('E'), MapVirtualKey(Ord('E'), 0), KEYEVENTF_KEYUP, 0);
-end;
-
-procedure TUIForm.KeyImageFMouseUp(Sender: TObject; Button: TMouseButton; Shift: TShiftState; X, Y: Integer);
-begin
-  keybd_event(Ord('F'), MapVirtualKey(Ord('F'), 0), KEYEVENTF_KEYUP, 0);
-end;
-
-procedure TUIForm.KeyImageSlashMouseUp(Sender: TObject; Button: TMouseButton; Shift: TShiftState; X, Y: Integer);
-begin
-  keybd_event(vkDivide, MapVirtualKey(vkDivide, 0), KEYEVENTF_KEYUP, 0);
-end;
-
-procedure TUIForm.KeyImageDotMouseUp(Sender: TObject; Button: TMouseButton; Shift: TShiftState; X, Y: Integer);
-begin
-  keybd_event(VK_DECIMAL, MapVirtualKey(VK_DECIMAL, 0), KEYEVENTF_KEYUP, 0);
-end;
-
-procedure TUIForm.KeyImageColonMouseUp(Sender: TObject; Button: TMouseButton; Shift: TShiftState; X, Y: Integer);
-begin
-  keybd_event(vkSemicolon, MapVirtualKey(vkSemicolon, 0), KEYEVENTF_KEYUP, 0);
-  keybd_event(VK_SHIFT, MapVirtualKey(VK_SHIFT, 0), KEYEVENTF_KEYUP, 0);
-end;
-
-procedure TUIForm.KeyImageColonX2MouseUp(Sender: TObject; Button: TMouseButton; Shift: TShiftState; X, Y: Integer);
-begin
-  keybd_event(vkSemicolon, MapVirtualKey(vkSemicolon, 0), KEYEVENTF_KEYUP, 0);
-  keybd_event(VK_SHIFT, MapVirtualKey(VK_SHIFT, 0), KEYEVENTF_KEYUP, 0);
-end;
-
-procedure TUIForm.KeyImageEnterMouseUp(Sender: TObject; Button: TMouseButton; Shift: TShiftState; X, Y: Integer);
-begin
-  keybd_event(vkReturn, MapVirtualKey(vkReturn, 0), KEYEVENTF_KEYUP, 0);
-end;
-
-procedure TUIForm.KeyImageClearMouseUp(Sender: TObject; Button: TMouseButton; Shift: TShiftState; X, Y: Integer);
-begin
-  keybd_event(VK_ESCAPE, MapVirtualKey(VK_ESCAPE, 0), KEYEVENTF_KEYUP, 0);
-end;
-
-procedure TUIForm.KeyImageBackMouseUp(Sender: TObject; Button: TMouseButton; Shift: TShiftState; X, Y: Integer);
-begin
-  keybd_event(VK_BACK, MapVirtualKey(VK_BACK, 0), KEYEVENTF_KEYUP, 0);
-end;
-
-{$ENDREGION}
 
 {$ENDREGION}
 
@@ -1055,31 +864,24 @@ begin
   try
     if (Sender = IPv4AddressEdit) then begin
       FIPv4.Address := IPv4AddressEdit.Text;
-      IPv4Update;
     end
     else if (Sender = IPv4NetworkMaskEdit) then begin
       FIPv4.NetMask := IPv4NetworkMaskEdit.Text;
-      IPv4Update;
     end
     else if (Sender = IPv4HostMaskEdit) then begin
       FIPv4.HostMask := IPv4HostMaskEdit.Text;
-      IPv4Update;
     end
     else if (Sender = IPv4OffsetEdit) then begin
       FIPv4.Offset := IPv4OffsetEdit.Text;
-      IPv4Update;
     end
     else if (Sender = IPv4PrefixEdit) then begin
       FIPv4.Prefix := IPv4PrefixEdit.Text;
-      IPv4Update;
     end
     else if (Sender = IPv4PrefixLengthEdit) then begin
       FIPv4.NetLength := IPv4PrefixLengthEdit.Text;
-      IPv4Update;
     end
     else if (Sender = IPv4NetworkEdit) then begin
       FIPv4.Network := IPv4NetworkEdit.Text;
-      IPv4Update;
     end
   except
     on E: Exception do begin
@@ -1092,6 +894,7 @@ begin
       end;
     end;
   end;
+  IPv4Update;
 end;
 
 procedure TUIForm.IPv4Update();
@@ -1112,9 +915,6 @@ end;
 
 procedure TUIForm.IPv4UpdateStatus();
 begin
-  StatusCastLabel.Caption        := '';
-  StatusScopeLabel.Caption       := '';
-  StatusDescriptionLabel.Caption := '';
   if TIPv4.IsUnicast(FIPv4.Address) then begin
     FIPv4Cast := 'Unicast';
     if ((FIPv4.Address = FIPv4.Network) and (FIPv4.NetLength.ToInteger < 31)) then begin
@@ -1301,23 +1101,18 @@ begin
   try
     if (Sender = IPv6AddressEdit) then begin
       FIPv6.Address := IPv6AddressEdit.Text;
-      IPv6Update;
     end
     else if (Sender = IPv6OffsetEdit) then begin
       FIPv6.Offset := IPv6OffsetEdit.Text;
-      IPv6Update;
     end
     else if (Sender = IPv6PrefixEdit) then begin
       FIPv6.Prefix  := IPv6PrefixEdit.Text;
-      IPv6Update;
     end
     else if (Sender = IPv6PrefixLengthEdit) then begin
       FIPv6.NetLength := IPv6PrefixLengthEdit.Text;
-      IPv6Update;
     end
     else if (Sender = IPv6NetworkEdit) then begin
       FIPv6.Network := IPv6NetworkEdit.Text;
-      IPv6Update;
     end;
   except
     on E: Exception do begin
@@ -1330,6 +1125,7 @@ begin
       end;
     end;
   end;
+  IPv6Update;
 end;
 
 procedure TUIForm.IPv6Update();
@@ -1347,12 +1143,8 @@ end;
 
 procedure TUIForm.IPv6UpdateStatus();
 var
-  a: string;
   c: System.TArray<Char>;
 begin
-  StatusCastLabel.Caption        := '';
-  StatusScopeLabel.Caption       := '';
-  StatusDescriptionLabel.Caption := '';
   if TIPv6.IsUnicast(FIPv6.Address) then begin
     FIPv6Cast := 'Unicast';
     if TIPv6.IsInRange(FIPv6.Address, '2000::/3') then begin
@@ -1422,8 +1214,7 @@ begin
   end
   else if TIPv6.IsMulticast(FIPv6.Address) then begin
     FIPv6Cast := 'Multicast';
-    a := FIPv6.Expand(FIPv6.Address);
-    c := a.ToCharArray;
+    c := TIPv6.Expand(FIPv6.Address).ToCharArray;
     case c[3] of
       '0': FIPv6Scope := 'Reserved';
       '1': FIPv6Scope := 'Interface-Local';

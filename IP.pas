@@ -1732,7 +1732,7 @@ initialization
                        '     )  # END Hexadecimal Notation'#10                                                  +
                        '  )# END Compressed'#10                                                                 +
                        '  (?:# BEGIN Optional Length'#10                                                        +
-                       '       /(12[0-8]|1[0-1][0-9]|[1-9]?[0-9])             # /0 to /128  *** Group 9 ***'#10 +
+                       '       /(12[0-8]|1[0-1][0-9]|[1-9]?[0-9])              # /0 to /128 *** Group 9 ***'#10 +
                        '  )? # END Optional Length'#10                                                          +
                        '$# Anchor'#10;
   IPv6RegEx.Study;

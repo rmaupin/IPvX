@@ -1,7 +1,6 @@
 object UIForm: TUIForm
   Left = 0
   Top = 0
-  HelpKeyword = 'WelcometoIPvX'
   HelpContext = 1
   Margins.Left = 0
   Margins.Top = 0
@@ -4117,7 +4116,6 @@ object UIForm: TUIForm
     Top = 0
     Width = 300
     Height = 516
-    HelpKeyword = 'Keypad'
     HelpContext = 320
     Margins.Left = 5
     Margins.Top = 5
@@ -4131,7 +4129,6 @@ object UIForm: TUIForm
       Top = 0
       Width = 300
       Height = 516
-      HelpKeyword = 'Keypad'
       HelpContext = 320
       Margins.Left = 5
       Margins.Top = 5
@@ -4148,7 +4145,6 @@ object UIForm: TUIForm
       Top = 438
       Width = 72
       Height = 72
-      HelpKeyword = 'Keypad'
       HelpContext = 320
       Margins.Left = 5
       Margins.Top = 5
@@ -4159,15 +4155,14 @@ object UIForm: TUIForm
       ImageHeight = 0
       ImageIndex = 9
       ImageName = 'Up0'
-      OnMouseDown = KeyImage0MouseDown
-      OnMouseUp = KeyImage0MouseUp
+      OnMouseDown = KeyImageMouseDown
+      OnMouseUp = KeyImageMouseUp
     end
     object KeyImageDot: TVirtualImage
       Left = 78
       Top = 438
       Width = 72
       Height = 72
-      HelpKeyword = 'Keypad'
       HelpContext = 320
       Margins.Left = 5
       Margins.Top = 5
@@ -4178,15 +4173,14 @@ object UIForm: TUIForm
       ImageHeight = 0
       ImageIndex = 27
       ImageName = 'UpDot'
-      OnMouseDown = KeyImageDotMouseDown
-      OnMouseUp = KeyImageDotMouseUp
+      OnMouseDown = KeyImageMouseDown
+      OnMouseUp = KeyImageMouseUp
     end
     object KeyImageEnter: TVirtualImage
       Left = 222
       Top = 366
       Width = 72
       Height = 144
-      HelpKeyword = 'Keypad'
       HelpContext = 320
       Margins.Left = 5
       Margins.Top = 5
@@ -4197,15 +4191,14 @@ object UIForm: TUIForm
       ImageHeight = 0
       ImageIndex = 29
       ImageName = 'UpEnter'
-      OnMouseDown = KeyImageEnterMouseDown
-      OnMouseUp = KeyImageEnterMouseUp
+      OnMouseDown = KeyImageMouseDown
+      OnMouseUp = KeyImageMouseUp
     end
     object KeyImage7: TVirtualImage
       Left = 6
       Top = 222
       Width = 72
       Height = 72
-      HelpKeyword = 'Keypad'
       HelpContext = 320
       Margins.Left = 5
       Margins.Top = 5
@@ -4216,15 +4209,14 @@ object UIForm: TUIForm
       ImageHeight = 0
       ImageIndex = 16
       ImageName = 'Up7'
-      OnMouseDown = KeyImage7MouseDown
-      OnMouseUp = KeyImage7MouseUp
+      OnMouseDown = KeyImageMouseDown
+      OnMouseUp = KeyImageMouseUp
     end
     object KeyImage8: TVirtualImage
       Left = 78
       Top = 222
       Width = 72
       Height = 72
-      HelpKeyword = 'Keypad'
       HelpContext = 320
       Margins.Left = 5
       Margins.Top = 5
@@ -4235,15 +4227,14 @@ object UIForm: TUIForm
       ImageHeight = 0
       ImageIndex = 17
       ImageName = 'Up8'
-      OnMouseDown = KeyImage8MouseDown
-      OnMouseUp = KeyImage8MouseUp
+      OnMouseDown = KeyImageMouseDown
+      OnMouseUp = KeyImageMouseUp
     end
     object KeyImage9: TVirtualImage
       Left = 150
       Top = 222
       Width = 72
       Height = 72
-      HelpKeyword = 'Keypad'
       HelpContext = 320
       Margins.Left = 5
       Margins.Top = 5
@@ -4254,15 +4245,14 @@ object UIForm: TUIForm
       ImageHeight = 0
       ImageIndex = 18
       ImageName = 'Up9'
-      OnMouseDown = KeyImage9MouseDown
-      OnMouseUp = KeyImage9MouseUp
+      OnMouseDown = KeyImageMouseDown
+      OnMouseUp = KeyImageMouseUp
     end
     object KeyImage4: TVirtualImage
       Left = 6
       Top = 294
       Width = 72
       Height = 72
-      HelpKeyword = 'Keypad'
       HelpContext = 320
       Margins.Left = 5
       Margins.Top = 5
@@ -4273,15 +4263,14 @@ object UIForm: TUIForm
       ImageHeight = 0
       ImageIndex = 13
       ImageName = 'Up4'
-      OnMouseDown = KeyImage4MouseDown
-      OnMouseUp = KeyImage4MouseUp
+      OnMouseDown = KeyImageMouseDown
+      OnMouseUp = KeyImageMouseUp
     end
     object KeyImage5: TVirtualImage
       Left = 78
       Top = 294
       Width = 72
       Height = 72
-      HelpKeyword = 'Keypad'
       HelpContext = 320
       Margins.Left = 5
       Margins.Top = 5
@@ -4292,15 +4281,14 @@ object UIForm: TUIForm
       ImageHeight = 0
       ImageIndex = 14
       ImageName = 'Up5'
-      OnMouseDown = KeyImage5MouseDown
-      OnMouseUp = KeyImage5MouseUp
+      OnMouseDown = KeyImageMouseDown
+      OnMouseUp = KeyImageMouseUp
     end
     object KeyImage6: TVirtualImage
       Left = 150
       Top = 294
       Width = 72
       Height = 72
-      HelpKeyword = 'Keypad'
       HelpContext = 320
       Margins.Left = 5
       Margins.Top = 5
@@ -4311,15 +4299,14 @@ object UIForm: TUIForm
       ImageHeight = 0
       ImageIndex = 15
       ImageName = 'Up6'
-      OnMouseDown = KeyImage6MouseDown
-      OnMouseUp = KeyImage6MouseUp
+      OnMouseDown = KeyImageMouseDown
+      OnMouseUp = KeyImageMouseUp
     end
     object KeyImage1: TVirtualImage
       Left = 6
       Top = 366
       Width = 72
       Height = 72
-      HelpKeyword = 'Keypad'
       HelpContext = 320
       Margins.Left = 5
       Margins.Top = 5
@@ -4330,15 +4317,14 @@ object UIForm: TUIForm
       ImageHeight = 0
       ImageIndex = 10
       ImageName = 'Up1'
-      OnMouseDown = KeyImage1MouseDown
-      OnMouseUp = KeyImage1MouseUp
+      OnMouseDown = KeyImageMouseDown
+      OnMouseUp = KeyImageMouseUp
     end
     object KeyImage2: TVirtualImage
       Left = 78
       Top = 366
       Width = 72
       Height = 72
-      HelpKeyword = 'Keypad'
       HelpContext = 320
       Margins.Left = 5
       Margins.Top = 5
@@ -4349,15 +4335,14 @@ object UIForm: TUIForm
       ImageHeight = 0
       ImageIndex = 11
       ImageName = 'Up2'
-      OnMouseDown = KeyImage2MouseDown
-      OnMouseUp = KeyImage2MouseUp
+      OnMouseDown = KeyImageMouseDown
+      OnMouseUp = KeyImageMouseUp
     end
     object KeyImage3: TVirtualImage
       Left = 150
       Top = 366
       Width = 72
       Height = 72
-      HelpKeyword = 'Keypad'
       HelpContext = 320
       Margins.Left = 5
       Margins.Top = 5
@@ -4368,15 +4353,14 @@ object UIForm: TUIForm
       ImageHeight = 0
       ImageIndex = 12
       ImageName = 'Up3'
-      OnMouseDown = KeyImage3MouseDown
-      OnMouseUp = KeyImage3MouseUp
+      OnMouseDown = KeyImageMouseDown
+      OnMouseUp = KeyImageMouseUp
     end
     object KeyImageColonX2: TVirtualImage
       Left = 222
       Top = 294
       Width = 72
       Height = 72
-      HelpKeyword = 'Keypad'
       HelpContext = 320
       Margins.Left = 5
       Margins.Top = 5
@@ -4387,15 +4371,14 @@ object UIForm: TUIForm
       ImageHeight = 0
       ImageIndex = 5
       ImageName = 'BaseColonX2'
-      OnMouseDown = KeyImageColonX2MouseDown
-      OnMouseUp = KeyImageColonX2MouseUp
+      OnMouseDown = KeyImageMouseDown
+      OnMouseUp = KeyImageMouseUp
     end
     object KeyImageColon: TVirtualImage
       Left = 150
       Top = 438
       Width = 72
       Height = 72
-      HelpKeyword = 'Keypad'
       HelpContext = 320
       Margins.Left = 5
       Margins.Top = 5
@@ -4406,15 +4389,14 @@ object UIForm: TUIForm
       ImageHeight = 0
       ImageIndex = 4
       ImageName = 'BaseColon'
-      OnMouseDown = KeyImageColonMouseDown
-      OnMouseUp = KeyImageColonMouseUp
+      OnMouseDown = KeyImageMouseDown
+      OnMouseUp = KeyImageMouseUp
     end
     object KeyImageA: TVirtualImage
       Left = 6
       Top = 150
       Width = 72
       Height = 72
-      HelpKeyword = 'Keypad'
       HelpContext = 320
       Margins.Left = 5
       Margins.Top = 5
@@ -4425,15 +4407,14 @@ object UIForm: TUIForm
       ImageHeight = 0
       ImageIndex = 1
       ImageName = 'BaseA'
-      OnMouseDown = KeyImageAMouseDown
-      OnMouseUp = KeyImageAMouseUp
+      OnMouseDown = KeyImageMouseDown
+      OnMouseUp = KeyImageMouseUp
     end
     object KeyImageB: TVirtualImage
       Left = 78
       Top = 150
       Width = 72
       Height = 72
-      HelpKeyword = 'Keypad'
       HelpContext = 320
       Margins.Left = 5
       Margins.Top = 5
@@ -4444,15 +4425,14 @@ object UIForm: TUIForm
       ImageHeight = 0
       ImageIndex = 2
       ImageName = 'BaseB'
-      OnMouseDown = KeyImageBMouseDown
-      OnMouseUp = KeyImageBMouseUp
+      OnMouseDown = KeyImageMouseDown
+      OnMouseUp = KeyImageMouseUp
     end
     object KeyImageC: TVirtualImage
       Left = 150
       Top = 150
       Width = 72
       Height = 72
-      HelpKeyword = 'Keypad'
       HelpContext = 320
       Margins.Left = 5
       Margins.Top = 5
@@ -4463,15 +4443,14 @@ object UIForm: TUIForm
       ImageHeight = 0
       ImageIndex = 3
       ImageName = 'BaseC'
-      OnMouseDown = KeyImageCMouseDown
-      OnMouseUp = KeyImageCMouseUp
+      OnMouseDown = KeyImageMouseDown
+      OnMouseUp = KeyImageMouseUp
     end
     object KeyImageSlash: TVirtualImage
       Left = 222
       Top = 222
       Width = 72
       Height = 72
-      HelpKeyword = 'Keypad'
       HelpContext = 320
       Margins.Left = 5
       Margins.Top = 5
@@ -4482,15 +4461,14 @@ object UIForm: TUIForm
       ImageHeight = 0
       ImageIndex = 31
       ImageName = 'UpSlash'
-      OnMouseDown = KeyImageSlashMouseDown
-      OnMouseUp = KeyImageSlashMouseUp
+      OnMouseDown = KeyImageMouseDown
+      OnMouseUp = KeyImageMouseUp
     end
     object KeyImageD: TVirtualImage
       Left = 6
       Top = 78
       Width = 72
       Height = 72
-      HelpKeyword = 'Keypad'
       HelpContext = 320
       Margins.Left = 5
       Margins.Top = 5
@@ -4501,15 +4479,14 @@ object UIForm: TUIForm
       ImageHeight = 0
       ImageIndex = 6
       ImageName = 'BaseD'
-      OnMouseDown = KeyImageDMouseDown
-      OnMouseUp = KeyImageDMouseUp
+      OnMouseDown = KeyImageMouseDown
+      OnMouseUp = KeyImageMouseUp
     end
     object KeyImageE: TVirtualImage
       Left = 78
       Top = 78
       Width = 72
       Height = 72
-      HelpKeyword = 'Keypad'
       HelpContext = 320
       Margins.Left = 5
       Margins.Top = 5
@@ -4520,15 +4497,14 @@ object UIForm: TUIForm
       ImageHeight = 0
       ImageIndex = 7
       ImageName = 'BaseE'
-      OnMouseDown = KeyImageEMouseDown
-      OnMouseUp = KeyImageEMouseUp
+      OnMouseDown = KeyImageMouseDown
+      OnMouseUp = KeyImageMouseUp
     end
     object KeyImageF: TVirtualImage
       Left = 150
       Top = 78
       Width = 72
       Height = 72
-      HelpKeyword = 'Keypad'
       HelpContext = 320
       Margins.Left = 5
       Margins.Top = 5
@@ -4539,15 +4515,14 @@ object UIForm: TUIForm
       ImageHeight = 0
       ImageIndex = 8
       ImageName = 'BaseF'
-      OnMouseDown = KeyImageFMouseDown
-      OnMouseUp = KeyImageFMouseUp
+      OnMouseDown = KeyImageMouseDown
+      OnMouseUp = KeyImageMouseUp
     end
     object KeyImageBack: TVirtualImage
       Left = 222
       Top = 150
       Width = 72
       Height = 72
-      HelpKeyword = 'Keypad'
       HelpContext = 320
       Margins.Left = 5
       Margins.Top = 5
@@ -4558,15 +4533,14 @@ object UIForm: TUIForm
       ImageHeight = 0
       ImageIndex = 21
       ImageName = 'UpBack'
-      OnMouseDown = KeyImageBackMouseDown
-      OnMouseUp = KeyImageBackMouseUp
+      OnMouseDown = KeyImageMouseDown
+      OnMouseUp = KeyImageMouseUp
     end
     object KeyImageClear: TVirtualImage
       Left = 222
       Top = 78
       Width = 72
       Height = 72
-      HelpKeyword = 'Keypad'
       HelpContext = 320
       Margins.Left = 5
       Margins.Top = 5
@@ -4577,29 +4551,28 @@ object UIForm: TUIForm
       ImageHeight = 0
       ImageIndex = 23
       ImageName = 'UpClr'
-      OnMouseDown = KeyImageClearMouseDown
-      OnMouseUp = KeyImageClearMouseUp
+      OnMouseDown = KeyImageMouseDown
+      OnMouseUp = KeyImageMouseUp
     end
-    object IPPanel: TPanel
-      Left = 6
-      Top = 6
-      Width = 288
-      Height = 72
-      HelpKeyword = 'Keypad'
-      HelpContext = 320
+    object IPLabel: TLabel
+      Left = 92
+      Top = 12
+      Width = 116
+      Height = 60
       Margins.Left = 5
       Margins.Top = 5
       Margins.Right = 5
       Margins.Bottom = 5
-      BevelOuter = bvNone
       Caption = 'IPv4'
+      Color = clWhite
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWindowText
       Font.Height = -48
       Font.Name = 'Source Code Pro Medium'
       Font.Style = []
+      ParentColor = False
       ParentFont = False
-      TabOrder = 0
+      Transparent = True
     end
   end
   object StatusPanel: TPanel
@@ -4607,7 +4580,6 @@ object UIForm: TUIForm
     Top = 528
     Width = 938
     Height = 32
-    HelpKeyword = 'StatusBar'
     HelpContext = 400
     Margins.Left = 5
     Margins.Top = 5
@@ -4627,7 +4599,6 @@ object UIForm: TUIForm
       Top = 0
       Width = 96
       Height = 32
-      HelpKeyword = 'StatusBar'
       HelpContext = 400
       Margins.Left = 5
       Margins.Top = 5
@@ -4644,7 +4615,6 @@ object UIForm: TUIForm
         Top = 1
         Width = 84
         Height = 30
-        HelpKeyword = 'StatusBar'
         HelpContext = 400
         Margins.Left = 5
         Margins.Top = 5
@@ -4661,7 +4631,6 @@ object UIForm: TUIForm
       Top = 0
       Width = 168
       Height = 32
-      HelpKeyword = 'StatusBar'
       HelpContext = 400
       Margins.Left = 5
       Margins.Top = 5
@@ -4678,7 +4647,6 @@ object UIForm: TUIForm
         Top = 1
         Width = 156
         Height = 30
-        HelpKeyword = 'StatusBar'
         HelpContext = 400
         Margins.Left = 5
         Margins.Top = 5
@@ -4695,7 +4663,6 @@ object UIForm: TUIForm
       Top = 0
       Width = 674
       Height = 32
-      HelpKeyword = 'StatusBar'
       HelpContext = 400
       Margins.Left = 5
       Margins.Top = 5
@@ -4712,7 +4679,6 @@ object UIForm: TUIForm
         Top = 1
         Width = 662
         Height = 30
-        HelpKeyword = 'StatusBar'
         HelpContext = 400
         Margins.Left = 5
         Margins.Top = 5
@@ -4729,8 +4695,7 @@ object UIForm: TUIForm
     Left = 321
     Top = 6
     Width = 605
-    Height = 273
-    HelpKeyword = 'IPv6ValuesandLabels'
+    Height = 271
     HelpContext = 332
     Margins.Left = 5
     Margins.Top = 5
@@ -4745,7 +4710,6 @@ object UIForm: TUIForm
       Top = 70
       Width = 43
       Height = 25
-      HelpKeyword = 'IPv6ValuesandLabels'
       HelpContext = 332
       Margins.Left = 5
       Margins.Top = 5
@@ -4764,7 +4728,6 @@ object UIForm: TUIForm
       Top = 140
       Width = 67
       Height = 25
-      HelpKeyword = 'IPv6ValuesandLabels'
       HelpContext = 332
       Margins.Left = 5
       Margins.Top = 5
@@ -4783,7 +4746,6 @@ object UIForm: TUIForm
       Top = 105
       Width = 102
       Height = 25
-      HelpKeyword = 'IPv6ValuesandLabels'
       HelpContext = 332
       Margins.Left = 5
       Margins.Top = 5
@@ -4802,7 +4764,6 @@ object UIForm: TUIForm
       Top = 0
       Width = 65
       Height = 25
-      HelpKeyword = 'IPv6ValuesandLabels'
       HelpContext = 332
       Margins.Left = 5
       Margins.Top = 5
@@ -4821,7 +4782,6 @@ object UIForm: TUIForm
       Top = 35
       Width = 119
       Height = 25
-      HelpKeyword = 'IPv6ValuesandLabels'
       HelpContext = 332
       Margins.Left = 5
       Margins.Top = 5
@@ -4840,7 +4800,6 @@ object UIForm: TUIForm
       Top = 175
       Width = 103
       Height = 25
-      HelpKeyword = 'IPv6ValuesandLabels'
       HelpContext = 332
       Margins.Left = 5
       Margins.Top = 5
@@ -4859,7 +4818,6 @@ object UIForm: TUIForm
       Top = 210
       Width = 101
       Height = 25
-      HelpKeyword = 'IPv6ValuesandLabels'
       HelpContext = 332
       Margins.Left = 5
       Margins.Top = 5
@@ -4878,7 +4836,6 @@ object UIForm: TUIForm
       Top = 245
       Width = 111
       Height = 25
-      HelpKeyword = 'IPv6ValuesandLabels'
       HelpContext = 332
       Margins.Left = 5
       Margins.Top = 5
@@ -4896,21 +4853,23 @@ object UIForm: TUIForm
       Left = 0
       Top = 70
       Width = 480
-      Height = 28
-      HelpKeyword = 'IPv6ValuesandLabels'
+      Height = 26
       HelpContext = 332
       Margins.Left = 5
       Margins.Top = 5
       Margins.Right = 5
       Margins.Bottom = 5
+      BevelEdges = []
       BevelInner = bvNone
       BevelOuter = bvNone
+      Ctl3D = False
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWindowText
       Font.Height = -18
       Font.Name = 'Courier New'
       Font.Style = []
       MaxLength = 43
+      ParentCtl3D = False
       ParentFont = False
       TabOrder = 2
       OnExit = IPv6EditExit
@@ -4919,21 +4878,23 @@ object UIForm: TUIForm
       Left = 0
       Top = 140
       Width = 480
-      Height = 28
-      HelpKeyword = 'IPv6ValuesandLabels'
+      Height = 26
       HelpContext = 332
       Margins.Left = 5
       Margins.Top = 5
       Margins.Right = 5
       Margins.Bottom = 5
+      BevelEdges = []
       BevelInner = bvNone
       BevelOuter = bvNone
+      Ctl3D = False
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWindowText
       Font.Height = -18
       Font.Name = 'Courier New'
       Font.Style = []
       MaxLength = 43
+      ParentCtl3D = False
       ParentFont = False
       TabOrder = 4
       OnExit = IPv6EditExit
@@ -4942,21 +4903,23 @@ object UIForm: TUIForm
       Left = 0
       Top = 105
       Width = 480
-      Height = 28
-      HelpKeyword = 'IPv6ValuesandLabels'
+      Height = 26
       HelpContext = 332
       Margins.Left = 5
       Margins.Top = 5
       Margins.Right = 5
       Margins.Bottom = 5
+      BevelEdges = []
       BevelInner = bvNone
       BevelOuter = bvNone
+      Ctl3D = False
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWindowText
       Font.Height = -18
       Font.Name = 'Courier New'
       Font.Style = []
       MaxLength = 43
+      ParentCtl3D = False
       ParentFont = False
       TabOrder = 3
       OnExit = IPv6EditExit
@@ -4965,21 +4928,23 @@ object UIForm: TUIForm
       Left = 0
       Top = 0
       Width = 480
-      Height = 28
-      HelpKeyword = 'IPv6ValuesandLabels'
+      Height = 26
       HelpContext = 332
       Margins.Left = 5
       Margins.Top = 5
       Margins.Right = 5
       Margins.Bottom = 5
+      BevelEdges = []
       BevelInner = bvNone
       BevelOuter = bvNone
+      Ctl3D = False
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWindowText
       Font.Height = -18
       Font.Name = 'Courier New'
       Font.Style = []
       MaxLength = 43
+      ParentCtl3D = False
       ParentFont = False
       TabOrder = 0
       OnExit = IPv6EditExit
@@ -4988,21 +4953,23 @@ object UIForm: TUIForm
       Left = 0
       Top = 35
       Width = 480
-      Height = 28
-      HelpKeyword = 'IPv6ValuesandLabels'
+      Height = 26
       HelpContext = 332
       Margins.Left = 5
       Margins.Top = 5
       Margins.Right = 5
       Margins.Bottom = 5
+      BevelEdges = []
       BevelInner = bvNone
       BevelOuter = bvNone
+      Ctl3D = False
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWindowText
       Font.Height = -18
       Font.Name = 'Courier New'
       Font.Style = []
       MaxLength = 43
+      ParentCtl3D = False
       ParentFont = False
       TabOrder = 1
       OnExit = IPv6EditExit
@@ -5011,22 +4978,24 @@ object UIForm: TUIForm
       Left = 0
       Top = 175
       Width = 480
-      Height = 28
-      HelpKeyword = 'IPv6ValuesandLabels'
+      Height = 26
       HelpContext = 332
       Margins.Left = 5
       Margins.Top = 5
       Margins.Right = 5
       Margins.Bottom = 5
+      BevelEdges = []
       BevelInner = bvNone
       BevelOuter = bvNone
       Color = clInfoBk
+      Ctl3D = False
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWindowText
       Font.Height = -18
       Font.Name = 'Courier New'
       Font.Style = []
       MaxLength = 43
+      ParentCtl3D = False
       ParentFont = False
       ReadOnly = True
       TabOrder = 5
@@ -5035,22 +5004,24 @@ object UIForm: TUIForm
       Left = 0
       Top = 210
       Width = 480
-      Height = 28
-      HelpKeyword = 'IPv6ValuesandLabels'
+      Height = 26
       HelpContext = 332
       Margins.Left = 5
       Margins.Top = 5
       Margins.Right = 5
       Margins.Bottom = 5
+      BevelEdges = []
       BevelInner = bvNone
       BevelOuter = bvNone
       Color = clInfoBk
+      Ctl3D = False
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWindowText
       Font.Height = -18
       Font.Name = 'Courier New'
       Font.Style = []
       MaxLength = 43
+      ParentCtl3D = False
       ParentFont = False
       ReadOnly = True
       TabOrder = 6
@@ -5059,22 +5030,24 @@ object UIForm: TUIForm
       Left = 0
       Top = 245
       Width = 480
-      Height = 28
-      HelpKeyword = 'IPv6ValuesandLabels'
+      Height = 26
       HelpContext = 332
       Margins.Left = 5
       Margins.Top = 5
       Margins.Right = 5
       Margins.Bottom = 5
+      BevelEdges = []
       BevelInner = bvNone
       BevelOuter = bvNone
       Color = clInfoBk
+      Ctl3D = False
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWindowText
       Font.Height = -18
       Font.Name = 'Courier New'
       Font.Style = []
       MaxLength = 43
+      ParentCtl3D = False
       ParentFont = False
       ReadOnly = True
       TabOrder = 7
@@ -5084,8 +5057,7 @@ object UIForm: TUIForm
     Left = 321
     Top = 6
     Width = 362
-    Height = 378
-    HelpKeyword = 'IPv4ValuesandLabels'
+    Height = 376
     HelpContext = 331
     Margins.Left = 5
     Margins.Top = 5
@@ -5099,7 +5071,6 @@ object UIForm: TUIForm
       Top = 35
       Width = 114
       Height = 25
-      HelpKeyword = 'IPv4ValuesandLabels'
       HelpContext = 331
       Margins.Left = 5
       Margins.Top = 5
@@ -5118,7 +5089,6 @@ object UIForm: TUIForm
       Top = 0
       Width = 65
       Height = 25
-      HelpKeyword = 'IPv4ValuesandLabels'
       HelpContext = 331
       Margins.Left = 5
       Margins.Top = 5
@@ -5137,7 +5107,6 @@ object UIForm: TUIForm
       Top = 175
       Width = 102
       Height = 25
-      HelpKeyword = 'IPv4ValuesandLabels'
       HelpContext = 331
       Margins.Left = 5
       Margins.Top = 5
@@ -5156,7 +5125,6 @@ object UIForm: TUIForm
       Top = 210
       Width = 67
       Height = 25
-      HelpKeyword = 'IPv4ValuesandLabels'
       HelpContext = 331
       Margins.Left = 5
       Margins.Top = 5
@@ -5175,7 +5143,6 @@ object UIForm: TUIForm
       Top = 140
       Width = 43
       Height = 25
-      HelpKeyword = 'IPv4ValuesandLabels'
       HelpContext = 331
       Margins.Left = 5
       Margins.Top = 5
@@ -5194,7 +5161,6 @@ object UIForm: TUIForm
       Top = 350
       Width = 111
       Height = 25
-      HelpKeyword = 'IPv4ValuesandLabels'
       HelpContext = 331
       Margins.Left = 5
       Margins.Top = 5
@@ -5213,7 +5179,6 @@ object UIForm: TUIForm
       Top = 280
       Width = 101
       Height = 25
-      HelpKeyword = 'IPv4ValuesandLabels'
       HelpContext = 331
       Margins.Left = 5
       Margins.Top = 5
@@ -5232,7 +5197,6 @@ object UIForm: TUIForm
       Top = 245
       Width = 103
       Height = 25
-      HelpKeyword = 'IPv4ValuesandLabels'
       HelpContext = 331
       Margins.Left = 5
       Margins.Top = 5
@@ -5251,7 +5215,6 @@ object UIForm: TUIForm
       Top = 105
       Width = 119
       Height = 25
-      HelpKeyword = 'IPv4ValuesandLabels'
       HelpContext = 331
       Margins.Left = 5
       Margins.Top = 5
@@ -5270,7 +5233,6 @@ object UIForm: TUIForm
       Top = 70
       Width = 85
       Height = 25
-      HelpKeyword = 'IPv4ValuesandLabels'
       HelpContext = 331
       Margins.Left = 5
       Margins.Top = 5
@@ -5289,7 +5251,6 @@ object UIForm: TUIForm
       Top = 315
       Width = 148
       Height = 25
-      HelpKeyword = 'IPv4ValuesandLabels'
       HelpContext = 331
       Margins.Left = 5
       Margins.Top = 5
@@ -5307,21 +5268,23 @@ object UIForm: TUIForm
       Left = 0
       Top = 35
       Width = 204
-      Height = 28
-      HelpKeyword = 'IPv4ValuesandLabels'
+      Height = 26
       HelpContext = 331
       Margins.Left = 5
       Margins.Top = 5
       Margins.Right = 5
       Margins.Bottom = 5
+      BevelEdges = []
       BevelInner = bvNone
       BevelOuter = bvNone
+      Ctl3D = False
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWindowText
       Font.Height = -18
       Font.Name = 'Courier New'
       Font.Style = []
       MaxLength = 18
+      ParentCtl3D = False
       ParentFont = False
       TabOrder = 1
       OnExit = IPv4EditExit
@@ -5330,21 +5293,23 @@ object UIForm: TUIForm
       Left = 0
       Top = 0
       Width = 204
-      Height = 28
-      HelpKeyword = 'IPv4ValuesandLabels'
+      Height = 26
       HelpContext = 331
       Margins.Left = 5
       Margins.Top = 5
       Margins.Right = 5
       Margins.Bottom = 5
+      BevelEdges = []
       BevelInner = bvNone
       BevelOuter = bvNone
+      Ctl3D = False
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWindowText
       Font.Height = -18
       Font.Name = 'Courier New'
       Font.Style = []
       MaxLength = 18
+      ParentCtl3D = False
       ParentFont = False
       TabOrder = 0
       OnExit = IPv4EditExit
@@ -5353,21 +5318,23 @@ object UIForm: TUIForm
       Left = 0
       Top = 175
       Width = 204
-      Height = 28
-      HelpKeyword = 'IPv4ValuesandLabels'
+      Height = 26
       HelpContext = 331
       Margins.Left = 5
       Margins.Top = 5
       Margins.Right = 5
       Margins.Bottom = 5
+      BevelEdges = []
       BevelInner = bvNone
       BevelOuter = bvNone
+      Ctl3D = False
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWindowText
       Font.Height = -18
       Font.Name = 'Courier New'
       Font.Style = []
       MaxLength = 18
+      ParentCtl3D = False
       ParentFont = False
       TabOrder = 5
       OnExit = IPv4EditExit
@@ -5376,21 +5343,23 @@ object UIForm: TUIForm
       Left = 0
       Top = 210
       Width = 204
-      Height = 28
-      HelpKeyword = 'IPv4ValuesandLabels'
+      Height = 26
       HelpContext = 331
       Margins.Left = 5
       Margins.Top = 5
       Margins.Right = 5
       Margins.Bottom = 5
+      BevelEdges = []
       BevelInner = bvNone
       BevelOuter = bvNone
+      Ctl3D = False
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWindowText
       Font.Height = -18
       Font.Name = 'Courier New'
       Font.Style = []
       MaxLength = 18
+      ParentCtl3D = False
       ParentFont = False
       TabOrder = 6
       OnExit = IPv4EditExit
@@ -5399,21 +5368,23 @@ object UIForm: TUIForm
       Left = 0
       Top = 140
       Width = 204
-      Height = 28
-      HelpKeyword = 'IPv4ValuesandLabels'
+      Height = 26
       HelpContext = 331
       Margins.Left = 5
       Margins.Top = 5
       Margins.Right = 5
       Margins.Bottom = 5
+      BevelEdges = []
       BevelInner = bvNone
       BevelOuter = bvNone
+      Ctl3D = False
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWindowText
       Font.Height = -18
       Font.Name = 'Courier New'
       Font.Style = []
       MaxLength = 18
+      ParentCtl3D = False
       ParentFont = False
       TabOrder = 4
       OnExit = IPv4EditExit
@@ -5422,22 +5393,24 @@ object UIForm: TUIForm
       Left = 0
       Top = 315
       Width = 204
-      Height = 28
-      HelpKeyword = 'IPv4ValuesandLabels'
+      Height = 26
       HelpContext = 331
       Margins.Left = 5
       Margins.Top = 5
       Margins.Right = 5
       Margins.Bottom = 5
+      BevelEdges = []
       BevelInner = bvNone
       BevelOuter = bvNone
       Color = clInfoBk
+      Ctl3D = False
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWindowText
       Font.Height = -18
       Font.Name = 'Courier New'
       Font.Style = []
       MaxLength = 18
+      ParentCtl3D = False
       ParentFont = False
       ReadOnly = True
       TabOrder = 9
@@ -5446,22 +5419,24 @@ object UIForm: TUIForm
       Left = 0
       Top = 280
       Width = 204
-      Height = 28
-      HelpKeyword = 'IPv4ValuesandLabels'
+      Height = 26
       HelpContext = 331
       Margins.Left = 5
       Margins.Top = 5
       Margins.Right = 5
       Margins.Bottom = 5
+      BevelEdges = []
       BevelInner = bvNone
       BevelOuter = bvNone
       Color = clInfoBk
+      Ctl3D = False
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWindowText
       Font.Height = -18
       Font.Name = 'Courier New'
       Font.Style = []
       MaxLength = 18
+      ParentCtl3D = False
       ParentFont = False
       ReadOnly = True
       TabOrder = 8
@@ -5470,22 +5445,24 @@ object UIForm: TUIForm
       Left = 0
       Top = 245
       Width = 204
-      Height = 28
-      HelpKeyword = 'IPv4ValuesandLabels'
+      Height = 26
       HelpContext = 331
       Margins.Left = 5
       Margins.Top = 5
       Margins.Right = 5
       Margins.Bottom = 5
+      BevelEdges = []
       BevelInner = bvNone
       BevelOuter = bvNone
       Color = clInfoBk
+      Ctl3D = False
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWindowText
       Font.Height = -18
       Font.Name = 'Courier New'
       Font.Style = []
       MaxLength = 18
+      ParentCtl3D = False
       ParentFont = False
       ReadOnly = True
       TabOrder = 7
@@ -5494,21 +5471,23 @@ object UIForm: TUIForm
       Left = 0
       Top = 105
       Width = 204
-      Height = 28
-      HelpKeyword = 'IPv4ValuesandLabels'
+      Height = 26
       HelpContext = 331
       Margins.Left = 5
       Margins.Top = 5
       Margins.Right = 5
       Margins.Bottom = 5
+      BevelEdges = []
       BevelInner = bvNone
       BevelOuter = bvNone
+      Ctl3D = False
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWindowText
       Font.Height = -18
       Font.Name = 'Courier New'
       Font.Style = []
       MaxLength = 18
+      ParentCtl3D = False
       ParentFont = False
       TabOrder = 3
       OnExit = IPv4EditExit
@@ -5517,21 +5496,23 @@ object UIForm: TUIForm
       Left = 0
       Top = 70
       Width = 204
-      Height = 28
-      HelpKeyword = 'IPv4ValuesandLabels'
+      Height = 26
       HelpContext = 331
       Margins.Left = 5
       Margins.Top = 5
       Margins.Right = 5
       Margins.Bottom = 5
+      BevelEdges = []
       BevelInner = bvNone
       BevelOuter = bvNone
+      Ctl3D = False
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWindowText
       Font.Height = -18
       Font.Name = 'Courier New'
       Font.Style = []
       MaxLength = 18
+      ParentCtl3D = False
       ParentFont = False
       TabOrder = 2
       OnExit = IPv4EditExit
@@ -5540,22 +5521,24 @@ object UIForm: TUIForm
       Left = 0
       Top = 350
       Width = 204
-      Height = 28
-      HelpKeyword = 'IPv4ValuesandLabels'
+      Height = 26
       HelpContext = 331
       Margins.Left = 5
       Margins.Top = 5
       Margins.Right = 5
       Margins.Bottom = 5
+      BevelEdges = []
       BevelInner = bvNone
       BevelOuter = bvNone
       Color = clInfoBk
+      Ctl3D = False
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWindowText
       Font.Height = -18
       Font.Name = 'Courier New'
       Font.Style = []
       MaxLength = 18
+      ParentCtl3D = False
       ParentFont = False
       ReadOnly = True
       TabOrder = 10
@@ -10082,14 +10065,14 @@ object UIForm: TUIForm
         GroupIndex = 1
         HelpContext = 312
         RadioItem = True
-        OnClick = IPv4MenuItemClick
+        OnClick = IPMenuItemClick
       end
       object IPv6MenuItem: TMenuItem
         Caption = 'IPv6'
         GroupIndex = 1
         HelpContext = 312
         RadioItem = True
-        OnClick = IPv6MenuItemClick
+        OnClick = IPMenuItemClick
       end
     end
     object HelpMenu: TMenuItem

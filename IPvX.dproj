@@ -5,7 +5,7 @@
         <FrameworkType>VCL</FrameworkType>
         <Base>True</Base>
         <Config Condition="'$(Config)'==''">Release</Config>
-        <Platform Condition="'$(Platform)'==''">Win32</Platform>
+        <Platform Condition="'$(Platform)'==''">Win64</Platform>
         <TargetedPlatforms>3</TargetedPlatforms>
         <AppType>Application</AppType>
         <MainSource>IPvX.dpr</MainSource>
@@ -121,9 +121,9 @@
         <VerInfo_MinorVer>10</VerInfo_MinorVer>
         <VerInfo_Release>1</VerInfo_Release>
         <VerInfo_Locale>1033</VerInfo_Locale>
-        <VerInfo_Keys>CompanyName=;FileDescription=$(MSBuildProjectName);FileVersion=22.10.1.1;InternalName=IPvX;LegalCopyright=© 2010 - 2022 by Ron Maupin;LegalTrademarks=;OriginalFilename=IPvX.exe;ProgramID=com.embarcadero.$(MSBuildProjectName);ProductName=$(MSBuildProjectName);ProductVersion=22.10.1.1;Comments=Created by Ron Maupin</VerInfo_Keys>
+        <VerInfo_Keys>CompanyName=;FileDescription=$(MSBuildProjectName);FileVersion=22.10.1.2;InternalName=IPvX;LegalCopyright=© 2010 - 2022 by Ron Maupin;LegalTrademarks=;OriginalFilename=IPvX.exe;ProgramID=com.embarcadero.$(MSBuildProjectName);ProductName=$(MSBuildProjectName);ProductVersion=22.10.1.2;Comments=Created by Ron Maupin</VerInfo_Keys>
         <Icon_MainIcon>IPvX_Icon.ico</Icon_MainIcon>
-        <VerInfo_Build>1</VerInfo_Build>
+        <VerInfo_Build>2</VerInfo_Build>
     </PropertyGroup>
     <PropertyGroup Condition="'$(Cfg_2_Win64)'!=''">
         <AppDPIAwarenessMode>PerMonitorV2</AppDPIAwarenessMode>
@@ -133,8 +133,9 @@
         <VerInfo_MajorVer>22</VerInfo_MajorVer>
         <VerInfo_MinorVer>10</VerInfo_MinorVer>
         <VerInfo_Release>1</VerInfo_Release>
-        <VerInfo_Keys>CompanyName=;FileDescription=$(MSBuildProjectName);FileVersion=22.10.1.1;InternalName=IPvX;LegalCopyright=Copyright © 2010 - 2022 by Ron Maupin;LegalTrademarks=;OriginalFilename=IPvX.exe;ProgramID=com.embarcadero.$(MSBuildProjectName);ProductName=$(MSBuildProjectName);ProductVersion=22.10.1.1;Comments=Created by Ron Maupin</VerInfo_Keys>
-        <VerInfo_Build>1</VerInfo_Build>
+        <VerInfo_Keys>CompanyName=;FileDescription=$(MSBuildProjectName);FileVersion=22.10.1.2;InternalName=IPvX;LegalCopyright=Copyright © 2010 - 2022 by Ron Maupin;LegalTrademarks=;OriginalFilename=IPvX.exe;ProgramID=com.embarcadero.$(MSBuildProjectName);ProductName=$(MSBuildProjectName);ProductVersion=22.10.1.2;Comments=Created by Ron Maupin</VerInfo_Keys>
+        <VerInfo_Build>2</VerInfo_Build>
+        <AppEnableRuntimeThemes>false</AppEnableRuntimeThemes>
     </PropertyGroup>
     <ItemGroup>
         <DelphiCompile Include="$(MainSource)">
@@ -1041,6 +1042,7 @@
                 <Platform value="Win32">True</Platform>
                 <Platform value="Win64">True</Platform>
             </Platforms>
+            <ModelSupport>False</ModelSupport>
         </BorlandProject>
         <ProjectFileVersion>12</ProjectFileVersion>
     </ProjectExtensions>
