@@ -39,19 +39,19 @@
 //*                                                                            *
 //*             (1) Add About to the uses clause of the VCL form unit of the   *
 //*                 hosting application.                                       *
-//*             (2) Assign the AboutForm.AboutImage.ImageCollection to an      *
+//*             (2) Create an AboutForm by vaiable assignment,                 *
+//*                   e.g. FAbout := TAboutForm.Create(self);                  *
+//*                 in the FormCreate event of the hosting application.        *
+//*             (3) Assign the AboutForm.AboutImage.ImageCollection to an      *
 //*                 ImageCollection in the hosting application.                *
-//*             (3) Assign the AboutForm.AboutImage.ImageIndex or the          *
+//*             (4) Assign the AboutForm.AboutImage.ImageIndex or the          *
 //*                 AboutForm.AboutImage.ImageName to an image in the          *
 //*                 ImageCollection.                                           *
-//*             (4) Call the AboutForm.ShowModal function from the hosting     *
+//*             (5) Call the AboutForm.ShowModal function from the hosting     *
 //*                 application to see the form.                               *
-//*                                                                            *
-//*             The form handles its own creation and frees itself, so it      *
-//*             only needs to be included in the uses clause of the hosting    *
-//*             application to be created, and the form will free itself when  *
-//*             the hosting application is closed. The form only hides when it *
-//*             is closed by clicking the "X" or the "OK" button.              *                            *
+//*             (6) Free the AboutForm varible,                                *
+//*                   e.g. FAbout.Free;                                        *
+//*                 in the FormDestroy event of the hosting application.       *
 //*                                                                            *
 //* Author:     Ron Maupin                                                     *
 //*                                                                            *
