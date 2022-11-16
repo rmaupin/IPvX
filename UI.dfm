@@ -8,16 +8,16 @@ object UIForm: TUIForm
   Margins.Bottom = 0
   BorderStyle = bsToolWindow
   Caption = 'IPvX'
-  ClientHeight = 560
-  ClientWidth = 938
+  ClientHeight = 372
+  ClientWidth = 624
   Color = clBtnFace
-  Constraints.MaxHeight = 646
-  Constraints.MaxWidth = 960
-  Constraints.MinHeight = 646
-  Constraints.MinWidth = 717
+  Constraints.MaxHeight = 431
+  Constraints.MaxWidth = 640
+  Constraints.MinHeight = 431
+  Constraints.MinWidth = 478
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
-  Font.Height = -18
+  Font.Height = -12
   Font.Name = 'Segoe UI'
   Font.Style = []
   HelpFile = 'IPvX.chm'
@@ -4109,31 +4109,22 @@ object UIForm: TUIForm
   OnKeyPress = FormKeyPress
   OnKeyUp = FormKeyUp
   OnShortCut = FormShortCut
-  PixelsPerInch = 144
-  TextHeight = 25
+  TextHeight = 15
   object KeyPanel: TPanel
-    Left = 6
+    Left = 4
     Top = 0
-    Width = 300
-    Height = 516
+    Width = 200
+    Height = 344
     HelpContext = 320
-    Margins.Left = 5
-    Margins.Top = 5
-    Margins.Right = 5
-    Margins.Bottom = 5
     BevelOuter = bvNone
     ParentColor = True
     TabOrder = 2
     object KeyBaseImage: TVirtualImage
       Left = 0
       Top = 0
-      Width = 300
-      Height = 516
+      Width = 200
+      Height = 344
       HelpContext = 320
-      Margins.Left = 5
-      Margins.Top = 5
-      Margins.Right = 5
-      Margins.Bottom = 5
       ImageCollection = KeypadImageCollection
       ImageWidth = 0
       ImageHeight = 0
@@ -4141,15 +4132,11 @@ object UIForm: TUIForm
       ImageName = 'Base'
     end
     object KeyImage0: TVirtualImage
-      Left = 6
-      Top = 438
-      Width = 72
-      Height = 72
+      Left = 4
+      Top = 292
+      Width = 48
+      Height = 48
       HelpContext = 320
-      Margins.Left = 5
-      Margins.Top = 5
-      Margins.Right = 5
-      Margins.Bottom = 5
       ImageCollection = KeypadImageCollection
       ImageWidth = 0
       ImageHeight = 0
@@ -4159,15 +4146,11 @@ object UIForm: TUIForm
       OnMouseUp = KeyImageMouseUp
     end
     object KeyImageDot: TVirtualImage
-      Left = 78
-      Top = 438
-      Width = 72
-      Height = 72
+      Left = 52
+      Top = 292
+      Width = 48
+      Height = 48
       HelpContext = 320
-      Margins.Left = 5
-      Margins.Top = 5
-      Margins.Right = 5
-      Margins.Bottom = 5
       ImageCollection = KeypadImageCollection
       ImageWidth = 0
       ImageHeight = 0
@@ -4177,15 +4160,11 @@ object UIForm: TUIForm
       OnMouseUp = KeyImageMouseUp
     end
     object KeyImageEnter: TVirtualImage
-      Left = 222
-      Top = 366
-      Width = 72
-      Height = 144
+      Left = 148
+      Top = 244
+      Width = 48
+      Height = 96
       HelpContext = 320
-      Margins.Left = 5
-      Margins.Top = 5
-      Margins.Right = 5
-      Margins.Bottom = 5
       ImageCollection = KeypadImageCollection
       ImageWidth = 0
       ImageHeight = 0
@@ -4195,15 +4174,11 @@ object UIForm: TUIForm
       OnMouseUp = KeyImageMouseUp
     end
     object KeyImage7: TVirtualImage
-      Left = 6
-      Top = 222
-      Width = 72
-      Height = 72
+      Left = 4
+      Top = 148
+      Width = 48
+      Height = 48
       HelpContext = 320
-      Margins.Left = 5
-      Margins.Top = 5
-      Margins.Right = 5
-      Margins.Bottom = 5
       ImageCollection = KeypadImageCollection
       ImageWidth = 0
       ImageHeight = 0
@@ -4213,15 +4188,11 @@ object UIForm: TUIForm
       OnMouseUp = KeyImageMouseUp
     end
     object KeyImage8: TVirtualImage
-      Left = 78
-      Top = 222
-      Width = 72
-      Height = 72
+      Left = 52
+      Top = 148
+      Width = 48
+      Height = 48
       HelpContext = 320
-      Margins.Left = 5
-      Margins.Top = 5
-      Margins.Right = 5
-      Margins.Bottom = 5
       ImageCollection = KeypadImageCollection
       ImageWidth = 0
       ImageHeight = 0
@@ -4231,15 +4202,11 @@ object UIForm: TUIForm
       OnMouseUp = KeyImageMouseUp
     end
     object KeyImage9: TVirtualImage
-      Left = 150
-      Top = 222
-      Width = 72
-      Height = 72
+      Left = 100
+      Top = 148
+      Width = 48
+      Height = 48
       HelpContext = 320
-      Margins.Left = 5
-      Margins.Top = 5
-      Margins.Right = 5
-      Margins.Bottom = 5
       ImageCollection = KeypadImageCollection
       ImageWidth = 0
       ImageHeight = 0
@@ -4249,15 +4216,11 @@ object UIForm: TUIForm
       OnMouseUp = KeyImageMouseUp
     end
     object KeyImage4: TVirtualImage
-      Left = 6
-      Top = 294
-      Width = 72
-      Height = 72
+      Left = 4
+      Top = 196
+      Width = 48
+      Height = 48
       HelpContext = 320
-      Margins.Left = 5
-      Margins.Top = 5
-      Margins.Right = 5
-      Margins.Bottom = 5
       ImageCollection = KeypadImageCollection
       ImageWidth = 0
       ImageHeight = 0
@@ -4267,15 +4230,11 @@ object UIForm: TUIForm
       OnMouseUp = KeyImageMouseUp
     end
     object KeyImage5: TVirtualImage
-      Left = 78
-      Top = 294
-      Width = 72
-      Height = 72
+      Left = 52
+      Top = 196
+      Width = 48
+      Height = 48
       HelpContext = 320
-      Margins.Left = 5
-      Margins.Top = 5
-      Margins.Right = 5
-      Margins.Bottom = 5
       ImageCollection = KeypadImageCollection
       ImageWidth = 0
       ImageHeight = 0
@@ -4285,15 +4244,11 @@ object UIForm: TUIForm
       OnMouseUp = KeyImageMouseUp
     end
     object KeyImage6: TVirtualImage
-      Left = 150
-      Top = 294
-      Width = 72
-      Height = 72
+      Left = 100
+      Top = 196
+      Width = 48
+      Height = 48
       HelpContext = 320
-      Margins.Left = 5
-      Margins.Top = 5
-      Margins.Right = 5
-      Margins.Bottom = 5
       ImageCollection = KeypadImageCollection
       ImageWidth = 0
       ImageHeight = 0
@@ -4303,15 +4258,11 @@ object UIForm: TUIForm
       OnMouseUp = KeyImageMouseUp
     end
     object KeyImage1: TVirtualImage
-      Left = 6
-      Top = 366
-      Width = 72
-      Height = 72
+      Left = 4
+      Top = 244
+      Width = 48
+      Height = 48
       HelpContext = 320
-      Margins.Left = 5
-      Margins.Top = 5
-      Margins.Right = 5
-      Margins.Bottom = 5
       ImageCollection = KeypadImageCollection
       ImageWidth = 0
       ImageHeight = 0
@@ -4321,15 +4272,11 @@ object UIForm: TUIForm
       OnMouseUp = KeyImageMouseUp
     end
     object KeyImage2: TVirtualImage
-      Left = 78
-      Top = 366
-      Width = 72
-      Height = 72
+      Left = 52
+      Top = 244
+      Width = 48
+      Height = 48
       HelpContext = 320
-      Margins.Left = 5
-      Margins.Top = 5
-      Margins.Right = 5
-      Margins.Bottom = 5
       ImageCollection = KeypadImageCollection
       ImageWidth = 0
       ImageHeight = 0
@@ -4339,15 +4286,11 @@ object UIForm: TUIForm
       OnMouseUp = KeyImageMouseUp
     end
     object KeyImage3: TVirtualImage
-      Left = 150
-      Top = 366
-      Width = 72
-      Height = 72
+      Left = 100
+      Top = 244
+      Width = 48
+      Height = 48
       HelpContext = 320
-      Margins.Left = 5
-      Margins.Top = 5
-      Margins.Right = 5
-      Margins.Bottom = 5
       ImageCollection = KeypadImageCollection
       ImageWidth = 0
       ImageHeight = 0
@@ -4357,15 +4300,11 @@ object UIForm: TUIForm
       OnMouseUp = KeyImageMouseUp
     end
     object KeyImageColonX2: TVirtualImage
-      Left = 222
-      Top = 294
-      Width = 72
-      Height = 72
+      Left = 148
+      Top = 196
+      Width = 48
+      Height = 48
       HelpContext = 320
-      Margins.Left = 5
-      Margins.Top = 5
-      Margins.Right = 5
-      Margins.Bottom = 5
       ImageCollection = KeypadImageCollection
       ImageWidth = 0
       ImageHeight = 0
@@ -4375,15 +4314,11 @@ object UIForm: TUIForm
       OnMouseUp = KeyImageMouseUp
     end
     object KeyImageColon: TVirtualImage
-      Left = 150
-      Top = 438
-      Width = 72
-      Height = 72
+      Left = 100
+      Top = 292
+      Width = 48
+      Height = 48
       HelpContext = 320
-      Margins.Left = 5
-      Margins.Top = 5
-      Margins.Right = 5
-      Margins.Bottom = 5
       ImageCollection = KeypadImageCollection
       ImageWidth = 0
       ImageHeight = 0
@@ -4393,15 +4328,11 @@ object UIForm: TUIForm
       OnMouseUp = KeyImageMouseUp
     end
     object KeyImageA: TVirtualImage
-      Left = 6
-      Top = 150
-      Width = 72
-      Height = 72
+      Left = 4
+      Top = 100
+      Width = 48
+      Height = 48
       HelpContext = 320
-      Margins.Left = 5
-      Margins.Top = 5
-      Margins.Right = 5
-      Margins.Bottom = 5
       ImageCollection = KeypadImageCollection
       ImageWidth = 0
       ImageHeight = 0
@@ -4411,15 +4342,11 @@ object UIForm: TUIForm
       OnMouseUp = KeyImageMouseUp
     end
     object KeyImageB: TVirtualImage
-      Left = 78
-      Top = 150
-      Width = 72
-      Height = 72
+      Left = 52
+      Top = 100
+      Width = 48
+      Height = 48
       HelpContext = 320
-      Margins.Left = 5
-      Margins.Top = 5
-      Margins.Right = 5
-      Margins.Bottom = 5
       ImageCollection = KeypadImageCollection
       ImageWidth = 0
       ImageHeight = 0
@@ -4429,15 +4356,11 @@ object UIForm: TUIForm
       OnMouseUp = KeyImageMouseUp
     end
     object KeyImageC: TVirtualImage
-      Left = 150
-      Top = 150
-      Width = 72
-      Height = 72
+      Left = 100
+      Top = 100
+      Width = 48
+      Height = 48
       HelpContext = 320
-      Margins.Left = 5
-      Margins.Top = 5
-      Margins.Right = 5
-      Margins.Bottom = 5
       ImageCollection = KeypadImageCollection
       ImageWidth = 0
       ImageHeight = 0
@@ -4447,15 +4370,11 @@ object UIForm: TUIForm
       OnMouseUp = KeyImageMouseUp
     end
     object KeyImageSlash: TVirtualImage
-      Left = 222
-      Top = 222
-      Width = 72
-      Height = 72
+      Left = 148
+      Top = 148
+      Width = 48
+      Height = 48
       HelpContext = 320
-      Margins.Left = 5
-      Margins.Top = 5
-      Margins.Right = 5
-      Margins.Bottom = 5
       ImageCollection = KeypadImageCollection
       ImageWidth = 0
       ImageHeight = 0
@@ -4465,15 +4384,11 @@ object UIForm: TUIForm
       OnMouseUp = KeyImageMouseUp
     end
     object KeyImageD: TVirtualImage
-      Left = 6
-      Top = 78
-      Width = 72
-      Height = 72
+      Left = 4
+      Top = 52
+      Width = 48
+      Height = 48
       HelpContext = 320
-      Margins.Left = 5
-      Margins.Top = 5
-      Margins.Right = 5
-      Margins.Bottom = 5
       ImageCollection = KeypadImageCollection
       ImageWidth = 0
       ImageHeight = 0
@@ -4483,15 +4398,11 @@ object UIForm: TUIForm
       OnMouseUp = KeyImageMouseUp
     end
     object KeyImageE: TVirtualImage
-      Left = 78
-      Top = 78
-      Width = 72
-      Height = 72
+      Left = 52
+      Top = 52
+      Width = 48
+      Height = 48
       HelpContext = 320
-      Margins.Left = 5
-      Margins.Top = 5
-      Margins.Right = 5
-      Margins.Bottom = 5
       ImageCollection = KeypadImageCollection
       ImageWidth = 0
       ImageHeight = 0
@@ -4501,15 +4412,11 @@ object UIForm: TUIForm
       OnMouseUp = KeyImageMouseUp
     end
     object KeyImageF: TVirtualImage
-      Left = 150
-      Top = 78
-      Width = 72
-      Height = 72
+      Left = 100
+      Top = 52
+      Width = 48
+      Height = 48
       HelpContext = 320
-      Margins.Left = 5
-      Margins.Top = 5
-      Margins.Right = 5
-      Margins.Bottom = 5
       ImageCollection = KeypadImageCollection
       ImageWidth = 0
       ImageHeight = 0
@@ -4519,15 +4426,11 @@ object UIForm: TUIForm
       OnMouseUp = KeyImageMouseUp
     end
     object KeyImageBack: TVirtualImage
-      Left = 222
-      Top = 150
-      Width = 72
-      Height = 72
+      Left = 148
+      Top = 100
+      Width = 48
+      Height = 48
       HelpContext = 320
-      Margins.Left = 5
-      Margins.Top = 5
-      Margins.Right = 5
-      Margins.Bottom = 5
       ImageCollection = KeypadImageCollection
       ImageWidth = 0
       ImageHeight = 0
@@ -4537,15 +4440,11 @@ object UIForm: TUIForm
       OnMouseUp = KeyImageMouseUp
     end
     object KeyImageClear: TVirtualImage
-      Left = 222
-      Top = 78
-      Width = 72
-      Height = 72
+      Left = 148
+      Top = 52
+      Width = 48
+      Height = 48
       HelpContext = 320
-      Margins.Left = 5
-      Margins.Top = 5
-      Margins.Right = 5
-      Margins.Bottom = 5
       ImageCollection = KeypadImageCollection
       ImageWidth = 0
       ImageHeight = 0
@@ -4555,19 +4454,15 @@ object UIForm: TUIForm
       OnMouseUp = KeyImageMouseUp
     end
     object IPLabel: TLabel
-      Left = 92
-      Top = 12
-      Width = 116
-      Height = 60
-      Margins.Left = 5
-      Margins.Top = 5
-      Margins.Right = 5
-      Margins.Bottom = 5
+      Left = 61
+      Top = 8
+      Width = 76
+      Height = 40
       Caption = 'IPv4'
       Color = clWhite
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWindowText
-      Font.Height = -48
+      Font.Height = -32
       Font.Name = 'Source Code Pro Medium'
       Font.Style = []
       ParentColor = False
@@ -4577,19 +4472,15 @@ object UIForm: TUIForm
   end
   object StatusPanel: TPanel
     Left = 0
-    Top = 528
-    Width = 938
-    Height = 32
+    Top = 351
+    Width = 624
+    Height = 21
     HelpContext = 400
-    Margins.Left = 5
-    Margins.Top = 5
-    Margins.Right = 5
-    Margins.Bottom = 5
     Align = alBottom
     BevelOuter = bvNone
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clWindowText
-    Font.Height = -18
+    Font.Height = -12
     Font.Name = 'Segoe UI'
     Font.Style = []
     ParentFont = False
@@ -4597,275 +4488,211 @@ object UIForm: TUIForm
     object StatusCastPanel: TPanel
       Left = 0
       Top = 0
-      Width = 96
-      Height = 32
+      Width = 64
+      Height = 21
       HelpContext = 400
-      Margins.Left = 5
-      Margins.Top = 5
-      Margins.Right = 5
-      Margins.Bottom = 5
       Align = alLeft
       Alignment = taLeftJustify
       AutoSize = True
-      Padding.Left = 5
-      Padding.Right = 5
+      Padding.Left = 3
+      Padding.Right = 3
       TabOrder = 0
       object StatusCastLabel: TLabel
-        Left = 6
+        Left = 4
         Top = 1
-        Width = 84
-        Height = 30
+        Width = 56
+        Height = 19
         HelpContext = 400
-        Margins.Left = 5
-        Margins.Top = 5
-        Margins.Right = 5
-        Margins.Bottom = 5
         Align = alClient
         Caption = 'Broadcast'
-        ExplicitWidth = 78
-        ExplicitHeight = 25
+        ExplicitWidth = 52
+        ExplicitHeight = 15
       end
     end
     object StatusScopePanel: TPanel
-      Left = 96
+      Left = 64
       Top = 0
-      Width = 168
-      Height = 32
+      Width = 112
+      Height = 21
       HelpContext = 400
-      Margins.Left = 5
-      Margins.Top = 5
-      Margins.Right = 5
-      Margins.Bottom = 5
       Align = alLeft
       Alignment = taLeftJustify
       AutoSize = True
-      Padding.Left = 5
-      Padding.Right = 5
+      Padding.Left = 3
+      Padding.Right = 3
       TabOrder = 1
       object StatusScopeLabel: TLabel
-        Left = 6
+        Left = 4
         Top = 1
-        Width = 156
-        Height = 30
+        Width = 104
+        Height = 19
         HelpContext = 400
-        Margins.Left = 5
-        Margins.Top = 5
-        Margins.Right = 5
-        Margins.Bottom = 5
         Align = alClient
         Caption = 'Organization-Local'
-        ExplicitWidth = 149
-        ExplicitHeight = 25
+        ExplicitWidth = 101
+        ExplicitHeight = 15
       end
     end
     object StatusDescriptionPanel: TPanel
-      Left = 264
+      Left = 176
       Top = 0
-      Width = 674
-      Height = 32
+      Width = 448
+      Height = 21
       HelpContext = 400
-      Margins.Left = 5
-      Margins.Top = 5
-      Margins.Right = 5
-      Margins.Bottom = 5
       Align = alClient
       Alignment = taLeftJustify
       AutoSize = True
-      Padding.Left = 5
-      Padding.Right = 5
+      Padding.Left = 3
+      Padding.Right = 3
       TabOrder = 2
       object StatusDescriptionLabel: TLabel
-        Left = 6
+        Left = 4
         Top = 1
-        Width = 662
-        Height = 30
+        Width = 440
+        Height = 19
         HelpContext = 400
-        Margins.Left = 5
-        Margins.Top = 5
-        Margins.Right = 5
-        Margins.Bottom = 5
         Align = alClient
         Caption = 'Description'
-        ExplicitWidth = 90
-        ExplicitHeight = 25
+        ExplicitWidth = 60
+        ExplicitHeight = 15
       end
     end
   end
   object IPv6Panel: TPanel
-    Left = 321
-    Top = 6
-    Width = 605
-    Height = 271
+    Left = 214
+    Top = 4
+    Width = 401
+    Height = 184
     HelpContext = 332
-    Margins.Left = 5
-    Margins.Top = 5
-    Margins.Right = 5
-    Margins.Bottom = 5
     AutoSize = True
     BevelOuter = bvNone
     TabOrder = 1
     Visible = False
     object IPv6PrefixLabel: TLabel
-      Left = 486
-      Top = 70
-      Width = 43
-      Height = 25
+      Left = 324
+      Top = 47
+      Width = 30
+      Height = 15
       HelpContext = 332
-      Margins.Left = 5
-      Margins.Top = 5
-      Margins.Right = 5
-      Margins.Bottom = 5
       Caption = 'Prefix'
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWindowText
-      Font.Height = -18
+      Font.Height = -12
       Font.Name = 'Segoe UI'
       Font.Style = []
       ParentFont = False
     end
     object IPv6NetworkLabel: TLabel
-      Left = 486
-      Top = 140
-      Width = 67
-      Height = 25
+      Left = 324
+      Top = 93
+      Width = 45
+      Height = 15
       HelpContext = 332
-      Margins.Left = 5
-      Margins.Top = 5
-      Margins.Right = 5
-      Margins.Bottom = 5
       Caption = 'Network'
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWindowText
-      Font.Height = -18
+      Font.Height = -12
       Font.Name = 'Segoe UI'
       Font.Style = []
       ParentFont = False
     end
     object IPv6PrefixLengthLabel: TLabel
-      Left = 486
-      Top = 105
-      Width = 102
-      Height = 25
+      Left = 324
+      Top = 70
+      Width = 70
+      Height = 15
       HelpContext = 332
-      Margins.Left = 5
-      Margins.Top = 5
-      Margins.Right = 5
-      Margins.Bottom = 5
       Caption = 'Prefix Length'
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWindowText
-      Font.Height = -18
+      Font.Height = -12
       Font.Name = 'Segoe UI'
       Font.Style = []
       ParentFont = False
     end
     object IPv6AddressLabel: TLabel
-      Left = 486
+      Left = 324
       Top = 0
-      Width = 65
-      Height = 25
+      Width = 42
+      Height = 15
       HelpContext = 332
-      Margins.Left = 5
-      Margins.Top = 5
-      Margins.Right = 5
-      Margins.Bottom = 5
       Caption = 'Address'
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWindowText
-      Font.Height = -18
+      Font.Height = -12
       Font.Name = 'Segoe UI'
       Font.Style = []
       ParentFont = False
     end
     object IPv6OffsetLabel: TLabel
-      Left = 486
-      Top = 35
-      Width = 119
-      Height = 25
+      Left = 324
+      Top = 23
+      Width = 77
+      Height = 15
       HelpContext = 332
-      Margins.Left = 5
-      Margins.Top = 5
-      Margins.Right = 5
-      Margins.Bottom = 5
       Caption = 'Address Offset'
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWindowText
-      Font.Height = -18
+      Font.Height = -12
       Font.Name = 'Segoe UI'
       Font.Style = []
       ParentFont = False
     end
     object IPv6FirstAddressLabel: TLabel
-      Left = 486
-      Top = 175
-      Width = 103
-      Height = 25
+      Left = 324
+      Top = 117
+      Width = 67
+      Height = 15
       HelpContext = 332
-      Margins.Left = 5
-      Margins.Top = 5
-      Margins.Right = 5
-      Margins.Bottom = 5
       Caption = 'First Address'
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWindowText
-      Font.Height = -18
+      Font.Height = -12
       Font.Name = 'Segoe UI'
       Font.Style = []
       ParentFont = False
     end
     object IPv6LastAddressLabel: TLabel
-      Left = 486
-      Top = 210
-      Width = 101
-      Height = 25
+      Left = 324
+      Top = 140
+      Width = 66
+      Height = 15
       HelpContext = 332
-      Margins.Left = 5
-      Margins.Top = 5
-      Margins.Right = 5
-      Margins.Bottom = 5
       Caption = 'Last Address'
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWindowText
-      Font.Height = -18
+      Font.Height = -12
       Font.Name = 'Segoe UI'
       Font.Style = []
       ParentFont = False
     end
     object IPv6HostQuantityLabel: TLabel
-      Left = 486
-      Top = 245
-      Width = 111
-      Height = 25
+      Left = 324
+      Top = 163
+      Width = 74
+      Height = 15
       HelpContext = 332
-      Margins.Left = 5
-      Margins.Top = 5
-      Margins.Right = 5
-      Margins.Bottom = 5
       Caption = 'Host Quantity'
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWindowText
-      Font.Height = -18
+      Font.Height = -12
       Font.Name = 'Segoe UI'
       Font.Style = []
       ParentFont = False
     end
     object IPv6PrefixEdit: TEdit
       Left = 0
-      Top = 70
-      Width = 480
-      Height = 26
+      Top = 47
+      Width = 320
+      Height = 21
       HelpContext = 332
-      Margins.Left = 5
-      Margins.Top = 5
-      Margins.Right = 5
-      Margins.Bottom = 5
       BevelEdges = []
       BevelInner = bvNone
       BevelOuter = bvNone
       Ctl3D = False
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWindowText
-      Font.Height = -18
+      Font.Height = -12
       Font.Name = 'Courier New'
       Font.Style = []
       MaxLength = 43
@@ -4876,21 +4703,17 @@ object UIForm: TUIForm
     end
     object IPv6NetworkEdit: TEdit
       Left = 0
-      Top = 140
-      Width = 480
-      Height = 26
+      Top = 93
+      Width = 320
+      Height = 21
       HelpContext = 332
-      Margins.Left = 5
-      Margins.Top = 5
-      Margins.Right = 5
-      Margins.Bottom = 5
       BevelEdges = []
       BevelInner = bvNone
       BevelOuter = bvNone
       Ctl3D = False
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWindowText
-      Font.Height = -18
+      Font.Height = -12
       Font.Name = 'Courier New'
       Font.Style = []
       MaxLength = 43
@@ -4901,21 +4724,17 @@ object UIForm: TUIForm
     end
     object IPv6PrefixLengthEdit: TEdit
       Left = 0
-      Top = 105
-      Width = 480
-      Height = 26
+      Top = 70
+      Width = 320
+      Height = 21
       HelpContext = 332
-      Margins.Left = 5
-      Margins.Top = 5
-      Margins.Right = 5
-      Margins.Bottom = 5
       BevelEdges = []
       BevelInner = bvNone
       BevelOuter = bvNone
       Ctl3D = False
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWindowText
-      Font.Height = -18
+      Font.Height = -12
       Font.Name = 'Courier New'
       Font.Style = []
       MaxLength = 43
@@ -4927,20 +4746,16 @@ object UIForm: TUIForm
     object IPv6AddressEdit: TEdit
       Left = 0
       Top = 0
-      Width = 480
-      Height = 26
+      Width = 320
+      Height = 21
       HelpContext = 332
-      Margins.Left = 5
-      Margins.Top = 5
-      Margins.Right = 5
-      Margins.Bottom = 5
       BevelEdges = []
       BevelInner = bvNone
       BevelOuter = bvNone
       Ctl3D = False
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWindowText
-      Font.Height = -18
+      Font.Height = -12
       Font.Name = 'Courier New'
       Font.Style = []
       MaxLength = 43
@@ -4951,21 +4766,17 @@ object UIForm: TUIForm
     end
     object IPv6OffsetEdit: TEdit
       Left = 0
-      Top = 35
-      Width = 480
-      Height = 26
+      Top = 23
+      Width = 320
+      Height = 21
       HelpContext = 332
-      Margins.Left = 5
-      Margins.Top = 5
-      Margins.Right = 5
-      Margins.Bottom = 5
       BevelEdges = []
       BevelInner = bvNone
       BevelOuter = bvNone
       Ctl3D = False
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWindowText
-      Font.Height = -18
+      Font.Height = -12
       Font.Name = 'Courier New'
       Font.Style = []
       MaxLength = 43
@@ -4976,14 +4787,10 @@ object UIForm: TUIForm
     end
     object IPv6FirstAddressEdit: TEdit
       Left = 0
-      Top = 175
-      Width = 480
-      Height = 26
+      Top = 117
+      Width = 320
+      Height = 21
       HelpContext = 332
-      Margins.Left = 5
-      Margins.Top = 5
-      Margins.Right = 5
-      Margins.Bottom = 5
       BevelEdges = []
       BevelInner = bvNone
       BevelOuter = bvNone
@@ -4991,7 +4798,7 @@ object UIForm: TUIForm
       Ctl3D = False
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWindowText
-      Font.Height = -18
+      Font.Height = -12
       Font.Name = 'Courier New'
       Font.Style = []
       MaxLength = 43
@@ -5002,14 +4809,10 @@ object UIForm: TUIForm
     end
     object IPv6LastAddressEdit: TEdit
       Left = 0
-      Top = 210
-      Width = 480
-      Height = 26
+      Top = 140
+      Width = 320
+      Height = 21
       HelpContext = 332
-      Margins.Left = 5
-      Margins.Top = 5
-      Margins.Right = 5
-      Margins.Bottom = 5
       BevelEdges = []
       BevelInner = bvNone
       BevelOuter = bvNone
@@ -5017,7 +4820,7 @@ object UIForm: TUIForm
       Ctl3D = False
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWindowText
-      Font.Height = -18
+      Font.Height = -12
       Font.Name = 'Courier New'
       Font.Style = []
       MaxLength = 43
@@ -5028,14 +4831,10 @@ object UIForm: TUIForm
     end
     object IPv6HostQuantityEdit: TEdit
       Left = 0
-      Top = 245
-      Width = 480
-      Height = 26
+      Top = 163
+      Width = 320
+      Height = 21
       HelpContext = 332
-      Margins.Left = 5
-      Margins.Top = 5
-      Margins.Right = 5
-      Margins.Bottom = 5
       BevelEdges = []
       BevelInner = bvNone
       BevelOuter = bvNone
@@ -5043,7 +4842,7 @@ object UIForm: TUIForm
       Ctl3D = False
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWindowText
-      Font.Height = -18
+      Font.Height = -12
       Font.Name = 'Courier New'
       Font.Style = []
       MaxLength = 43
@@ -5054,233 +4853,181 @@ object UIForm: TUIForm
     end
   end
   object IPv4Panel: TPanel
-    Left = 321
-    Top = 6
-    Width = 362
-    Height = 376
+    Left = 214
+    Top = 4
+    Width = 240
+    Height = 254
     HelpContext = 331
-    Margins.Left = 5
-    Margins.Top = 5
-    Margins.Right = 5
-    Margins.Bottom = 5
     AutoSize = True
     BevelOuter = bvNone
     TabOrder = 0
     object IPv4NetworkMaskLabel: TLabel
-      Left = 214
-      Top = 35
-      Width = 114
-      Height = 25
+      Left = 143
+      Top = 23
+      Width = 76
+      Height = 15
       HelpContext = 331
-      Margins.Left = 5
-      Margins.Top = 5
-      Margins.Right = 5
-      Margins.Bottom = 5
       Caption = 'Network Mask'
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWindowText
-      Font.Height = -18
+      Font.Height = -12
       Font.Name = 'Segoe UI'
       Font.Style = []
       ParentFont = False
     end
     object IPv4AddressLabel: TLabel
-      Left = 214
+      Left = 143
       Top = 0
-      Width = 65
-      Height = 25
+      Width = 42
+      Height = 15
       HelpContext = 331
-      Margins.Left = 5
-      Margins.Top = 5
-      Margins.Right = 5
-      Margins.Bottom = 5
       Caption = 'Address'
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWindowText
-      Font.Height = -18
+      Font.Height = -12
       Font.Name = 'Segoe UI'
       Font.Style = []
       ParentFont = False
     end
     object IPv4PrefixLengthLabel: TLabel
-      Left = 214
-      Top = 175
-      Width = 102
-      Height = 25
+      Left = 143
+      Top = 117
+      Width = 70
+      Height = 15
       HelpContext = 331
-      Margins.Left = 5
-      Margins.Top = 5
-      Margins.Right = 5
-      Margins.Bottom = 5
       Caption = 'Prefix Length'
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWindowText
-      Font.Height = -18
+      Font.Height = -12
       Font.Name = 'Segoe UI'
       Font.Style = []
       ParentFont = False
     end
     object IPv4NetworkLabel: TLabel
-      Left = 214
-      Top = 210
-      Width = 67
-      Height = 25
+      Left = 143
+      Top = 140
+      Width = 45
+      Height = 15
       HelpContext = 331
-      Margins.Left = 5
-      Margins.Top = 5
-      Margins.Right = 5
-      Margins.Bottom = 5
       Caption = 'Network'
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWindowText
-      Font.Height = -18
+      Font.Height = -12
       Font.Name = 'Segoe UI'
       Font.Style = []
       ParentFont = False
     end
     object IPv4PrefixLabel: TLabel
-      Left = 214
-      Top = 140
-      Width = 43
-      Height = 25
+      Left = 143
+      Top = 93
+      Width = 30
+      Height = 15
       HelpContext = 331
-      Margins.Left = 5
-      Margins.Top = 5
-      Margins.Right = 5
-      Margins.Bottom = 5
       Caption = 'Prefix'
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWindowText
-      Font.Height = -18
+      Font.Height = -12
       Font.Name = 'Segoe UI'
       Font.Style = []
       ParentFont = False
     end
     object IPv4HostQuantityLabel: TLabel
-      Left = 214
-      Top = 350
-      Width = 111
-      Height = 25
+      Left = 143
+      Top = 233
+      Width = 74
+      Height = 15
       HelpContext = 331
-      Margins.Left = 5
-      Margins.Top = 5
-      Margins.Right = 5
-      Margins.Bottom = 5
       Caption = 'Host Quantity'
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWindowText
-      Font.Height = -18
+      Font.Height = -12
       Font.Name = 'Segoe UI'
       Font.Style = []
       ParentFont = False
     end
     object IPv4LastAddressLabel: TLabel
-      Left = 214
-      Top = 280
-      Width = 101
-      Height = 25
+      Left = 143
+      Top = 187
+      Width = 66
+      Height = 15
       HelpContext = 331
-      Margins.Left = 5
-      Margins.Top = 5
-      Margins.Right = 5
-      Margins.Bottom = 5
       Caption = 'Last Address'
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWindowText
-      Font.Height = -18
+      Font.Height = -12
       Font.Name = 'Segoe UI'
       Font.Style = []
       ParentFont = False
     end
     object IPv4FirstAddressLabel: TLabel
-      Left = 214
-      Top = 245
-      Width = 103
-      Height = 25
+      Left = 143
+      Top = 163
+      Width = 67
+      Height = 15
       HelpContext = 331
-      Margins.Left = 5
-      Margins.Top = 5
-      Margins.Right = 5
-      Margins.Bottom = 5
       Caption = 'First Address'
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWindowText
-      Font.Height = -18
+      Font.Height = -12
       Font.Name = 'Segoe UI'
       Font.Style = []
       ParentFont = False
     end
     object IPv4OffsetLabel: TLabel
-      Left = 214
-      Top = 105
-      Width = 119
-      Height = 25
+      Left = 143
+      Top = 70
+      Width = 77
+      Height = 15
       HelpContext = 331
-      Margins.Left = 5
-      Margins.Top = 5
-      Margins.Right = 5
-      Margins.Bottom = 5
       Caption = 'Address Offset'
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWindowText
-      Font.Height = -18
+      Font.Height = -12
       Font.Name = 'Segoe UI'
       Font.Style = []
       ParentFont = False
     end
     object IPv4HostMaskLabel: TLabel
-      Left = 214
-      Top = 70
-      Width = 85
-      Height = 25
+      Left = 143
+      Top = 47
+      Width = 56
+      Height = 15
       HelpContext = 331
-      Margins.Left = 5
-      Margins.Top = 5
-      Margins.Right = 5
-      Margins.Bottom = 5
       Caption = 'Host Mask'
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWindowText
-      Font.Height = -18
+      Font.Height = -12
       Font.Name = 'Segoe UI'
       Font.Style = []
       ParentFont = False
     end
     object IPv4BroadcastAddressLabel: TLabel
-      Left = 214
-      Top = 315
-      Width = 148
-      Height = 25
+      Left = 143
+      Top = 210
+      Width = 97
+      Height = 15
       HelpContext = 331
-      Margins.Left = 5
-      Margins.Top = 5
-      Margins.Right = 5
-      Margins.Bottom = 5
       Caption = 'Broadcast Address'
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWindowText
-      Font.Height = -18
+      Font.Height = -12
       Font.Name = 'Segoe UI'
       Font.Style = []
       ParentFont = False
     end
     object IPv4NetworkMaskEdit: TEdit
       Left = 0
-      Top = 35
-      Width = 204
-      Height = 26
+      Top = 23
+      Width = 136
+      Height = 21
       HelpContext = 331
-      Margins.Left = 5
-      Margins.Top = 5
-      Margins.Right = 5
-      Margins.Bottom = 5
       BevelEdges = []
       BevelInner = bvNone
       BevelOuter = bvNone
       Ctl3D = False
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWindowText
-      Font.Height = -18
+      Font.Height = -12
       Font.Name = 'Courier New'
       Font.Style = []
       MaxLength = 18
@@ -5292,20 +5039,16 @@ object UIForm: TUIForm
     object IPv4AddressEdit: TEdit
       Left = 0
       Top = 0
-      Width = 204
-      Height = 26
+      Width = 136
+      Height = 21
       HelpContext = 331
-      Margins.Left = 5
-      Margins.Top = 5
-      Margins.Right = 5
-      Margins.Bottom = 5
       BevelEdges = []
       BevelInner = bvNone
       BevelOuter = bvNone
       Ctl3D = False
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWindowText
-      Font.Height = -18
+      Font.Height = -12
       Font.Name = 'Courier New'
       Font.Style = []
       MaxLength = 18
@@ -5316,21 +5059,17 @@ object UIForm: TUIForm
     end
     object IPv4PrefixLengthEdit: TEdit
       Left = 0
-      Top = 175
-      Width = 204
-      Height = 26
+      Top = 117
+      Width = 136
+      Height = 21
       HelpContext = 331
-      Margins.Left = 5
-      Margins.Top = 5
-      Margins.Right = 5
-      Margins.Bottom = 5
       BevelEdges = []
       BevelInner = bvNone
       BevelOuter = bvNone
       Ctl3D = False
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWindowText
-      Font.Height = -18
+      Font.Height = -12
       Font.Name = 'Courier New'
       Font.Style = []
       MaxLength = 18
@@ -5341,21 +5080,17 @@ object UIForm: TUIForm
     end
     object IPv4NetworkEdit: TEdit
       Left = 0
-      Top = 210
-      Width = 204
-      Height = 26
+      Top = 140
+      Width = 136
+      Height = 21
       HelpContext = 331
-      Margins.Left = 5
-      Margins.Top = 5
-      Margins.Right = 5
-      Margins.Bottom = 5
       BevelEdges = []
       BevelInner = bvNone
       BevelOuter = bvNone
       Ctl3D = False
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWindowText
-      Font.Height = -18
+      Font.Height = -12
       Font.Name = 'Courier New'
       Font.Style = []
       MaxLength = 18
@@ -5366,21 +5101,17 @@ object UIForm: TUIForm
     end
     object IPv4PrefixEdit: TEdit
       Left = 0
-      Top = 140
-      Width = 204
-      Height = 26
+      Top = 93
+      Width = 136
+      Height = 21
       HelpContext = 331
-      Margins.Left = 5
-      Margins.Top = 5
-      Margins.Right = 5
-      Margins.Bottom = 5
       BevelEdges = []
       BevelInner = bvNone
       BevelOuter = bvNone
       Ctl3D = False
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWindowText
-      Font.Height = -18
+      Font.Height = -12
       Font.Name = 'Courier New'
       Font.Style = []
       MaxLength = 18
@@ -5391,14 +5122,10 @@ object UIForm: TUIForm
     end
     object IPv4BroadcastAddressEdit: TEdit
       Left = 0
-      Top = 315
-      Width = 204
-      Height = 26
+      Top = 210
+      Width = 136
+      Height = 21
       HelpContext = 331
-      Margins.Left = 5
-      Margins.Top = 5
-      Margins.Right = 5
-      Margins.Bottom = 5
       BevelEdges = []
       BevelInner = bvNone
       BevelOuter = bvNone
@@ -5406,7 +5133,7 @@ object UIForm: TUIForm
       Ctl3D = False
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWindowText
-      Font.Height = -18
+      Font.Height = -12
       Font.Name = 'Courier New'
       Font.Style = []
       MaxLength = 18
@@ -5417,14 +5144,10 @@ object UIForm: TUIForm
     end
     object IPv4LastAddressEdit: TEdit
       Left = 0
-      Top = 280
-      Width = 204
-      Height = 26
+      Top = 187
+      Width = 136
+      Height = 21
       HelpContext = 331
-      Margins.Left = 5
-      Margins.Top = 5
-      Margins.Right = 5
-      Margins.Bottom = 5
       BevelEdges = []
       BevelInner = bvNone
       BevelOuter = bvNone
@@ -5432,7 +5155,7 @@ object UIForm: TUIForm
       Ctl3D = False
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWindowText
-      Font.Height = -18
+      Font.Height = -12
       Font.Name = 'Courier New'
       Font.Style = []
       MaxLength = 18
@@ -5443,14 +5166,10 @@ object UIForm: TUIForm
     end
     object IPv4FirstAddressEdit: TEdit
       Left = 0
-      Top = 245
-      Width = 204
-      Height = 26
+      Top = 163
+      Width = 136
+      Height = 21
       HelpContext = 331
-      Margins.Left = 5
-      Margins.Top = 5
-      Margins.Right = 5
-      Margins.Bottom = 5
       BevelEdges = []
       BevelInner = bvNone
       BevelOuter = bvNone
@@ -5458,7 +5177,7 @@ object UIForm: TUIForm
       Ctl3D = False
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWindowText
-      Font.Height = -18
+      Font.Height = -12
       Font.Name = 'Courier New'
       Font.Style = []
       MaxLength = 18
@@ -5469,21 +5188,17 @@ object UIForm: TUIForm
     end
     object IPv4OffsetEdit: TEdit
       Left = 0
-      Top = 105
-      Width = 204
-      Height = 26
+      Top = 70
+      Width = 136
+      Height = 21
       HelpContext = 331
-      Margins.Left = 5
-      Margins.Top = 5
-      Margins.Right = 5
-      Margins.Bottom = 5
       BevelEdges = []
       BevelInner = bvNone
       BevelOuter = bvNone
       Ctl3D = False
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWindowText
-      Font.Height = -18
+      Font.Height = -12
       Font.Name = 'Courier New'
       Font.Style = []
       MaxLength = 18
@@ -5494,21 +5209,17 @@ object UIForm: TUIForm
     end
     object IPv4HostMaskEdit: TEdit
       Left = 0
-      Top = 70
-      Width = 204
-      Height = 26
+      Top = 47
+      Width = 136
+      Height = 21
       HelpContext = 331
-      Margins.Left = 5
-      Margins.Top = 5
-      Margins.Right = 5
-      Margins.Bottom = 5
       BevelEdges = []
       BevelInner = bvNone
       BevelOuter = bvNone
       Ctl3D = False
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWindowText
-      Font.Height = -18
+      Font.Height = -12
       Font.Name = 'Courier New'
       Font.Style = []
       MaxLength = 18
@@ -5519,14 +5230,10 @@ object UIForm: TUIForm
     end
     object IPv4HostQuantityEdit: TEdit
       Left = 0
-      Top = 350
-      Width = 204
-      Height = 26
+      Top = 233
+      Width = 136
+      Height = 21
       HelpContext = 331
-      Margins.Left = 5
-      Margins.Top = 5
-      Margins.Right = 5
-      Margins.Bottom = 5
       BevelEdges = []
       BevelInner = bvNone
       BevelOuter = bvNone
@@ -5534,7 +5241,7 @@ object UIForm: TUIForm
       Ctl3D = False
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWindowText
-      Font.Height = -18
+      Font.Height = -12
       Font.Name = 'Courier New'
       Font.Style = []
       MaxLength = 18
@@ -10121,8 +9828,6 @@ object UIForm: TUIForm
         Name = 'Info'
       end>
     ImageCollection = ApplicationImageCollection
-    Width = 24
-    Height = 24
     Left = 712
     Top = 464
   end
