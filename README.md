@@ -1,7 +1,7 @@
 # IPvX
 IPvX IP calculator
 
-Originally a demonstration of the **[IP.pas](https://github.com/rmaupin/IPvX/blob/main/IP.pas)** IP library I created to do IP manipulation (both IPv4 and IPv6) using proper binary IP math (32-bit for IPv4 and 128-bit for IPv6), but reading and writing IP addresses as strings. The algorithms used are detailed in [my two-part answer on Network Engineering Stack Exchange](https://networkengineering.stackexchange.com/a/53994/8499) I turned IPvX into a real application. See the **[IPvX.pdf](https://github.com/rmaupin/IPvX/raw/main/IPvX.pdf)** for a more complete explanation of the application.
+Originally a demonstration of the **[IP.pas](https://github.com/rmaupin/IPvX/blob/main/IP.pas)** IP library I created to do IP manipulation (both IPv4 and IPv6) using proper binary IP math (32-bit for IPv4 and 128-bit for IPv6), but reading and writing IP addresses as strings. The algorithms used are detailed in [my two-part answer on Network Engineering Stack Exchange](https://networkengineering.stackexchange.com/a/53994/8499). I turned IPvX into a real application. See the **[IPvX.pdf](https://github.com/rmaupin/IPvX/raw/main/IPvX.pdf)** for a more complete explanation of the application.
 
 Only the **IPvX.exe** (either **[IPvX.exe](https://github.com/rmaupin/IPvX/releases/download/v22.10.4.1-x86/IPvX.exe)** for Win32 or **[IPvX.exe](https://github.com/rmaupin/IPvX/releases/download/v22.10.4.1-x64/IPvX.exe)** for Win64]) and the **[IPvX.chm](https://github.com/rmaupin/IPvX/raw/main/IPvX.chm)** (help file for either version) are needed to run the application.
 
