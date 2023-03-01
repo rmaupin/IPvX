@@ -671,7 +671,7 @@ begin
       FIPVersion                := 6;
       IPv4Panel.Visible         := False;
       IPv6Panel.Visible         := True;
-      Width                     := 640;
+      Width                     := 949;
       ActiveControl             := FIPv6ActiveEdit;
       IPv6Update;
     end;
