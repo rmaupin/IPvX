@@ -39,7 +39,7 @@
 //*                                                                            *
 //******************************************************************************
 //*                                                                            *
-//* Copyright:  IPvX.exe, UI.pas, IP.pas (c) 2010 - 2022 by Ron Maupin         *
+//* Copyright:  IPvX.exe, UI.pas, IP.pas (c) 2010 - 2023 by Ron Maupin         *
 //*             Velthuis.BigIntegers.pas (c) 2015,2016,2017 Rudy Velthuis      *
 //*                                                                            *
 //******************************************************************************
@@ -240,7 +240,7 @@ begin
   FColonX2 := False;
   IPv6Update;
   IPv4Update;
-  FCopyrights := 'Copyright: UI.pas, IP.pas (c) 2010 - 2022 by Ron Maupin' + #13#10 +
+  FCopyrights := 'Copyright: UI.pas, IP.pas (c) 2010 - 2023 by Ron Maupin' + #13#10 +
                  'Copyright: Velthuis.BigIntegers.pas (c) 2015,2016,2017 Rudy Velthuis';
 end;
 
@@ -314,7 +314,9 @@ begin
                             Key := 0;
                           end;
     vkA:                  if (not ((ssAlt in Shift) or (ssCtrl in Shift))) then begin
-                            KeyImageA.ImageName := 'DnA';
+                            if (FIPVersion = 6) then begin
+                              KeyImageA.ImageName := 'DnA';
+                            end;
                           end
                           else if (ssAlt in Shift) then begin
                             Key := 0;
@@ -376,31 +378,11 @@ begin
                           else begin
                             Key := 0;
                           end;
-    vkEscape:             begin
-                            Key := 0;
-                            if (not ((ssShift in Shift) or (ssAlt in Shift) or (ssCtrl in Shift))) then begin
-                              KeyImageClear.ImageName := 'DnClr';
-                              ClearMenuItemClick(Sender);
-                            end;
-                          end;
     vkBack:               if (not ((ssShift in Shift) or (ssAlt in Shift) or (ssCtrl in Shift))) then begin
                             KeyImageBack.ImageName := 'DnBack';
                           end
                           else begin
                             Key := 0;
-                          end;
-    vkReturn:             begin
-                            Key := 0;
-                            if (not ((ssAlt in Shift) or (ssCtrl in Shift))) then begin
-                              KeyImageEnter.ImageName := 'DnEnter';
-                              SelectNext(ActiveControl, (not (ssShift in Shift)), True);
-                            end;
-                          end;
-    vkTab:                begin
-                            Key := 0;
-                            if (not ((ssAlt in Shift) or (ssCtrl in Shift))) then begin
-                              SelectNext(ActiveControl, (not (ssShift in Shift)), True);
-                            end;
                           end;
     vkF1:                 if ((ssShift in Shift) or (ssAlt in Shift) or (ssCtrl in Shift)) then begin
                             Key := 0;
@@ -472,22 +454,6 @@ end;
 
 procedure TUIForm.FormKeyPress(Sender: TObject; var Key: Char);
 begin
-  if (FIPVersion = 4) then begin
-    case Key of
-    'A': Key := #0;
-    'a': Key := #0;
-    'B': Key := #0;
-    'b': Key := #0;
-    'C': Key := #0;
-    'c': Key := #0;
-    'D': Key := #0;
-    'd': Key := #0;
-    'E': Key := #0;
-    'e': Key := #0;
-    'F': Key := #0;
-    'f': Key := #0;
-    end;
-  end;
   case Key of
     '!': Key := #0;
     '@': Key := #0;
@@ -516,6 +482,16 @@ begin
     'x': Key := #0;
     'Z': Key := #0;
     'z': Key := #0;
+  end;
+  if (FIPVersion = 4) then begin
+    case Key of
+      'a': Key := #0;
+      'b': Key := #0;
+      'c': Key := #0;
+      'd': Key := #0;
+      'e': Key := #0;
+      'f': Key := #0;
+    end;
   end;
 end;
 
@@ -552,11 +528,17 @@ begin
     vkSemicolon:          if (FIPVersion = 6) then begin
                             Handled := False;
                           end;
-    vkReturn:             Handled := False;
-    vkEscape:             Handled := False;
+    vkReturn, vkTab:      begin
+                            KeyImageEnter.ImageName := 'DnEnter';
+                            Msg.CharCode := vkTab;
+                            Handled := False;
+                          end;
+    vkEscape:             begin
+                            KeyImageClear.ImageName := 'DnClr';
+                            ClearMenuItemClick(Self);
+                          end;
     vkBack:               Handled := False;
     vkF1:                 Handled := False;
-    vkTab:                Handled := False;
     vkHome:               Handled := False;
     vkEnd:                Handled := False;
     vkInsert:             Handled := False;
@@ -659,7 +641,7 @@ begin
       FIPVersion                := 4;
       IPv6Panel.Visible         := False;
       IPv4Panel.Visible         := True;
-      Width                     := 478;
+      Width                     := 480;
       ActiveControl             := FIPv4ActiveEdit;
       IPv4Update;
     end;
@@ -671,7 +653,7 @@ begin
       FIPVersion                := 6;
       IPv4Panel.Visible         := False;
       IPv6Panel.Visible         := True;
-      Width                     := 949;
+      Width                     := 960;
       ActiveControl             := FIPv6ActiveEdit;
       IPv6Update;
     end;

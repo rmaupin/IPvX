@@ -55,7 +55,7 @@
 //*                                                                            *
 //* Author:     Ron Maupin                                                     *
 //*                                                                            *
-//* Copyright:  (c) 2021 by Ron Maupin                                         *
+//* Copyright:  (c) 2021-2023 by Ron Maupin                                    *
 //*                                                                            *
 //* License:    Redistribution and use in source and binary forms, with or     *
 //*             without modification, are permitted provided that the          *

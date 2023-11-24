@@ -5,7 +5,7 @@ object AboutForm: TAboutForm
   AutoSize = True
   BorderStyle = bsDialog
   Caption = 'About {Product Name}'
-  ClientHeight = 478
+  ClientHeight = 479
   ClientWidth = 688
   Color = clWhite
   Font.Charset = DEFAULT_CHARSET
@@ -138,7 +138,7 @@ object AboutForm: TAboutForm
     Left = 286
     Top = 429
     Width = 114
-    Height = 37
+    Height = 38
     Margins.Left = 174
     Margins.Top = 9
     Margins.Right = 174
@@ -146,7 +146,7 @@ object AboutForm: TAboutForm
     Caption = 'OK'
     Constraints.MaxHeight = 38
     Constraints.MaxWidth = 123
-    Constraints.MinHeight = 37
+    Constraints.MinHeight = 38
     Constraints.MinWidth = 114
     Default = True
     Font.Charset = DEFAULT_CHARSET

@@ -40,7 +40,7 @@
 //*                                                                            *
 //******************************************************************************
 //*                                                                            *
-//* Copyright:  IPvX.dpr, UI.pas, IP.pas (c) 2010 - 2022 by Ron Maupin         *
+//* Copyright:  IPvX.dpr, UI.pas, IP.pas (c) 2010 - 2023 by Ron Maupin         *
 //*             Velthuis.BigIntegers.pas (c) 2015,2016,2017 Rudy Velthuis      *
 //*                                                                            *
 //******************************************************************************
@@ -97,7 +97,7 @@ var
 
 begin
   ReportMemoryLeaksOnShutdown := True;
-  Copyrights := 'Copyright: IPvX.dpr, UI.pas, IP.pas (c) 2010 - 2022 by Ron Maupin' + #13#10 +
+  Copyrights := 'Copyright: IPvX.dpr, UI.pas, IP.pas (c) 2010 - 2023 by Ron Maupin' + #13#10 +
                 'Copyright: Velthuis.BigIntegers.pas (c) 2015,2016,2017 Rudy Velthuis';
   Application.Initialize;
   Application.MainFormOnTaskbar := True;

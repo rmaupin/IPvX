@@ -52,7 +52,7 @@
 //*                                                                            *
 //******************************************************************************
 //*                                                                            *
-//* Copyright:  IP.pas (c) 2010 - 2022 by Ron Maupin                           *
+//* Copyright:  IP.pas (c) 2010 - 2023 by Ron Maupin                           *
 //*             Velthuis.BigIntegers.pas (c) 2015,2016,2017 Rudy Velthuis      *
 //*                                                                            *
 //******************************************************************************
@@ -1675,7 +1675,7 @@ var
   Copyrights: string;
 
 initialization
-  Copyrights        := 'Copyright: IP.pas (c) 2010 - 2022 by Ron Maupin' + #13#10                               +
+  Copyrights        := 'Copyright: IP.pas (c) 2010 - 2023 by Ron Maupin' + #13#10                               +
                        'Copyright: Velthuis.BigIntegers.pas (c) 2015,2016,2017 Rudy Velthuis';
 
   IPv4RegEx         := TPerlRegEx.Create();
