@@ -8,13 +8,9 @@ object UIForm: TUIForm
   Margins.Bottom = 0
   BorderStyle = bsToolWindow
   Caption = 'IPvX'
-  ClientHeight = 346
-  ClientWidth = 463
+  ClientHeight = 368
+  ClientWidth = 778
   Color = clBtnFace
-  Constraints.MaxHeight = 432
-  Constraints.MaxWidth = 640
-  Constraints.MinHeight = 432
-  Constraints.MinWidth = 478
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
   Font.Height = -12
@@ -4111,7 +4107,7 @@ object UIForm: TUIForm
   OnShortCut = FormShortCut
   TextHeight = 15
   object KeyPanel: TPanel
-    Left = 4
+    Left = 6
     Top = 0
     Width = 200
     Height = 344
@@ -4576,8 +4572,8 @@ object UIForm: TUIForm
   end
   object StatusPanel: TPanel
     Left = 0
-    Top = 324
-    Width = 463
+    Top = 346
+    Width = 778
     Height = 22
     HelpContext = 400
     Margins.Left = 4
@@ -4593,11 +4589,12 @@ object UIForm: TUIForm
     Font.Style = []
     ParentFont = False
     TabOrder = 3
-    ExplicitTop = 353
+    ExplicitTop = 207
+    ExplicitWidth = 511
     object StatusCastPanel: TPanel
       Left = 0
       Top = 0
-      Width = 73
+      Width = 75
       Height = 22
       HelpContext = 400
       Margins.Left = 4
@@ -4613,7 +4610,7 @@ object UIForm: TUIForm
       object StatusCastLabel: TLabel
         Left = 5
         Top = 1
-        Width = 63
+        Width = 65
         Height = 20
         HelpContext = 400
         Margins.Left = 4
@@ -4627,9 +4624,9 @@ object UIForm: TUIForm
       end
     end
     object StatusScopePanel: TPanel
-      Left = 73
+      Left = 75
       Top = 0
-      Width = 121
+      Width = 123
       Height = 22
       HelpContext = 400
       Margins.Left = 4
@@ -4642,11 +4639,11 @@ object UIForm: TUIForm
       Padding.Left = 4
       Padding.Right = 4
       TabOrder = 1
-      ExplicitLeft = 69
+      ExplicitLeft = 71
       object StatusScopeLabel: TLabel
         Left = 5
         Top = 1
-        Width = 111
+        Width = 113
         Height = 20
         HelpContext = 400
         Margins.Left = 4
@@ -4660,9 +4657,9 @@ object UIForm: TUIForm
       end
     end
     object StatusDescriptionPanel: TPanel
-      Left = 194
+      Left = 198
       Top = 0
-      Width = 269
+      Width = 580
       Height = 22
       HelpContext = 400
       Margins.Left = 4
@@ -4675,12 +4672,12 @@ object UIForm: TUIForm
       Padding.Left = 4
       Padding.Right = 4
       TabOrder = 2
-      ExplicitLeft = 185
-      ExplicitWidth = 278
+      ExplicitLeft = 189
+      ExplicitWidth = 322
       object StatusDescriptionLabel: TLabel
         Left = 5
         Top = 1
-        Width = 259
+        Width = 570
         Height = 20
         HelpContext = 400
         Margins.Left = 4
@@ -4696,9 +4693,9 @@ object UIForm: TUIForm
   end
   object IPv6Panel: TPanel
     Left = 214
-    Top = 4
-    Width = 401
-    Height = 185
+    Top = 6
+    Width = 550
+    Height = 234
     HelpContext = 332
     Margins.Left = 4
     Margins.Top = 4
@@ -4706,13 +4703,15 @@ object UIForm: TUIForm
     Margins.Bottom = 4
     AutoSize = True
     BevelOuter = bvNone
+    UseDockManager = False
+    Padding.Right = 6
     TabOrder = 1
     Visible = False
     object IPv6PrefixLabel: TLabel
-      Left = 324
-      Top = 48
-      Width = 30
-      Height = 15
+      Left = 442
+      Top = 60
+      Width = 39
+      Height = 21
       HelpContext = 332
       Margins.Left = 4
       Margins.Top = 4
@@ -4721,16 +4720,16 @@ object UIForm: TUIForm
       Caption = 'Prefix'
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWindowText
-      Font.Height = -12
+      Font.Height = -16
       Font.Name = 'Segoe UI'
       Font.Style = []
       ParentFont = False
     end
     object IPv6NetworkLabel: TLabel
-      Left = 324
-      Top = 94
-      Width = 45
-      Height = 15
+      Left = 442
+      Top = 120
+      Width = 60
+      Height = 21
       HelpContext = 332
       Margins.Left = 4
       Margins.Top = 4
@@ -4739,16 +4738,16 @@ object UIForm: TUIForm
       Caption = 'Network'
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWindowText
-      Font.Height = -12
+      Font.Height = -16
       Font.Name = 'Segoe UI'
       Font.Style = []
       ParentFont = False
     end
     object IPv6PrefixLengthLabel: TLabel
-      Left = 324
-      Top = 70
-      Width = 70
-      Height = 15
+      Left = 442
+      Top = 90
+      Width = 91
+      Height = 21
       HelpContext = 332
       Margins.Left = 4
       Margins.Top = 4
@@ -4757,16 +4756,16 @@ object UIForm: TUIForm
       Caption = 'Prefix Length'
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWindowText
-      Font.Height = -12
+      Font.Height = -16
       Font.Name = 'Segoe UI'
       Font.Style = []
       ParentFont = False
     end
     object IPv6AddressLabel: TLabel
-      Left = 324
+      Left = 442
       Top = 0
-      Width = 42
-      Height = 15
+      Width = 56
+      Height = 21
       HelpContext = 332
       Margins.Left = 4
       Margins.Top = 4
@@ -4775,16 +4774,16 @@ object UIForm: TUIForm
       Caption = 'Address'
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWindowText
-      Font.Height = -12
+      Font.Height = -16
       Font.Name = 'Segoe UI'
       Font.Style = []
       ParentFont = False
     end
     object IPv6OffsetLabel: TLabel
-      Left = 324
-      Top = 24
-      Width = 77
-      Height = 15
+      Left = 442
+      Top = 30
+      Width = 102
+      Height = 21
       HelpContext = 332
       Margins.Left = 4
       Margins.Top = 4
@@ -4793,16 +4792,16 @@ object UIForm: TUIForm
       Caption = 'Address Offset'
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWindowText
-      Font.Height = -12
+      Font.Height = -16
       Font.Name = 'Segoe UI'
       Font.Style = []
       ParentFont = False
     end
     object IPv6FirstAddressLabel: TLabel
-      Left = 324
-      Top = 118
-      Width = 67
-      Height = 15
+      Left = 442
+      Top = 150
+      Width = 90
+      Height = 21
       HelpContext = 332
       Margins.Left = 4
       Margins.Top = 4
@@ -4811,16 +4810,16 @@ object UIForm: TUIForm
       Caption = 'First Address'
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWindowText
-      Font.Height = -12
+      Font.Height = -16
       Font.Name = 'Segoe UI'
       Font.Style = []
       ParentFont = False
     end
     object IPv6LastAddressLabel: TLabel
-      Left = 324
-      Top = 140
-      Width = 66
-      Height = 15
+      Left = 442
+      Top = 180
+      Width = 88
+      Height = 21
       HelpContext = 332
       Margins.Left = 4
       Margins.Top = 4
@@ -4829,16 +4828,16 @@ object UIForm: TUIForm
       Caption = 'Last Address'
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWindowText
-      Font.Height = -12
+      Font.Height = -16
       Font.Name = 'Segoe UI'
       Font.Style = []
       ParentFont = False
     end
     object IPv6HostQuantityLabel: TLabel
-      Left = 324
-      Top = 164
-      Width = 74
-      Height = 15
+      Left = 442
+      Top = 210
+      Width = 96
+      Height = 21
       HelpContext = 332
       Margins.Left = 4
       Margins.Top = 4
@@ -4847,16 +4846,16 @@ object UIForm: TUIForm
       Caption = 'Host Quantity'
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWindowText
-      Font.Height = -12
+      Font.Height = -16
       Font.Name = 'Segoe UI'
       Font.Style = []
       ParentFont = False
     end
     object IPv6PrefixEdit: TEdit
       Left = 0
-      Top = 48
-      Width = 320
-      Height = 21
+      Top = 60
+      Width = 434
+      Height = 24
       HelpContext = 332
       Margins.Left = 4
       Margins.Top = 4
@@ -4868,7 +4867,7 @@ object UIForm: TUIForm
       Ctl3D = False
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWindowText
-      Font.Height = -12
+      Font.Height = -16
       Font.Name = 'Courier New'
       Font.Style = []
       MaxLength = 43
@@ -4879,9 +4878,9 @@ object UIForm: TUIForm
     end
     object IPv6NetworkEdit: TEdit
       Left = 0
-      Top = 94
-      Width = 320
-      Height = 21
+      Top = 120
+      Width = 434
+      Height = 24
       HelpContext = 332
       Margins.Left = 4
       Margins.Top = 4
@@ -4893,7 +4892,7 @@ object UIForm: TUIForm
       Ctl3D = False
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWindowText
-      Font.Height = -12
+      Font.Height = -16
       Font.Name = 'Courier New'
       Font.Style = []
       MaxLength = 43
@@ -4904,9 +4903,9 @@ object UIForm: TUIForm
     end
     object IPv6PrefixLengthEdit: TEdit
       Left = 0
-      Top = 70
-      Width = 320
-      Height = 21
+      Top = 90
+      Width = 434
+      Height = 24
       HelpContext = 332
       Margins.Left = 4
       Margins.Top = 4
@@ -4918,7 +4917,7 @@ object UIForm: TUIForm
       Ctl3D = False
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWindowText
-      Font.Height = -12
+      Font.Height = -16
       Font.Name = 'Courier New'
       Font.Style = []
       MaxLength = 43
@@ -4930,8 +4929,8 @@ object UIForm: TUIForm
     object IPv6AddressEdit: TEdit
       Left = 0
       Top = 0
-      Width = 320
-      Height = 21
+      Width = 434
+      Height = 24
       HelpContext = 332
       Margins.Left = 4
       Margins.Top = 4
@@ -4943,20 +4942,21 @@ object UIForm: TUIForm
       Ctl3D = False
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWindowText
-      Font.Height = -12
+      Font.Height = -16
       Font.Name = 'Courier New'
       Font.Style = []
       MaxLength = 43
       ParentCtl3D = False
       ParentFont = False
       TabOrder = 0
+      Text = 'ffff:ffff:ffff:ffff:ffff:ffff:ffff:ffff/128'
       OnExit = IPv6EditExit
     end
     object IPv6OffsetEdit: TEdit
       Left = 0
-      Top = 24
-      Width = 320
-      Height = 21
+      Top = 30
+      Width = 434
+      Height = 24
       HelpContext = 332
       Margins.Left = 4
       Margins.Top = 4
@@ -4968,7 +4968,7 @@ object UIForm: TUIForm
       Ctl3D = False
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWindowText
-      Font.Height = -12
+      Font.Height = -16
       Font.Name = 'Courier New'
       Font.Style = []
       MaxLength = 43
@@ -4979,9 +4979,9 @@ object UIForm: TUIForm
     end
     object IPv6FirstAddressEdit: TEdit
       Left = 0
-      Top = 118
-      Width = 320
-      Height = 21
+      Top = 150
+      Width = 434
+      Height = 24
       HelpContext = 332
       Margins.Left = 4
       Margins.Top = 4
@@ -4994,7 +4994,7 @@ object UIForm: TUIForm
       Ctl3D = False
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWindowText
-      Font.Height = -12
+      Font.Height = -16
       Font.Name = 'Courier New'
       Font.Style = []
       MaxLength = 43
@@ -5005,9 +5005,9 @@ object UIForm: TUIForm
     end
     object IPv6LastAddressEdit: TEdit
       Left = 0
-      Top = 140
-      Width = 320
-      Height = 21
+      Top = 180
+      Width = 434
+      Height = 24
       HelpContext = 332
       Margins.Left = 4
       Margins.Top = 4
@@ -5020,7 +5020,7 @@ object UIForm: TUIForm
       Ctl3D = False
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWindowText
-      Font.Height = -12
+      Font.Height = -16
       Font.Name = 'Courier New'
       Font.Style = []
       MaxLength = 43
@@ -5031,9 +5031,9 @@ object UIForm: TUIForm
     end
     object IPv6HostQuantityEdit: TEdit
       Left = 0
-      Top = 164
-      Width = 320
-      Height = 21
+      Top = 210
+      Width = 434
+      Height = 24
       HelpContext = 332
       Margins.Left = 4
       Margins.Top = 4
@@ -5046,7 +5046,7 @@ object UIForm: TUIForm
       Ctl3D = False
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWindowText
-      Font.Height = -12
+      Font.Height = -16
       Font.Name = 'Courier New'
       Font.Style = []
       MaxLength = 43
@@ -5057,10 +5057,10 @@ object UIForm: TUIForm
     end
   end
   object IPv4Panel: TPanel
-    Left = 214
-    Top = 4
-    Width = 241
-    Height = 255
+    Left = 216
+    Top = 8
+    Width = 321
+    Height = 324
     HelpContext = 331
     Margins.Left = 4
     Margins.Top = 4
@@ -5070,10 +5070,10 @@ object UIForm: TUIForm
     BevelOuter = bvNone
     TabOrder = 0
     object IPv4NetworkMaskLabel: TLabel
-      Left = 144
-      Top = 24
-      Width = 76
-      Height = 15
+      Left = 193
+      Top = 30
+      Width = 101
+      Height = 21
       HelpContext = 331
       Margins.Left = 4
       Margins.Top = 4
@@ -5082,16 +5082,16 @@ object UIForm: TUIForm
       Caption = 'Network Mask'
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWindowText
-      Font.Height = -12
+      Font.Height = -16
       Font.Name = 'Segoe UI'
       Font.Style = []
       ParentFont = False
     end
     object IPv4AddressLabel: TLabel
-      Left = 144
+      Left = 193
       Top = 0
-      Width = 42
-      Height = 15
+      Width = 56
+      Height = 21
       HelpContext = 331
       Margins.Left = 4
       Margins.Top = 4
@@ -5100,16 +5100,16 @@ object UIForm: TUIForm
       Caption = 'Address'
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWindowText
-      Font.Height = -12
+      Font.Height = -16
       Font.Name = 'Segoe UI'
       Font.Style = []
       ParentFont = False
     end
     object IPv4PrefixLengthLabel: TLabel
-      Left = 144
-      Top = 118
-      Width = 70
-      Height = 15
+      Left = 193
+      Top = 150
+      Width = 91
+      Height = 21
       HelpContext = 331
       Margins.Left = 4
       Margins.Top = 4
@@ -5118,16 +5118,16 @@ object UIForm: TUIForm
       Caption = 'Prefix Length'
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWindowText
-      Font.Height = -12
+      Font.Height = -16
       Font.Name = 'Segoe UI'
       Font.Style = []
       ParentFont = False
     end
     object IPv4NetworkLabel: TLabel
-      Left = 144
-      Top = 140
-      Width = 45
-      Height = 15
+      Left = 193
+      Top = 180
+      Width = 60
+      Height = 21
       HelpContext = 331
       Margins.Left = 4
       Margins.Top = 4
@@ -5136,16 +5136,16 @@ object UIForm: TUIForm
       Caption = 'Network'
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWindowText
-      Font.Height = -12
+      Font.Height = -16
       Font.Name = 'Segoe UI'
       Font.Style = []
       ParentFont = False
     end
     object IPv4PrefixLabel: TLabel
-      Left = 144
-      Top = 94
-      Width = 30
-      Height = 15
+      Left = 193
+      Top = 120
+      Width = 39
+      Height = 21
       HelpContext = 331
       Margins.Left = 4
       Margins.Top = 4
@@ -5154,16 +5154,16 @@ object UIForm: TUIForm
       Caption = 'Prefix'
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWindowText
-      Font.Height = -12
+      Font.Height = -16
       Font.Name = 'Segoe UI'
       Font.Style = []
       ParentFont = False
     end
     object IPv4HostQuantityLabel: TLabel
-      Left = 144
-      Top = 234
-      Width = 74
-      Height = 15
+      Left = 193
+      Top = 300
+      Width = 96
+      Height = 21
       HelpContext = 331
       Margins.Left = 4
       Margins.Top = 4
@@ -5172,16 +5172,16 @@ object UIForm: TUIForm
       Caption = 'Host Quantity'
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWindowText
-      Font.Height = -12
+      Font.Height = -16
       Font.Name = 'Segoe UI'
       Font.Style = []
       ParentFont = False
     end
     object IPv4LastAddressLabel: TLabel
-      Left = 144
-      Top = 188
-      Width = 66
-      Height = 15
+      Left = 193
+      Top = 240
+      Width = 88
+      Height = 21
       HelpContext = 331
       Margins.Left = 4
       Margins.Top = 4
@@ -5190,16 +5190,16 @@ object UIForm: TUIForm
       Caption = 'Last Address'
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWindowText
-      Font.Height = -12
+      Font.Height = -16
       Font.Name = 'Segoe UI'
       Font.Style = []
       ParentFont = False
     end
     object IPv4FirstAddressLabel: TLabel
-      Left = 144
-      Top = 164
-      Width = 67
-      Height = 15
+      Left = 193
+      Top = 210
+      Width = 90
+      Height = 21
       HelpContext = 331
       Margins.Left = 4
       Margins.Top = 4
@@ -5208,16 +5208,16 @@ object UIForm: TUIForm
       Caption = 'First Address'
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWindowText
-      Font.Height = -12
+      Font.Height = -16
       Font.Name = 'Segoe UI'
       Font.Style = []
       ParentFont = False
     end
     object IPv4OffsetLabel: TLabel
-      Left = 144
-      Top = 70
-      Width = 77
-      Height = 15
+      Left = 193
+      Top = 90
+      Width = 102
+      Height = 21
       HelpContext = 331
       Margins.Left = 4
       Margins.Top = 4
@@ -5226,16 +5226,16 @@ object UIForm: TUIForm
       Caption = 'Address Offset'
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWindowText
-      Font.Height = -12
+      Font.Height = -16
       Font.Name = 'Segoe UI'
       Font.Style = []
       ParentFont = False
     end
     object IPv4HostMaskLabel: TLabel
-      Left = 144
-      Top = 48
-      Width = 56
-      Height = 15
+      Left = 193
+      Top = 60
+      Width = 73
+      Height = 21
       HelpContext = 331
       Margins.Left = 4
       Margins.Top = 4
@@ -5244,16 +5244,16 @@ object UIForm: TUIForm
       Caption = 'Host Mask'
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWindowText
-      Font.Height = -12
+      Font.Height = -16
       Font.Name = 'Segoe UI'
       Font.Style = []
       ParentFont = False
     end
     object IPv4BroadcastAddressLabel: TLabel
-      Left = 144
-      Top = 210
-      Width = 97
-      Height = 15
+      Left = 193
+      Top = 270
+      Width = 128
+      Height = 21
       HelpContext = 331
       Margins.Left = 4
       Margins.Top = 4
@@ -5262,16 +5262,16 @@ object UIForm: TUIForm
       Caption = 'Broadcast Address'
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWindowText
-      Font.Height = -12
+      Font.Height = -16
       Font.Name = 'Segoe UI'
       Font.Style = []
       ParentFont = False
     end
     object IPv4NetworkMaskEdit: TEdit
       Left = 0
-      Top = 24
-      Width = 136
-      Height = 21
+      Top = 30
+      Width = 185
+      Height = 24
       HelpContext = 331
       Margins.Left = 4
       Margins.Top = 4
@@ -5283,7 +5283,7 @@ object UIForm: TUIForm
       Ctl3D = False
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWindowText
-      Font.Height = -12
+      Font.Height = -16
       Font.Name = 'Courier New'
       Font.Style = []
       MaxLength = 18
@@ -5295,8 +5295,8 @@ object UIForm: TUIForm
     object IPv4AddressEdit: TEdit
       Left = 0
       Top = 0
-      Width = 136
-      Height = 21
+      Width = 185
+      Height = 24
       HelpContext = 331
       Margins.Left = 4
       Margins.Top = 4
@@ -5308,20 +5308,21 @@ object UIForm: TUIForm
       Ctl3D = False
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWindowText
-      Font.Height = -12
+      Font.Height = -16
       Font.Name = 'Courier New'
       Font.Style = []
       MaxLength = 18
       ParentCtl3D = False
       ParentFont = False
       TabOrder = 0
+      Text = '255.255.255.255/32'
       OnExit = IPv4EditExit
     end
     object IPv4PrefixLengthEdit: TEdit
       Left = 0
-      Top = 118
-      Width = 136
-      Height = 21
+      Top = 150
+      Width = 185
+      Height = 24
       HelpContext = 331
       Margins.Left = 4
       Margins.Top = 4
@@ -5333,7 +5334,7 @@ object UIForm: TUIForm
       Ctl3D = False
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWindowText
-      Font.Height = -12
+      Font.Height = -16
       Font.Name = 'Courier New'
       Font.Style = []
       MaxLength = 18
@@ -5344,9 +5345,9 @@ object UIForm: TUIForm
     end
     object IPv4NetworkEdit: TEdit
       Left = 0
-      Top = 140
-      Width = 136
-      Height = 21
+      Top = 180
+      Width = 185
+      Height = 24
       HelpContext = 331
       Margins.Left = 4
       Margins.Top = 4
@@ -5358,7 +5359,7 @@ object UIForm: TUIForm
       Ctl3D = False
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWindowText
-      Font.Height = -12
+      Font.Height = -16
       Font.Name = 'Courier New'
       Font.Style = []
       MaxLength = 18
@@ -5369,9 +5370,9 @@ object UIForm: TUIForm
     end
     object IPv4PrefixEdit: TEdit
       Left = 0
-      Top = 94
-      Width = 136
-      Height = 21
+      Top = 120
+      Width = 185
+      Height = 24
       HelpContext = 331
       Margins.Left = 4
       Margins.Top = 4
@@ -5383,7 +5384,7 @@ object UIForm: TUIForm
       Ctl3D = False
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWindowText
-      Font.Height = -12
+      Font.Height = -16
       Font.Name = 'Courier New'
       Font.Style = []
       MaxLength = 18
@@ -5394,9 +5395,9 @@ object UIForm: TUIForm
     end
     object IPv4BroadcastAddressEdit: TEdit
       Left = 0
-      Top = 210
-      Width = 136
-      Height = 21
+      Top = 270
+      Width = 185
+      Height = 24
       HelpContext = 331
       Margins.Left = 4
       Margins.Top = 4
@@ -5409,7 +5410,7 @@ object UIForm: TUIForm
       Ctl3D = False
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWindowText
-      Font.Height = -12
+      Font.Height = -16
       Font.Name = 'Courier New'
       Font.Style = []
       MaxLength = 18
@@ -5420,9 +5421,9 @@ object UIForm: TUIForm
     end
     object IPv4LastAddressEdit: TEdit
       Left = 0
-      Top = 188
-      Width = 136
-      Height = 21
+      Top = 240
+      Width = 185
+      Height = 24
       HelpContext = 331
       Margins.Left = 4
       Margins.Top = 4
@@ -5435,7 +5436,7 @@ object UIForm: TUIForm
       Ctl3D = False
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWindowText
-      Font.Height = -12
+      Font.Height = -16
       Font.Name = 'Courier New'
       Font.Style = []
       MaxLength = 18
@@ -5446,9 +5447,9 @@ object UIForm: TUIForm
     end
     object IPv4FirstAddressEdit: TEdit
       Left = 0
-      Top = 164
-      Width = 136
-      Height = 21
+      Top = 210
+      Width = 185
+      Height = 24
       HelpContext = 331
       Margins.Left = 4
       Margins.Top = 4
@@ -5461,7 +5462,7 @@ object UIForm: TUIForm
       Ctl3D = False
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWindowText
-      Font.Height = -12
+      Font.Height = -16
       Font.Name = 'Courier New'
       Font.Style = []
       MaxLength = 18
@@ -5472,9 +5473,9 @@ object UIForm: TUIForm
     end
     object IPv4OffsetEdit: TEdit
       Left = 0
-      Top = 70
-      Width = 136
-      Height = 21
+      Top = 90
+      Width = 185
+      Height = 24
       HelpContext = 331
       Margins.Left = 4
       Margins.Top = 4
@@ -5486,7 +5487,7 @@ object UIForm: TUIForm
       Ctl3D = False
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWindowText
-      Font.Height = -12
+      Font.Height = -16
       Font.Name = 'Courier New'
       Font.Style = []
       MaxLength = 18
@@ -5497,9 +5498,9 @@ object UIForm: TUIForm
     end
     object IPv4HostMaskEdit: TEdit
       Left = 0
-      Top = 48
-      Width = 136
-      Height = 21
+      Top = 60
+      Width = 185
+      Height = 24
       HelpContext = 331
       Margins.Left = 4
       Margins.Top = 4
@@ -5511,7 +5512,7 @@ object UIForm: TUIForm
       Ctl3D = False
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWindowText
-      Font.Height = -12
+      Font.Height = -16
       Font.Name = 'Courier New'
       Font.Style = []
       MaxLength = 18
@@ -5522,9 +5523,9 @@ object UIForm: TUIForm
     end
     object IPv4HostQuantityEdit: TEdit
       Left = 0
-      Top = 234
-      Width = 136
-      Height = 21
+      Top = 300
+      Width = 185
+      Height = 24
       HelpContext = 331
       Margins.Left = 4
       Margins.Top = 4
@@ -5537,7 +5538,7 @@ object UIForm: TUIForm
       Ctl3D = False
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWindowText
-      Font.Height = -12
+      Font.Height = -16
       Font.Name = 'Courier New'
       Font.Style = []
       MaxLength = 18

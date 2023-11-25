@@ -70,6 +70,7 @@
         <UWP_DelphiLogo44>$(BDS)\bin\Artwork\Windows\UWP\delphi_UwpDefault_44.png</UWP_DelphiLogo44>
         <UWP_DelphiLogo150>$(BDS)\bin\Artwork\Windows\UWP\delphi_UwpDefault_150.png</UWP_DelphiLogo150>
         <SanitizedProjectName>IPvX</SanitizedProjectName>
+        <GetItPackages>RudysBigNumbers-12</GetItPackages>
     </PropertyGroup>
     <PropertyGroup Condition="'$(Base_Win32)'!=''">
         <DCC_UsePackage>soapserver;RaizeComponentsVcl;IndySystem;vclwinx;FlexCel_Report;fmx;vclie;DbxCommonDriver;bindengine;vcldb;ibxbindings;IndyIPCommon;VCLRESTComponents;FireDACCommonODBC;FireDACCommonDriver;FMX_FlexCel_Components;appanalytics;IndyProtocols;vclx;FlexCel_Core;IndyIPClient;dbxcds;vcledge;vclFireDAC;bindcompvclwinx;bindcomp;FmxTeeUI;FireDACCommon;FlexCel_Render;IndyCore;RESTBackendComponents;bindcompfmx;FlexCel_Pdf;bindcompdbx;SKIA_FlexCel_Core;inetdb;rtl;FireDACMySQLDriver;ibmonitor;FireDACSqliteDriver;DbxClientDriver;FireDACADSDriver;RaizeComponentsVclDb;VCL_FlexCel_Components;Tee;RESTComponents;DBXSqliteDriver;vcl;vclactnband;TeeUI;IndyIPServer;fmxFireDAC;dbexpress;dsnapxml;dsnapcon;soapmidas;adortl;DBXMySQLDriver;VclSmp;inet;vclimg;vcltouch;FireDACPgDriver;FireDAC;fmxase;inetdbxpress;xmlrtl;tethering;FMX_FlexCel_Core;dbrtl;ibxpress;bindcompvcl;dsnap;fmxdae;TeeDB;FlexCel_XlsAdapter;CloudService;FireDACMSAccDriver;VCL_FlexCel_Core;CustomIPTransport;vclib;fmxobj;bindcompvclsmp;FMXTee;soaprtl;vcldsnap;DBXInterBaseDriver;FireDACIBDriver;$(DCC_UsePackage)</DCC_UsePackage>
@@ -121,8 +122,9 @@
         <VerInfo_MinorVer>11</VerInfo_MinorVer>
         <VerInfo_Release>23</VerInfo_Release>
         <VerInfo_Locale>1033</VerInfo_Locale>
-        <VerInfo_Keys>CompanyName=;FileDescription=$(MSBuildProjectName);FileVersion=23.11.23.0;InternalName=IPvX;LegalCopyright=© 2010 - 2023 by Ron Maupin;LegalTrademarks=;OriginalFilename=IPvX.exe;ProgramID=com.embarcadero.$(MSBuildProjectName);ProductName=$(MSBuildProjectName);ProductVersion=23.11.23.0;Comments=Created by Ron Maupin</VerInfo_Keys>
+        <VerInfo_Keys>CompanyName=;FileDescription=$(MSBuildProjectName);FileVersion=23.11.23.1;InternalName=IPvX;LegalCopyright=© 2010 - 2023 by Ron Maupin;LegalTrademarks=;OriginalFilename=IPvX.exe;ProgramID=com.embarcadero.$(MSBuildProjectName);ProductName=$(MSBuildProjectName);ProductVersion=23.11.23.1;Comments=Created by Ron Maupin</VerInfo_Keys>
         <Icon_MainIcon>IPvX_Icon.ico</Icon_MainIcon>
+        <VerInfo_Build>1</VerInfo_Build>
     </PropertyGroup>
     <PropertyGroup Condition="'$(Cfg_2_Win64)'!=''">
         <AppDPIAwarenessMode>PerMonitorV2</AppDPIAwarenessMode>
@@ -132,7 +134,8 @@
         <VerInfo_MajorVer>23</VerInfo_MajorVer>
         <VerInfo_MinorVer>11</VerInfo_MinorVer>
         <VerInfo_Release>23</VerInfo_Release>
-        <VerInfo_Keys>CompanyName=;FileDescription=$(MSBuildProjectName);FileVersion=23.11.23.0;InternalName=IPvX;LegalCopyright=Copyright © 2010 - 2023 by Ron Maupin;LegalTrademarks=;OriginalFilename=IPvX.exe;ProgramID=com.embarcadero.$(MSBuildProjectName);ProductName=$(MSBuildProjectName);ProductVersion=23.11.23.0;Comments=Created by Ron Maupin</VerInfo_Keys>
+        <VerInfo_Keys>CompanyName=;FileDescription=$(MSBuildProjectName);FileVersion=23.11.23.1;InternalName=IPvX;LegalCopyright=Copyright © 2010 - 2023 by Ron Maupin;LegalTrademarks=;OriginalFilename=IPvX.exe;ProgramID=com.embarcadero.$(MSBuildProjectName);ProductName=$(MSBuildProjectName);ProductVersion=23.11.23.1;Comments=Created by Ron Maupin</VerInfo_Keys>
+        <VerInfo_Build>1</VerInfo_Build>
     </PropertyGroup>
     <ItemGroup>
         <DelphiCompile Include="$(MainSource)">

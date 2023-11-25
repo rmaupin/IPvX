@@ -232,7 +232,7 @@ begin
   FAbout.AboutImage.ImageCollection := ApplicationImageCollection;
   FAbout.AboutImage.ImageName := 'IPvX';
   FIPVersion := 4;
-  Width := 478;
+  Width := (Width * 3) DIV 4;
   FIPv4ActiveEdit := IPv4AddressEdit;
   FIPv6ActiveEdit := IPv6AddressEdit;
   FIPv4 := TIPv4.Create;
@@ -641,7 +641,7 @@ begin
       FIPVersion                := 4;
       IPv6Panel.Visible         := False;
       IPv4Panel.Visible         := True;
-      Width                     := 480;
+      Width := (Width * 3) DIV 4;
       ActiveControl             := FIPv4ActiveEdit;
       IPv4Update;
     end;
@@ -653,7 +653,7 @@ begin
       FIPVersion                := 6;
       IPv4Panel.Visible         := False;
       IPv6Panel.Visible         := True;
-      Width                     := 960;
+      Width := (Width * 4) DIV 3;
       ActiveControl             := FIPv6ActiveEdit;
       IPv6Update;
     end;
